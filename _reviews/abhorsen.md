@@ -6,7 +6,7 @@ date: 2026-04-30
 rating: 4
 cover: "https://covers.openlibrary.org/b/isbn/9780060528737-L.jpg"
 genre: "Fantasy"
-verdict: "This book really had the ability to stick in my thoughts as a supreme fantasy."
+verdict: "A supreme fantasy."
 quotes_heading: "Favorite moments"
 quotes:
   - "The descriptions of the Abhorsen's home, the Seers' ice mountains, and crossing the threshold into Death."

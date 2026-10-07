@@ -5,7 +5,7 @@ date: 2026-04-24
 rating: 4
 cover: "https://covers.openlibrary.org/b/id/13481659-L.jpg"
 genre: "Horror"
-verdict: "This one started perfectly, got weird and really lost me in the middle, and then apologized and became a beloved friend by the end."
+verdict: "Moms + daughters, beauty cults, vampires but with squids?"
 quotes:
   - "\"I watched her soul close its eyes inside her body as she stared at the screen.\""
   - "\"The only journey that matters in the end, Daughter of Noelle.\" \"Retinol?\" I whisper. \"The soul. A journey of the soul, of course.\""

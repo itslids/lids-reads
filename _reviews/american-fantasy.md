@@ -5,7 +5,7 @@ date: 2026-04-22
 rating: 1
 cover: "https://images2.penguinrandomhouse.com/cover/9798217046850"
 genre: "Fiction"
-verdict: "Lesson learned: owning a bookstore does not make you Ann Patchett."
+verdict: "Owning a bookstore does not make you Ann Patchett."
 recommend_to: "No one, in good conscience."
 playlist:
   name: "All Aboard the Nostalgia Cruise"

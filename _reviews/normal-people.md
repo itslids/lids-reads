@@ -5,7 +5,7 @@ date: 2026-05-10
 rating: 3
 cover: "https://covers.openlibrary.org/b/isbn/9780571334650-L.jpg"
 genre: "Literary fiction"
-verdict: "But I kind of didn't care about anyone in this book."
+verdict: "I kind of didn't care about anyone in this book."
 quotes:
   - "\"She believes Marianne lacks 'warmth,' by which she means the ability to beg for love from people who hate her.\""
   - "\"It feels intellectually unserious to concern himself with fictional people marrying one another. But there it is: literature moves him. One of his professors calls it 'the pleasure of being touched by great art.'\""
