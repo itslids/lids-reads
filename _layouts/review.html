@@ -16,6 +16,18 @@ layout: default
   <div class="prose">
     {{ content }}
   </div>
+  {% if page.vibes %}
+  <section class="extras">
+    <h2>Vibes</h2>
+    <ul class="vibes">{% for v in page.vibes %}<li>{{ v }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  {% if page.why %}
+  <section class="extras">
+    <h2>Why I picked it up</h2>
+    {{ page.why | markdownify }}
+  </section>
+  {% endif %}
   {% if page.quotes %}
   <section class="extras">
     <h2>{% if page.quotes_heading %}{{ page.quotes_heading }}{% elsif page.quotes.size == 1 %}Favorite quote{% else %}Favorite quotes{% endif %}</h2>
@@ -26,6 +38,15 @@ layout: default
   <section class="extras">
     <h2>Would recommend to</h2>
     <p>{{ page.recommend_to }}</p>
+  </section>
+  {% endif %}
+  {% if page.part_of %}
+  <section class="extras">
+    <h2>Part of</h2>
+    {% for g in page.part_of %}
+    {% assign group = site.reviews | where_exp: "x", "x.part_of contains g" | sort: "date" %}
+    <p class="partof"><strong>{{ g }}</strong>{% if group.size > 1 %}<br>Also reviewed: {% assign sep = "" %}{% for o in group %}{% unless o.url == page.url %}{{ sep }}<a href="{{ o.url | relative_url }}">{{ o.title }}</a>{% assign sep = ", " %}{% endunless %}{% endfor %}{% endif %}</p>
+    {% endfor %}
   </section>
   {% endif %}
   <nav class="review-nav" aria-label="More reviews">

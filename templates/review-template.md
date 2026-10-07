@@ -12,6 +12,11 @@ quotes_heading: ""        # optional, e.g. "Favorite moment" (default: "Favorite
 quotes:                   # optional
   - "\"A favorite quote.\""
 recommend_to: "Who should read it."
+vibes:                    # optional: short tags, also searchable from the home page
+  - "beauty cults"
+why: ""                   # optional: one line on why you picked it up
+part_of:                  # optional: a reading project; reviews sharing a label link to each other
+  - "Tracking the International Booker Prize"
 ---
 
 The review itself.

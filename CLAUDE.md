@@ -28,6 +28,9 @@ When converting a vault review into `_reviews/<slug>.md`:
 - `rating` comes from the number of ★. `date` is the Finished date (YYYY-MM-DD). Use the cover URL from the vault in `cover`.
 - Don't publish the **Reading Playlist**; Lindsey had playlists removed from the site (2026-10-06).
 - `genre` and `series` are optional, factual labels.
+- `vibes` are short tags (shown as chips, searchable on the home page). Build them from phrases in her review and recommendation, not new descriptions.
+- `why` ("Why I picked it up") is only filled in when she states the reason herself: a **Why I picked it up** line in the vault, or a sentence in the review that says it. Otherwise leave it out.
+- `part_of` groups reviews into a reading project; reviews sharing a label link to each other. Current labels: "Tracking the International Booker Prize", "The Abhorsen series", "My Mona Awad micro-obsession", "Obsession stories". Reuse the exact label text.
 - Published so far: every written review in the vault as of 2026-10-06 (18). Check `_reviews/` against the vault for new ones.
 
 ## Conventions

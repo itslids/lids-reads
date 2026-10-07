@@ -39,12 +39,12 @@ title: Reviews
 <h2 class="section-h">Reviews</h2>
 <div class="toolbar">
   <label class="sr-only" for="q">Search reviews</label>
-  <input id="q" type="search" placeholder="Search by title, author or genre" autocomplete="off">
+  <input id="q" type="search" placeholder="Search by title, author, genre or vibe" autocomplete="off">
   <p class="count"><span id="shown">{{ reviews.size }}</span> of {{ reviews.size }} {% if reviews.size == 1 %}book{% else %}books{% endif %}</p>
 </div>
 <ol class="cards" id="cards">
   {% for r in reviews %}
-  <li class="card" data-search="{{ r.title | downcase | escape }} {{ r.author | downcase | escape }} {{ r.genre | downcase | escape }}">
+  <li class="card" data-search="{{ r.title | downcase | escape }} {{ r.author | downcase | escape }} {{ r.genre | downcase | escape }} {{ r.vibes | join: ' ' | downcase | escape }} {{ r.part_of | join: ' ' | downcase | escape }}">
     <a href="{{ r.url | relative_url }}">
       {% include cover.html src=r.cover isbn=r.isbn title=r.title size="small" %}
       <div class="card-body">

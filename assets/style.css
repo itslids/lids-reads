@@ -122,3 +122,6 @@ nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underl
 .extras h2 { font-family: var(--display); font-weight: 600; font-size: 26px; margin: 0 0 8px; }
 .extras blockquote { margin: 0 0 16px; padding-left: 20px; border-left: 3px solid var(--rule); font-style: italic; color: var(--ink); }
 .extras blockquote p { margin: 0; }
+.extras p { margin: 0 0 10px; }
+.vibes { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.vibes li { font-size: 14.5px; line-height: 1.4; padding: 4px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); }

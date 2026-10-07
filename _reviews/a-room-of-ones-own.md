@@ -12,6 +12,10 @@ quotes:
   - "\"Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.\""
   - "\"Women have served all these centuries as looking glasses possessing the magic and delicious power of reflecting the figure of man at twice its natural size.\""
 recommend_to: "Anyone with a pulse. Especially anyone who has ever felt like the smartest person in a room that refused to acknowledge it."
+vibes:
+  - "tongue-in-cheek"
+  - "sharp and witty"
+  - "fun and poignant"
 ---
 
 I can't believe I have an entire English Literature degree and have never even read an excerpt of this before. It was brilliant, funny, absorbing, sharp, and witty. So tongue-in-cheek. I was impressed by how fun and poignant it is, even today, nearly a century later. I think Virginia Woolf would be one of those "if you could invite anyone to dinner, dead or alive..." guests for me.
