@@ -5,7 +5,7 @@ date: 2026-05-04
 rating: 4
 cover: "https://covers.openlibrary.org/b/id/15213149-L.jpg"
 genre: "Literary fiction"
-verdict: "A strange, domestic magical realism piece."
+verdict: "My favorite of the International Booker shortlist so far."
 quotes:
   - "\"But-- practical, serene, resolute, intensely relaxed, grasping, asking a great deal of life with the most perfect innocence-- they had next to no modesty or discretion, were rarely embarrassed by anything. In that those clever little barbarians, my daughters, amazed me.\""
 recommend_to: "A genuine literary friend: someone who enjoys language, interesting or creative storytelling, and not always having all the answers or a perfect plot."

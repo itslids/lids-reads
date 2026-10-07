@@ -5,7 +5,7 @@ date: 2026-03-26
 rating: 1
 cover: "https://covers.openlibrary.org/b/id/1548130-L.jpg"
 genre: "Literary fiction"
-verdict: "So much potential and fell totally flat."
+verdict: "I hated this one passionately because it could have been so good."
 recommend_to: "No one, really. It's short, so you won't waste much time — maybe worth it if you're tracking the International Booker Prize."
 ---
 

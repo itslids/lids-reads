@@ -5,7 +5,7 @@ date: 2026-05-23
 rating: 3
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1772673526l/222700466._SY475_.jpg"
 genre: "Literary fiction"
-verdict: "Tries to be grand and impressive in a Donna Tartt kind of way and doesn't get there."
+verdict: "Wants to be Donna Tartt. Doesn't get there."
 recommend_to: "Anyone looking for an obsession tale with a non-traditional, non-heterosexual male main character, ambitious literary fiction framing, and genuinely nice prose. Just go in knowing the ambition outpaces the execution."
 playlist:
   name: "Elegant Melancholy"

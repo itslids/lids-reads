@@ -5,7 +5,7 @@ date: 2026-03-23
 rating: 1
 cover: "https://covers.openlibrary.org/b/id/14594740-L.jpg"
 genre: "Thriller"
-verdict: "A misleading comp is its own category of crime."
+verdict: "Sold as a modern Jane Eyre. It is not."
 recommend_to: "No one."
 ---
 

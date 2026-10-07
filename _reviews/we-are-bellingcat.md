@@ -5,7 +5,7 @@ date: 2026-03-05
 rating: 3
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596434293l/54680228.jpg"
 genre: "Nonfiction"
-verdict: "A great origin story."
+verdict: "A great origin story with a timeline I kept getting lost in."
 recommend_to: "Would recommend specifically to people interested in the last decade+ evolution of open-source research and journalism, or specific fans of Bellingcat."
 ---
 

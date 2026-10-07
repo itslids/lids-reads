@@ -5,7 +5,7 @@ date: 2026-03-25
 rating: 3
 cover: "https://covers.openlibrary.org/b/id/14605019-L.jpg"
 genre: "Literary fiction"
-verdict: "I both loved and hated this book."
+verdict: "If she had actual boundaries, there would be no book."
 quotes_heading: "Favorite moment"
 quotes:
   - "The last page. Read the whole book to get there."
