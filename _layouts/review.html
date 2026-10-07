@@ -18,7 +18,7 @@ layout: default
   </div>
   {% if page.quotes %}
   <section class="extras">
-    <h2>{% if page.quotes.size == 1 %}Favorite quote{% else %}Favorite quotes{% endif %}</h2>
+    <h2>{% if page.quotes_heading %}{{ page.quotes_heading }}{% elsif page.quotes.size == 1 %}Favorite quote{% else %}Favorite quotes{% endif %}</h2>
     {% for q in page.quotes %}<blockquote>{{ q | markdownify }}</blockquote>{% endfor %}
   </section>
   {% endif %}
