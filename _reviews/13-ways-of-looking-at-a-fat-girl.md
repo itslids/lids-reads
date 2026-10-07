@@ -5,7 +5,7 @@ date: 2026-04-02
 rating: 4
 cover: "https://covers.openlibrary.org/b/isbn/9780143128489-L.jpg"
 genre: "Fiction"
-verdict: "Mona Awad keeps writing main characters with my exact personality."
+verdict: "No spec fic, no genre-bending, just darkly funny and very sharp."
 quotes:
   - "\"Epic. Primordial. Gritty. Incandescent. These are just a few of the adjectives the fat girl feeds you along with her Banana-Rama bread, her peanut butter and raspberry triangles, her rocky road. She says it's like you have Leonard Cohen's touch with lyrics coupled with Daniel Johnston's sincerity coupled with a Rimbaudian aura of tragedy yet with Nick Cave teeth. She doesn't tell you not to quit your day job, like Some People. Instead, she counsels never to give up, her gaze wet, dark, and adoring as a dog's.\"\n\nThe whole chapter this comes from is a modern echo of Virginia Woolf's line in *A Room of One's Own* — that a woman is a \"looking-glass possessing the magic and delicious power of reflecting the figure of man at twice its natural size.\" Same dynamic, different century."
 recommend_to: "All women. Especially all women who feel strong alone."

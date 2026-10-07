@@ -24,7 +24,7 @@ Lindsey writes her reviews in her Obsidian vault at `~/Desktop/MyWorld/AI-GEN/re
 
 When converting a vault review into `_reviews/<slug>.md`:
 - **Keep Lindsey's wording exactly.** Don't rewrite, polish or summarize her review, quotes or recommendations.
-- `verdict` is the short teaser line on the card. Lindsey has okayed punchy rewrites here (2026-10-06) as long as they sound like her (blunt, casual, a little snarky), say only what her review says, and avoid AI-sounding phrasing: no em dashes, no "not X but Y", no stock praise words. This exception covers `verdict` only; the review body, quotes and recommendations stay word for word.
+- `verdict` is the short teaser line on the card: a sentence, or a trimmed piece of one, lifted word for word from her review. Cut it down to the sharpest part, but never add or change words.
 - `rating` comes from the number of ★. `date` is the Finished date (YYYY-MM-DD). Use the cover URL from the vault in `cover`.
 - Drop `utm_*` and other tracking parameters from Spotify links.
 - `genre` and `series` are optional, factual labels.

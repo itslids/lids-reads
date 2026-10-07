@@ -5,7 +5,7 @@ date: 2026-05-03
 rating: 5
 cover: "https://covers.openlibrary.org/b/isbn/9780156787338-L.jpg"
 genre: "Essay"
-verdict: "Virginia Woolf is officially on my dream dinner guest list."
+verdict: "Brilliant, funny, absorbing, sharp, and witty."
 quotes:
   - "\"It would be a thousand pities if women wrote like men, or lived like men, or looked like men, for if two sexes are quite inadequate, considering the vastness and variety of the world, how should we manage with one only?\""
   - "\"I like reading books in the bulk…Therefore I would ask you to write all kinds of books, hesitating at no subject however trivial or however vast. By hook or by crook, I hope that you will possess yourselves of money enough to travel and to idle, to contemplate the future or the past of the world, to dream over books and loiter at street corners and let the line of thought dip deep into the stream.\""

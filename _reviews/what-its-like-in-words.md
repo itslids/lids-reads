@@ -5,7 +5,7 @@ date: 2026-05-19
 rating: 3
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708547134l/203578775._SY475_.jpg"
 genre: "Literary fiction"
-verdict: "About 70% of a great thriller about a terrible adult man-baby."
+verdict: "Falling into an obsession with a terrible adult man-baby."
 quotes:
   - "\"Now everything mine has become his, and I don't know when or how that happened.\""
 recommend_to: "About 70% of this book is great for people who love obsessive relationship thrillers. It would also work for someone who enjoys books about writers and writing. That said — if you need a tidy, resolved ending, this isn't it."
