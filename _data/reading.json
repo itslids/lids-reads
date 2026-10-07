@@ -1,15 +1,38 @@
 {
-  "updated": "2026-07-22",
+  "updated": "2026-10-07",
   "year": 2026,
   "goal": 100,
-  "read_this_year": null,
+  "read_this_year": 75,
   "currently_reading": [
-    {"title": "Strega", "author": "Johanne Lykke Holm", "cover": "", "link": ""},
-    {"title": "Land", "author": "Maggie O'Farrell", "cover": "", "link": ""},
-    {"title": "The People in the Trees", "author": "Hanya Yanagihara", "cover": "", "link": ""},
-    {"title": "Paradise Rot", "author": "Jenny Hval", "cover": "", "link": ""},
-    {"title": "Say Nothing", "author": "Patrick Radden Keefe", "cover": "", "link": ""},
-    {"title": "The Good Soldier", "author": "Ford Madox Ford", "cover": "", "link": ""},
-    {"title": "Never Whistle at Night", "author": "Shane Hawk (ed.)", "cover": "", "link": ""}
+    {
+      "title": "Three Guineas",
+      "author": "Virginia Woolf",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442463839l/18854._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/18854"
+    },
+    {
+      "title": "Land",
+      "author": "Maggie O'Farrell",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1764056109l/241126782._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/241126782"
+    },
+    {
+      "title": "The People in the Trees",
+      "author": "Hanya Yanagihara",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356108388l/16126596.jpg",
+      "link": "https://www.goodreads.com/book/show/16126596"
+    },
+    {
+      "title": "Paradise Rot",
+      "author": "Jenny Hval",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596041196l/39216527._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/39216527"
+    },
+    {
+      "title": "Say Nothing",
+      "author": "Patrick Radden Keefe",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537315266l/40163119._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/40163119"
+    }
   ]
 }
