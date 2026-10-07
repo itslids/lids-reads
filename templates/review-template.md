@@ -12,10 +12,6 @@ quotes_heading: ""        # optional, e.g. "Favorite moment" (default: "Favorite
 quotes:                   # optional
   - "\"A favorite quote.\""
 recommend_to: "Who should read it."
-playlist:                 # optional
-  name: "Playlist name"
-  url: "https://open.spotify.com/playlist/..."
-  note: "A few words on the vibe."
 ---
 
 The review itself.

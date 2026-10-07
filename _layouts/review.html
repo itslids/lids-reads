@@ -28,12 +28,6 @@ layout: default
     <p>{{ page.recommend_to }}</p>
   </section>
   {% endif %}
-  {% if page.playlist %}
-  <section class="extras playlist">
-    <h2>Reading playlist</h2>
-    <p><a href="{{ page.playlist.url }}">{{ page.playlist.name }}</a>{% if page.playlist.note %} · {{ page.playlist.note }}{% endif %}</p>
-  </section>
-  {% endif %}
   <nav class="review-nav" aria-label="More reviews">
     <a href="{{ '/' | relative_url }}">← All reviews</a>
   </nav>

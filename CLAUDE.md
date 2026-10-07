@@ -26,7 +26,7 @@ When converting a vault review into `_reviews/<slug>.md`:
 - **Keep Lindsey's wording exactly.** Don't rewrite, polish or summarize her review, quotes or recommendations.
 - `verdict` is the short teaser line on the card: a sentence, or a trimmed piece of one, lifted word for word from her review. Cut it down to the sharpest part, but never add or change words.
 - `rating` comes from the number of ★. `date` is the Finished date (YYYY-MM-DD). Use the cover URL from the vault in `cover`.
-- Drop `utm_*` and other tracking parameters from Spotify links.
+- Don't publish the **Reading Playlist**; Lindsey had playlists removed from the site (2026-10-06).
 - `genre` and `series` are optional, factual labels.
 - Published so far: every written review in the vault as of 2026-10-06 (18). Check `_reviews/` against the vault for new ones.
 
