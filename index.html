@@ -1,0 +1,75 @@
+---
+title: Reviews
+---
+{% assign reviews = site.reviews | sort: "date" | reverse %}
+<section class="intro">
+  <h1>{{ site.title }}</h1>
+  <p class="lede">{{ site.tagline }}</p>
+</section>
+
+{% assign now = site.data.reading %}
+{% if now and now.currently_reading.size > 0 %}
+<section class="now" aria-labelledby="now-h">
+  <div class="now-head">
+    <h2 id="now-h">Currently reading</h2>
+    {% if now.read_this_year %}
+    <div class="goal" title="{{ now.read_this_year }} of {{ now.goal }} books finished in {{ now.year }}">
+      <span class="goal-num">{{ now.read_this_year }} of {{ now.goal }}</span> books in {{ now.year }}
+      {% assign pct = now.read_this_year | times: 100 | divided_by: now.goal %}{% if pct > 100 %}{% assign pct = 100 %}{% endif %}
+      <span class="goal-bar"><span style="width: {{ pct }}%"></span></span>
+    </div>
+    {% endif %}
+  </div>
+  <ul class="shelf">
+    {% for b in now.currently_reading %}
+    <li>
+      {% if b.link %}<a href="{{ b.link }}">{% endif %}
+      {% include cover.html src=b.cover title=b.title size="mini" %}
+      <span class="shelf-title">{{ b.title }}</span>
+      <span class="shelf-author">{{ b.author }}</span>
+      {% if b.link %}</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% if now.updated %}<p class="now-updated">Updated {{ now.updated | date: "%B %-d, %Y" }}</p>{% endif %}
+</section>
+{% endif %}
+
+{% if reviews.size > 0 %}
+<h2 class="section-h">Reviews</h2>
+<div class="toolbar">
+  <label class="sr-only" for="q">Search reviews</label>
+  <input id="q" type="search" placeholder="Search by title, author or genre" autocomplete="off">
+  <p class="count"><span id="shown">{{ reviews.size }}</span> of {{ reviews.size }} {% if reviews.size == 1 %}book{% else %}books{% endif %}</p>
+</div>
+<ol class="cards" id="cards">
+  {% for r in reviews %}
+  <li class="card" data-search="{{ r.title | downcase | escape }} {{ r.author | downcase | escape }} {{ r.genre | downcase | escape }}">
+    <a href="{{ r.url | relative_url }}">
+      {% include cover.html src=r.cover isbn=r.isbn title=r.title size="small" %}
+      <div class="card-body">
+        <h2>{{ r.title }}</h2>
+        <p class="byline">{{ r.author }}</p>
+        <p class="rating">{% include stars.html rating=r.rating %}</p>
+        {% if r.verdict %}<p class="card-verdict">{{ r.verdict }}</p>{% endif %}
+        <p class="finished">{{ r.date | date: "%b %Y" }}{% if r.genre %} · {{ r.genre }}{% endif %}</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ol>
+<p class="empty" id="none" hidden>No reviews match that search.</p>
+<script>
+  (function () {
+    var q = document.getElementById('q'), cards = document.querySelectorAll('#cards .card'),
+        shown = document.getElementById('shown'), none = document.getElementById('none');
+    q.addEventListener('input', function () {
+      var t = q.value.trim().toLowerCase(), n = 0;
+      cards.forEach(function (c) { var hit = !t || c.dataset.search.indexOf(t) > -1; c.hidden = !hit; if (hit) n++; });
+      shown.textContent = n; none.hidden = n > 0;
+    });
+  })();
+</script>
+{% else %}
+<p class="empty">The first review is on its way.</p>
+{% endif %}

@@ -1,0 +1,41 @@
+title: Lids Reads
+tagline: Book reviews by Lindsey — classics, new releases, and whatever's on the nightstand.
+description: Book reviews by Lindsey (Lids), from Dickens and the Brontës to whatever's on the nightstand.
+author: Lindsey
+url: "https://itslids.github.io"
+baseurl: "/lids-reads"
+lang: en
+
+# Optional: paste your Substack URL here once it exists, and a "Newsletter" link appears in the header.
+substack_url: ""
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: reviews
+    values:
+      layout: review
+
+feed:
+  collections:
+    - reviews
+
+exclude:
+  - README.md
+  - scripts
+  - templates
+  - Gemfile
+  - Gemfile.lock

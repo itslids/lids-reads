@@ -1,0 +1,7 @@
+{%- if include.src and include.src != "" -%}
+<img class="cover {{ include.size }}" src="{{ include.src }}" alt="Cover of {{ include.title | escape }}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="cover placeholder {{ include.size }}" hidden>{{ include.title }}</div>
+{%- elsif include.isbn -%}
+<img class="cover {{ include.size }}" src="https://covers.openlibrary.org/b/isbn/{{ include.isbn }}-{% if include.size == 'large' %}L{% else %}M{% endif %}.jpg?default=false" alt="Cover of {{ include.title | escape }}" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><div class="cover placeholder {{ include.size }}" hidden>{{ include.title }}</div>
+{%- else -%}
+<div class="cover placeholder {{ include.size }}">{{ include.title }}</div>
+{%- endif -%}
