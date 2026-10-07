@@ -1,2 +1,2 @@
-{%- assign r = include.rating | plus: 0 -%}
-<span class="stars" role="img" aria-label="{{ r }} out of 5 stars">{% for i in (1..5) %}{% assign h = i | minus: 0.5 %}{% if r >= i %}<span class="s full">★</span>{% elsif r >= h %}<span class="s half">★</span>{% else %}<span class="s empty">★</span>{% endif %}{% endfor %}</span>
+{%- assign star_rating = include.rating | plus: 0 -%}
+<span class="stars" role="img" aria-label="{{ star_rating }} out of 5 stars">{% for i in (1..5) %}{% assign h = i | minus: 0.5 %}{% if star_rating >= i %}<span class="s full">★</span>{% elsif star_rating >= h %}<span class="s half">★</span>{% else %}<span class="s empty">★</span>{% endif %}{% endfor %}</span>
