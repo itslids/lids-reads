@@ -16,4 +16,10 @@ part_of:
   - "Tracking the International Booker Prize"
 ---
 
-I hated this book passionately because it had so much potential and fell totally flat. The writing was actually good, and each interwoven story had a compelling premise — but altogether it served no purpose for me other than to say: this is how bad things are, and here's some magic sprinkled on top that doesn't fix anything. The one character I found compelling was the gardener — the one good man in the book — and I still don't understand what he was there for.
+Magical realism trying to make sense of the 1953 Iranian coup. I hated this book passionately because it had so much potential and fell totally flat.
+
+The writing was actually good, and each interwoven story had a compelling premise.
+
+But I really struggled to derive any message from it other than: men hurt women, and sometimes women also hurt women. I wanted the magic to make sense of it all. Isn't that what magical systems are for? Instead it's: this is how bad things are, and here's some magic sprinkled on top that doesn't fix anything.
+
+The one character I found compelling was the gardener, the one good man in the book, and I still don't understand what he was there for. Is he a savior figure? But why a man?

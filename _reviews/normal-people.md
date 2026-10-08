@@ -17,4 +17,8 @@ vibes:
   - "adults communicating poorly"
 ---
 
-This book was fine — maybe even good. I enjoyed comparing the show to the book; it seems like it was actually a pretty good and true adaptation. I'm really impressed by Sally Rooney's ability to create intense intimacy through only fairly sparse and specific moments in time, rather than a long, drawn-out narrative. But I kind of didn't care about anyone in this book. Also, this has that trope I hate: adults just plain communicating poorly.
+A story about two people who can't talk to other people, in a torturous relationship drawn out over their lives.
+
+It was fine, maybe even good. I enjoyed comparing the show to the book, and it's a pretty good and true adaptation. I'm really impressed by Sally Rooney's ability to create intense intimacy through only sparse and specific moments in time, rather than a long narrative.
+
+But I kind of didn't care about anyone in this book. Also, it has that trope I hate: adults just plain communicating poorly.
