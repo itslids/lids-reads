@@ -1,6 +1,7 @@
 ---
 title: "American Fantasy"
 author: "Emma Straub"
+goodreads_id: "239051491"
 date: 2026-04-22
 rating: 1
 cover: "https://images2.penguinrandomhouse.com/cover/9798217046850"

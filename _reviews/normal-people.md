@@ -1,6 +1,7 @@
 ---
 title: "Normal People"
 author: "Sally Rooney"
+goodreads_id: "41057294"
 date: 2026-05-10
 rating: 3
 cover: "https://covers.openlibrary.org/b/isbn/9780571334650-L.jpg"

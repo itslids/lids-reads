@@ -1,6 +1,7 @@
 ---
 title: "Kingfisher"
 author: "Rozie Kelly"
+goodreads_id: "222700466"
 date: 2026-05-23
 rating: 3
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1772673526l/222700466._SY475_.jpg"

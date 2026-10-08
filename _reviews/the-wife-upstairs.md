@@ -1,6 +1,7 @@
 ---
 title: "The Wife Upstairs"
 author: "Rachel Hawkins"
+goodreads_id: "53137893"
 date: 2026-03-23
 rating: 1
 cover: "https://covers.openlibrary.org/b/id/14594740-L.jpg"

@@ -1,0 +1,605 @@
+{
+  "year": 2026,
+  "books": [
+    {
+      "id": "60209475",
+      "title": "We Spread",
+      "author": "Iain Reid",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644353572l/60209475.jpg",
+      "rating": 3,
+      "date": "2026-10-04"
+    },
+    {
+      "id": "228394781",
+      "title": "Small Boat",
+      "author": "Vincent Delecroix",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1741272009l/228394781._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-09-29"
+    },
+    {
+      "id": "23453099",
+      "title": "Eileen",
+      "author": "Ottessa Moshfegh",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1479545528l/23453099._SX318_.jpg",
+      "rating": 3,
+      "date": "2026-09-27"
+    },
+    {
+      "id": "238176234",
+      "title": "What Am I, a Deer?",
+      "author": "Polly Barton",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1752090797l/238176234._SY475_.jpg",
+      "rating": 0,
+      "date": "2026-09-20"
+    },
+    {
+      "id": "75293507",
+      "title": "Never Whistle at Night",
+      "author": "Shane Hawk",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1685990593l/75293507.jpg",
+      "rating": 3,
+      "date": "2026-09-12"
+    },
+    {
+      "id": "242512669",
+      "title": "The Man",
+      "author": "Laura Sims",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1762405681l/242512669._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-09-10"
+    },
+    {
+      "id": "60243188",
+      "title": "Bliss Montage",
+      "author": "Ling Ma",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1650397247l/60243188.jpg",
+      "rating": 5,
+      "date": "2026-09-04"
+    },
+    {
+      "id": "71872930",
+      "title": "North Woods",
+      "author": "Daniel Mason",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684816182l/71872930.jpg",
+      "rating": 4,
+      "date": "2026-08-31"
+    },
+    {
+      "id": "228110489",
+      "title": "Heart the Lover",
+      "author": "Lily King",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1745508457l/228110489._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-08-24"
+    },
+    {
+      "id": "7628",
+      "title": "The Good Soldier",
+      "author": "Ford Madox Ford",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1777366360l/7628._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-08-22"
+    },
+    {
+      "id": "55628983",
+      "title": "Survive the Night",
+      "author": "Riley Sager",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603780911l/55628983.jpg",
+      "rating": 1,
+      "date": "2026-08-14"
+    },
+    {
+      "id": "60372438",
+      "title": "Strega",
+      "author": "Johanne Lykke Holm",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1652965907l/60372438.jpg",
+      "rating": 3,
+      "date": "2026-08-12"
+    },
+    {
+      "id": "174156218",
+      "title": "Headshot",
+      "author": "Rita Bullwinkel",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1691077222l/174156218._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-08-02"
+    },
+    {
+      "id": "62039259",
+      "title": "Open Throat",
+      "author": "Henry Hoke",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1667852289l/62039259.jpg",
+      "rating": 5,
+      "date": "2026-08-01"
+    },
+    {
+      "id": "214986269",
+      "title": "Hunchback",
+      "author": "Saou Ichikawa",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1740937485l/214986269._SY475_.jpg",
+      "rating": 1,
+      "date": "2026-07-30"
+    },
+    {
+      "id": "63313297",
+      "title": "The Details",
+      "author": "Ia Genberg",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1669323616l/63313297.jpg",
+      "rating": 4,
+      "date": "2026-07-26"
+    },
+    {
+      "id": "50269327",
+      "title": "Earthlings",
+      "author": "Sayaka Murata",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580144195l/50269327._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-07-24"
+    },
+    {
+      "id": "55711559",
+      "title": "Animal",
+      "author": "Lisa Taddeo",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623264432l/55711559._SX318_.jpg",
+      "rating": 2,
+      "date": "2026-07-18"
+    },
+    {
+      "id": "238873074",
+      "title": "Vigil",
+      "author": "George Saunders",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "199635125",
+      "title": "Rejection",
+      "author": "Tony Tulathimutte",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-07-14"
+    },
+    {
+      "id": "7631105",
+      "title": "The Scorch Trials",
+      "author": "James Dashner",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388240248l/7631105.jpg",
+      "rating": 3,
+      "date": "2026-07-11"
+    },
+    {
+      "id": "36348525",
+      "title": "Severance",
+      "author": "Ling Ma",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1507060524l/36348525._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-07-10"
+    },
+    {
+      "id": "238227104",
+      "title": "The Keeper",
+      "author": "Tana French",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757472113l/238227104._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-07-08"
+    },
+    {
+      "id": "126262032",
+      "title": "So Late in the Day",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
+      "rating": 4,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "674155",
+      "title": "Chronicle of a Death Foretold",
+      "author": "Gabriel García Márquez",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg",
+      "rating": 4,
+      "date": "2026-07-05"
+    },
+    {
+      "id": "61022861",
+      "title": "Foster",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "238226942",
+      "title": "Yesteryear",
+      "author": "Caro Claire Burke",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-07-04"
+    },
+    {
+      "id": "58662236",
+      "title": "Small Things Like These",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734631773l/58662236._SX318_.jpg",
+      "rating": 4,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "24911006",
+      "title": "Missoula",
+      "author": "Jon Krakauer",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1491227618l/24911006._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-06-30"
+    },
+    {
+      "id": "60353768",
+      "title": "The Marriage Portrait",
+      "author": "Maggie O'Farrell",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655741851l/60353768.jpg",
+      "rating": 5,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "241823",
+      "title": "Women Who Run With the Wolves",
+      "author": "Clarissa Pinkola Estés",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1662139742l/241823._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "242693052",
+      "title": "Whistler",
+      "author": "Ann Patchett",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1761863582l/242693052._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-06-18"
+    },
+    {
+      "id": "6186357",
+      "title": "The Maze Runner",
+      "author": "James Dashner",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375596592l/6186357.jpg",
+      "rating": 4,
+      "date": "2026-06-14"
+    },
+    {
+      "id": "197798168",
+      "title": "All Fours",
+      "author": "Miranda July",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1695913995l/197798168._SY475_.jpg",
+      "rating": 2,
+      "date": "2026-06-12"
+    },
+    {
+      "id": "61884832",
+      "title": "All the Sinners Bleed",
+      "author": "S.A. Cosby",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663544598l/61884832.jpg",
+      "rating": 4,
+      "date": "2026-06-05"
+    },
+    {
+      "id": "240424526",
+      "title": "Half His Age",
+      "author": "Jennette McCurdy",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
+      "rating": 2,
+      "date": "2026-05-30"
+    },
+    {
+      "id": "36739755",
+      "title": "Convenience Store Woman",
+      "author": "Sayaka Murata",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg",
+      "rating": 4,
+      "date": "2026-05-30"
+    },
+    {
+      "id": "207571151",
+      "title": "The Lake of Lost Girls",
+      "author": "Katherine Greene",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708004345l/207571151._SY475_.jpg",
+      "rating": 1,
+      "date": "2026-05-29"
+    },
+    {
+      "id": "54304105",
+      "title": "Milk Fed",
+      "author": "Melissa Broder",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610290064l/54304105.jpg",
+      "rating": 3,
+      "date": "2026-05-25"
+    },
+    {
+      "id": "222700466",
+      "title": "Kingfisher",
+      "author": "Rozie Kelly",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1772673526l/222700466._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-05-23"
+    },
+    {
+      "id": "203578775",
+      "title": "What It's Like in Words",
+      "author": "Eliza Moss",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708547134l/203578775._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-05-19"
+    },
+    {
+      "id": "216407333",
+      "title": "The Nights Are Quiet in Tehran",
+      "author": "Shida Bazyar",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1721291204l/216407333._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-05-17"
+    },
+    {
+      "id": "41057294",
+      "title": "Normal People",
+      "author": "Sally Rooney",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571423190l/41057294._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-05-10"
+    },
+    {
+      "id": "238766811",
+      "title": "The Witch",
+      "author": "Marie NDiaye",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1779026593l/238766811._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-05-04"
+    },
+    {
+      "id": "18521",
+      "title": "A Room of One’s Own",
+      "author": "Virginia Woolf",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327883012l/18521.jpg",
+      "rating": 5,
+      "date": "2026-05-03"
+    },
+    {
+      "id": "334643",
+      "title": "Abhorsen",
+      "author": "Garth Nix",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401683669l/334643.jpg",
+      "rating": 4,
+      "date": "2026-04-30"
+    },
+    {
+      "id": "157184735",
+      "title": "Rouge",
+      "author": "Mona Awad",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684423250l/157184735._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-04-24"
+    },
+    {
+      "id": "239051491",
+      "title": "American Fantasy",
+      "author": "Emma Straub",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1758250558l/239051491._SY475_.jpg",
+      "rating": 1,
+      "date": "2026-04-22"
+    },
+    {
+      "id": "33460",
+      "title": "Among the Thugs",
+      "author": "Bill Buford",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388264544l/33460.jpg",
+      "rating": 5,
+      "date": "2026-04-09"
+    },
+    {
+      "id": "25716567",
+      "title": "13 Ways of Looking at a Fat Girl",
+      "author": "Mona Awad",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445534207l/25716567.jpg",
+      "rating": 4,
+      "date": "2026-04-02"
+    },
+    {
+      "id": "47624",
+      "title": "Lirael",
+      "author": "Garth Nix",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266458951l/47624.jpg",
+      "rating": 5,
+      "date": "2026-03-31"
+    },
+    {
+      "id": "150373",
+      "title": "Women Without Men",
+      "author": "Shahrnush Parsipur",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348209043l/150373.jpg",
+      "rating": 1,
+      "date": "2026-03-26"
+    },
+    {
+      "id": "44279110",
+      "title": "My Year of Rest and Relaxation",
+      "author": "Ottessa Moshfegh",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597676656l/44279110._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-03-25"
+    },
+    {
+      "id": "53137893",
+      "title": "The Wife Upstairs",
+      "author": "Rachel Hawkins",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609506208l/53137893._SY475_.jpg",
+      "rating": 1,
+      "date": "2026-03-23"
+    },
+    {
+      "id": "518848",
+      "title": "Sabriel",
+      "author": "Garth Nix",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1293655399l/518848.jpg",
+      "rating": 5,
+      "date": "2026-03-22"
+    },
+    {
+      "id": "25622850",
+      "title": "Carol",
+      "author": "Patricia Highsmith",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1451790279l/25622850.jpg",
+      "rating": 3,
+      "date": "2026-03-16"
+    },
+    {
+      "id": "52878453",
+      "title": "Death in Her Hands",
+      "author": "Ottessa Moshfegh",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567702645l/52878453._SX318_SY475_.jpg",
+      "rating": 4,
+      "date": "2026-03-15"
+    },
+    {
+      "id": "139400713",
+      "title": "Martyr!",
+      "author": "Kaveh Akbar",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1683818219l/139400713.jpg",
+      "rating": 5,
+      "date": "2026-03-13"
+    },
+    {
+      "id": "54680228",
+      "title": "We Are Bellingcat",
+      "author": "Eliot Higgins",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596434293l/54680228.jpg",
+      "rating": 3,
+      "date": "2026-03-05"
+    },
+    {
+      "id": "53285047",
+      "title": "Bunny",
+      "author": "Mona Awad",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588043687l/53285047.jpg",
+      "rating": 5,
+      "date": "2026-02-28"
+    },
+    {
+      "id": "39968782",
+      "title": "The One",
+      "author": "John Marrs",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556726792l/39968782.jpg",
+      "rating": 0,
+      "date": "2026-02-26"
+    },
+    {
+      "id": "16692",
+      "title": "Roverandom",
+      "author": "J.R.R. Tolkien",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388237830l/16692.jpg",
+      "rating": 0,
+      "date": "2026-02-21"
+    },
+    {
+      "id": "53138099",
+      "title": "Finlay Donovan Is Killing It",
+      "author": "Elle Cosimano",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659447956l/53138099._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-02-17"
+    },
+    {
+      "id": "50548197",
+      "title": "A Deadly Education",
+      "author": "Naomi Novik",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596909044l/50548197._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-02-12"
+    },
+    {
+      "id": "43208407",
+      "title": "I Who Have Never Known Men",
+      "author": "Jacqueline Harpman",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554973792l/43208407._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-02-07"
+    },
+    {
+      "id": "56791389",
+      "title": "Dungeon Crawler Carl",
+      "author": "Matt Dinniman",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734203042l/56791389._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-01-31"
+    },
+    {
+      "id": "238365535",
+      "title": "Dear Debbie",
+      "author": "Freida McFadden",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1774686324l/238365535._SY475_.jpg",
+      "rating": 2,
+      "date": "2026-01-29"
+    },
+    {
+      "id": "33375622",
+      "title": "Her Body and Other Parties",
+      "author": "Carmen Maria Machado",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1485266434l/33375622.jpg",
+      "rating": 2,
+      "date": "2026-01-26"
+    },
+    {
+      "id": "34845512",
+      "title": "The Vegetarian",
+      "author": "Han Kang",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1770780197l/34845512._SY475_.jpg",
+      "rating": 1,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "3698",
+      "title": "The Quiet American",
+      "author": "Graham Greene",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753926448l/3698._SY475_.jpg",
+      "rating": 5,
+      "date": "2026-01-18"
+    },
+    {
+      "id": "46038742",
+      "title": "Outlawed",
+      "author": "Anna North",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589885553l/46038742._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-01-10"
+    },
+    {
+      "id": "42283862",
+      "title": "Cult of the Dead Cow",
+      "author": "Joseph Menn",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543035549l/42283862.jpg",
+      "rating": 5,
+      "date": "2026-01-07"
+    },
+    {
+      "id": "13079982",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1383718290l/13079982.jpg",
+      "rating": 3,
+      "date": "2026-01-06"
+    },
+    {
+      "id": "211004089",
+      "title": "Wild Dark Shore",
+      "author": "Charlotte McConaghy",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715784093l/211004089._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-01-03"
+    },
+    {
+      "id": "52581895",
+      "title": "Survivor Song",
+      "author": "Paul Tremblay",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1575564155l/52581895.jpg",
+      "rating": 4,
+      "date": "2026-01-01"
+    }
+  ]
+}

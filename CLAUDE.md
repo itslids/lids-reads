@@ -12,6 +12,7 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 |---|---|
 | `_reviews/*.md` | One file per review; the file name becomes the URL (`/reviews/<name>/`) |
 | `templates/review-template.md` | The front matter fields a review can use |
+| `_data/read.json` | Every book finished this year with its Goodreads star rating, written by the same script. The home page shows a "Review to come" placeholder card for each one that has no review |
 | `_data/reading.json` | Currently-reading shelf + yearly goal, rendered on the home page |
 | `scripts/update_reading.py` | Refreshes `_data/reading.json` from Lindsey's public Goodreads RSS shelves (user 6818060) |
 | `.github/workflows/currently-reading.yml` | Runs that script daily at about 7:17 AM Mountain and commits any change |
@@ -27,6 +28,7 @@ When converting a vault review into `_reviews/<slug>.md`:
 - `verdict` is the short teaser line on the card: a sentence, or a trimmed piece of one, lifted word for word from her review. Cut it down to the sharpest part, but never add or change words.
 - `rating` comes from the number of ★. `date` is the Finished date (YYYY-MM-DD). Use the cover URL from the vault in `cover`.
 - Don't publish the **Reading Playlist**; Lindsey had playlists removed from the site (2026-10-06).
+- `goodreads_id` is the book's id from `_data/read.json` (the number in its Goodreads URL), quoted as a string. It is what swaps a book's placeholder card for the real review card, so always set it.
 - `genre` and `series` are optional, factual labels.
 - `vibes` are short tags (shown as chips, searchable on the home page). Build them from phrases in her review and recommendation, not new descriptions.
 - `why` ("Why I picked it up") is only filled in when she states the reason herself: a **Why I picked it up** line in the vault, or a sentence in the review that says it. Otherwise leave it out.

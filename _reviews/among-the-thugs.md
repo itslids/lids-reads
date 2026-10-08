@@ -1,6 +1,7 @@
 ---
 title: "Among the Thugs"
 author: "Bill Buford"
+goodreads_id: "33460"
 date: 2026-04-09
 rating: 5
 cover: "https://covers.openlibrary.org/b/id/420650-L.jpg"

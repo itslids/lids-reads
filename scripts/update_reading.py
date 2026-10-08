@@ -18,6 +18,7 @@ GOODREADS_USER_ID = "6818060"
 GOAL = 100
 YEAR = datetime.now(timezone.utc).year
 OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "reading.json")
+READ_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "read.json")
 
 
 def fetch(shelf, page=1):
@@ -30,7 +31,8 @@ def fetch(shelf, page=1):
     for it in root.find("channel").findall("item"):
         g = lambda t: ((it.find(t).text or "").strip() if it.find(t) is not None else "")
         items.append({k: g(k) for k in ("title", "author_name", "book_large_image_url",
-                                        "book_image_url", "book_id", "user_read_at", "user_date_added")})
+                                        "book_image_url", "book_id", "user_read_at", "user_date_added",
+                                        "user_rating")})
     return items
 
 
@@ -56,11 +58,12 @@ def main():
     current.sort(key=lambda b: parse_date(b["user_date_added"]) or datetime.min.replace(tzinfo=timezone.utc),
                  reverse=True)
 
-    read_count, page = 0, 1
+    read_count, page, finished = 0, 1, []
     while True:
         books = fetch("read", page)
         dates = [parse_date(b["user_read_at"]) for b in books]
         read_count += sum(1 for d in dates if d and d.year == YEAR)
+        finished += [(d, b) for d, b in zip(dates, books) if d and d.year == YEAR]
         known = [d for d in dates if d]
         if len(books) < 200 or (known and min(known).year < YEAR):
             break
@@ -79,6 +82,20 @@ def main():
     }
     with open(OUT, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    # every book finished this year, newest first; the home page shows a placeholder card
+    # for any that has no review yet (matched to reviews by goodreads_id)
+    finished.sort(key=lambda x: x[0], reverse=True)
+    read = {
+        "year": YEAR,
+        "books": [
+            {"id": b["book_id"], "title": clean_title(b["title"]), "author": " ".join(b["author_name"].split()),
+             "cover": cover(b), "rating": int(b["user_rating"] or 0), "date": d.strftime("%Y-%m-%d")}
+            for d, b in finished
+        ],
+    }
+    with open(READ_OUT, "w") as f:
+        json.dump(read, f, indent=2, ensure_ascii=False)
         f.write("\n")
     print(f"{len(data['currently_reading'])} currently reading, {read_count} read in {YEAR}")
 

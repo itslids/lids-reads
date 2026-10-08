@@ -1,6 +1,7 @@
 ---
 title: "Abhorsen"
 author: "Garth Nix"
+goodreads_id: "334643"
 series: "Abhorsen #3"
 date: 2026-04-30
 rating: 4

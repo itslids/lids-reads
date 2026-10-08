@@ -1,6 +1,7 @@
 ---
 title: "We Are Bellingcat"
 author: "Eliot Higgins"
+goodreads_id: "54680228"
 date: 2026-03-05
 rating: 3
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596434293l/54680228.jpg"

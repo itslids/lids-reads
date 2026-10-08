@@ -1,6 +1,7 @@
 ---
 title: "Lirael"
 author: "Garth Nix"
+goodreads_id: "47624"
 series: "Abhorsen #2"
 date: 2026-03-31
 rating: 5

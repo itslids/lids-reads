@@ -1,6 +1,7 @@
 ---
 title: "The Nights Are Quiet in Tehran"
 author: "Shida Bazyar"
+goodreads_id: "216407333"
 date: 2026-05-17
 rating: 5
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1721291204l/216407333._SY475_.jpg"

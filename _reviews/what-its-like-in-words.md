@@ -1,6 +1,7 @@
 ---
 title: "What It's Like in Words"
 author: "Eliza Moss"
+goodreads_id: "203578775"
 date: 2026-05-19
 rating: 3
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708547134l/203578775._SY475_.jpg"

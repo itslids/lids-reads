@@ -1,6 +1,7 @@
 ---
 title: "A Room of One's Own"
 author: "Virginia Woolf"
+goodreads_id: "18521"
 date: 2026-05-03
 rating: 5
 cover: "https://covers.openlibrary.org/b/isbn/9780156787338-L.jpg"

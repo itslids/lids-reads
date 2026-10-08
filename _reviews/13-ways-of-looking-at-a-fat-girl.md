@@ -1,6 +1,7 @@
 ---
 title: "13 Ways of Looking at a Fat Girl"
 author: "Mona Awad"
+goodreads_id: "25716567"
 date: 2026-04-02
 rating: 4
 cover: "https://covers.openlibrary.org/b/isbn/9780143128489-L.jpg"

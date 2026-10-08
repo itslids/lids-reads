@@ -1,0 +1,13 @@
+{%- assign bk = include.book -%}
+<li class="card stub" data-search="{{ bk.title | downcase | escape }} {{ bk.author | downcase | escape }}">
+  <div class="card-inner">
+    {% include cover.html src=bk.cover title=bk.title size="small" %}
+    <div class="card-body">
+      <h2>{{ bk.title }}</h2>
+      <p class="byline">{{ bk.author }}</p>
+      <p class="rating">{% if bk.rating > 0 %}{% include stars.html rating=bk.rating %}{% else %}<span class="unrated">Not rated</span>{% endif %}</p>
+      <p class="stub-tag">Review to come</p>
+      <p class="finished">{{ bk.date | date: "%b %Y" }}</p>
+    </div>
+  </div>
+</li>

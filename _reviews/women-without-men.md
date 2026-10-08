@@ -1,6 +1,7 @@
 ---
 title: "Women Without Men"
 author: "Shahrnush Parsipur"
+goodreads_id: "150373"
 date: 2026-03-26
 rating: 1
 cover: "https://covers.openlibrary.org/b/id/1548130-L.jpg"

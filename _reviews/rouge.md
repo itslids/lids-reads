@@ -1,6 +1,7 @@
 ---
 title: "Rouge"
 author: "Mona Awad"
+goodreads_id: "157184735"
 date: 2026-04-24
 rating: 4
 cover: "https://covers.openlibrary.org/b/id/13481659-L.jpg"

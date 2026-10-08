@@ -1,0 +1,13 @@
+{%- assign rc = include.review -%}
+<li class="card" data-reviewed="1" data-search="{{ rc.title | downcase | escape }} {{ rc.author | downcase | escape }} {{ rc.genre | downcase | escape }} {{ rc.vibes | join: ' ' | downcase | escape }} {{ rc.part_of | join: ' ' | downcase | escape }}">
+  <a href="{{ rc.url | relative_url }}">
+    {% include cover.html src=rc.cover isbn=rc.isbn title=rc.title size="small" %}
+    <div class="card-body">
+      <h2>{{ rc.title }}</h2>
+      <p class="byline">{{ rc.author }}</p>
+      <p class="rating">{% include stars.html rating=rc.rating %}</p>
+      {% if rc.verdict %}<p class="card-verdict">{{ rc.verdict }}</p>{% endif %}
+      <p class="finished">{{ rc.date | date: "%b %Y" }}{% if rc.genre %} · {{ rc.genre }}{% endif %}</p>
+    </div>
+  </a>
+</li>

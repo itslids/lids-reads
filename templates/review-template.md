@@ -1,6 +1,7 @@
 ---
 title: "Book Title"
 author: "Author Name"
+goodreads_id: ""           # the number in the book's Goodreads URL; replaces its placeholder card on the home page
 series: ""                # optional, e.g. "Abhorsen #2"
 date: 2026-10-07          # the day you finished it (YYYY-MM-DD)
 rating: 4.5               # 0.5 to 5, half stars allowed

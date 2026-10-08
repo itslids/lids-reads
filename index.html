@@ -35,39 +35,41 @@ title: Reviews
 </section>
 {% endif %}
 
-{% if reviews.size > 0 %}
-<h2 class="section-h">Reviews</h2>
+{% assign read = site.data.read.books %}
+{% unless read %}{% assign read = "" | split: "" %}{% endunless %}
+{% assign read_ids = read | map: "id" %}
+{% assign total = read.size %}
+{% for rv in reviews %}{% unless read_ids contains rv.goodreads_id %}{% assign total = total | plus: 1 %}{% endunless %}{% endfor %}
+{% if total > 0 %}
+<h2 class="section-h">Read in {{ site.data.read.year | default: site.data.reading.year }}</h2>
 <div class="toolbar">
-  <label class="sr-only" for="q">Search reviews</label>
+  <label class="sr-only" for="q">Search books</label>
   <input id="q" type="search" placeholder="Search by title, author, genre or vibe" autocomplete="off">
-  <p class="count"><span id="shown">{{ reviews.size }}</span> of {{ reviews.size }} {% if reviews.size == 1 %}book{% else %}books{% endif %}</p>
+  <label class="only"><input id="only" type="checkbox"> Reviews only</label>
+  <p class="count"><span id="shown">{{ total }}</span> of {{ total }} books · {{ reviews.size }} reviewed</p>
 </div>
 <ol class="cards" id="cards">
-  {% for r in reviews %}
-  <li class="card" data-search="{{ r.title | downcase | escape }} {{ r.author | downcase | escape }} {{ r.genre | downcase | escape }} {{ r.vibes | join: ' ' | downcase | escape }} {{ r.part_of | join: ' ' | downcase | escape }}">
-    <a href="{{ r.url | relative_url }}">
-      {% include cover.html src=r.cover isbn=r.isbn title=r.title size="small" %}
-      <div class="card-body">
-        <h2>{{ r.title }}</h2>
-        <p class="byline">{{ r.author }}</p>
-        <p class="rating">{% include stars.html rating=r.rating %}</p>
-        {% if r.verdict %}<p class="card-verdict">{{ r.verdict }}</p>{% endif %}
-        <p class="finished">{{ r.date | date: "%b %Y" }}{% if r.genre %} · {{ r.genre }}{% endif %}</p>
-      </div>
-    </a>
-  </li>
+  {% for rv in reviews %}{% unless read_ids contains rv.goodreads_id %}{% include review-card.html review=rv %}{% endunless %}{% endfor %}
+  {% for b in read %}
+  {% assign match = reviews | where: "goodreads_id", b.id | first %}
+  {% if match %}{% include review-card.html review=match %}{% else %}{% include book-card.html book=b %}{% endif %}
   {% endfor %}
 </ol>
-<p class="empty" id="none" hidden>No reviews match that search.</p>
+<p class="empty" id="none" hidden>No books match that search.</p>
 <script>
   (function () {
-    var q = document.getElementById('q'), cards = document.querySelectorAll('#cards .card'),
+    var q = document.getElementById('q'), only = document.getElementById('only'),
+        cards = document.querySelectorAll('#cards .card'),
         shown = document.getElementById('shown'), none = document.getElementById('none');
-    q.addEventListener('input', function () {
+    function apply() {
       var t = q.value.trim().toLowerCase(), n = 0;
-      cards.forEach(function (c) { var hit = !t || c.dataset.search.indexOf(t) > -1; c.hidden = !hit; if (hit) n++; });
+      cards.forEach(function (c) {
+        var hit = (!t || c.dataset.search.indexOf(t) > -1) && (!only.checked || c.dataset.reviewed);
+        c.hidden = !hit; if (hit) n++;
+      });
       shown.textContent = n; none.hidden = n > 0;
-    });
+    }
+    q.addEventListener('input', apply); only.addEventListener('change', apply);
   })();
 </script>
 {% else %}
