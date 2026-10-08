@@ -55,7 +55,7 @@ title: Reviews
   {% if match %}{% include review-card.html review=match %}{% else %}{% include book-card.html book=b %}{% endif %}
   {% endfor %}
 </ol>
-<p class="empty" id="none" hidden>No books match that search.</p>
+<p class="empty" id="none" hidden>Nothing matches that.</p>
 <script>
   (function () {
     var q = document.getElementById('q'), only = document.getElementById('only'),

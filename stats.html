@@ -215,7 +215,7 @@ permalink: /stats/
   }
   rows("ratings", [5, 4, 3, 2, 1].map(function (r) {
     return bucket("★★★★★".slice(0, r), function (b) { return b.rating === r; });
-  }).concat(books.length > rated.length ? [bucket("Not rated", function (b) { return !b.rating; })] : []), "gilt");
+  }).concat(books.length > rated.length ? [bucket("No stars yet", function (b) { return !b.rating; })] : []), "gilt");
   rows("lengths", [
     bucket("Under 150 pages", function (b) { return b.pages > 0 && b.pages < 150; }),
     bucket("150 to 249", function (b) { return b.pages >= 150 && b.pages < 250; }),
