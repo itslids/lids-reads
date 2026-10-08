@@ -22,3 +22,5 @@ part_of:
 ---
 
 I wasn't sold on the premise going in — a time jump of nearly 20 years and a new main character felt like a risk. But I ended up loving it completely. Lirael, the Disreputable Dog, Sam, and Ellimere are all wonderful, and the relationship between Lirael and the Disreputable Dog mirrors Sabriel and Mogget in such a compelling way — same dynamic, different register, clearly intentional. This series knows what it's doing.
+
+The Disreputable Dog might be my favorite literary Familiar. Bonus: audiobook is read by Tim Curry!
