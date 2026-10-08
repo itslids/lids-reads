@@ -13,6 +13,7 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 | `_reviews/*.md` | One file per review; the file name becomes the URL (`/reviews/<name>/`) |
 | `templates/review-template.md` | The front matter fields a review can use |
 | `_data/read.json` | Every book finished this year with its Goodreads star rating, written by the same script. The home page shows a "Review to come" placeholder card for each one that has no review |
+| `_data/read_manual.json` | Hand-kept list of books finished this year that aren't on Goodreads (title, author, date, rating, cover). The script merges them into `read.json` and the goal count, and skips one once Goodreads lists the same title |
 | `_data/reading.json` | Currently-reading shelf + yearly goal, rendered on the home page |
 | `scripts/update_reading.py` | Refreshes `_data/reading.json` from Lindsey's public Goodreads RSS shelves (user 6818060) |
 | `.github/workflows/currently-reading.yml` | Runs that script daily at about 7:17 AM Mountain and commits any change |

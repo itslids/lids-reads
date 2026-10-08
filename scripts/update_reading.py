@@ -19,6 +19,7 @@ GOAL = 100
 YEAR = datetime.now(timezone.utc).year
 OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "reading.json")
 READ_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "read.json")
+MANUAL = os.path.join(os.path.dirname(__file__), "..", "_data", "read_manual.json")
 
 
 def fetch(shelf, page=1):
@@ -69,6 +70,22 @@ def main():
             break
         page += 1
 
+    # books finished this year that Goodreads doesn't have; dropped once the feed lists them
+    books = [
+        {"id": b["book_id"], "title": clean_title(b["title"]), "author": " ".join(b["author_name"].split()),
+         "cover": cover(b), "rating": int(b["user_rating"] or 0), "date": d.strftime("%Y-%m-%d")}
+        for d, b in finished
+    ]
+    if os.path.exists(MANUAL):
+        seen = {b["title"].lower() for b in books}
+        for m in json.load(open(MANUAL)):
+            if m["date"].startswith(str(YEAR)) and m["title"].lower() not in seen:
+                books.append({"id": "manual-" + re.sub(r"[^a-z0-9]+", "-", m["title"].lower()).strip("-"),
+                              "title": m["title"], "author": m["author"], "cover": m.get("cover", ""),
+                              "rating": m.get("rating", 0), "date": m["date"]})
+    books.sort(key=lambda b: b["date"], reverse=True)
+    read_count = len(books)
+
     data = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "year": YEAR,
@@ -85,15 +102,7 @@ def main():
         f.write("\n")
     # every book finished this year, newest first; the home page shows a placeholder card
     # for any that has no review yet (matched to reviews by goodreads_id)
-    finished.sort(key=lambda x: x[0], reverse=True)
-    read = {
-        "year": YEAR,
-        "books": [
-            {"id": b["book_id"], "title": clean_title(b["title"]), "author": " ".join(b["author_name"].split()),
-             "cover": cover(b), "rating": int(b["user_rating"] or 0), "date": d.strftime("%Y-%m-%d")}
-            for d, b in finished
-        ],
-    }
+    read = {"year": YEAR, "books": books}
     with open(READ_OUT, "w") as f:
         json.dump(read, f, indent=2, ensure_ascii=False)
         f.write("\n")
