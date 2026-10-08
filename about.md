@@ -8,7 +8,7 @@ permalink: /about/
 
 Call me Lids. I read about 100 books a year and I have opinions about all of them, so here they are.
 
-What I love: weird, dark, smart books about women who don't quite fit where they're planted. Translated fiction. Horror that actually means something. A main character who is kind of awful. History and crime.
+What I love: weird, dark, smart books about women who don't quite fit where they're planted. Translated fiction. A sad little uplift. Horror that actually means something. A main character who is kind of awful. History and crime.
 
 Favorite authors: Mona Awad, Ann Patchett, Donna Tartt, Tana French, Claire Keegan, Maggie O'Farrell, Ling Ma, Paul Tremblay.
 
