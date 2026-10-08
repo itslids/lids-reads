@@ -18,6 +18,7 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 | `scripts/update_reading.py` | Refreshes `_data/reading.json` from Lindsey's public Goodreads RSS shelves (user 6818060) |
 | `.github/workflows/currently-reading.yml` | Runs that script daily at about 7:17 AM Mountain and commits any change |
 | `_layouts/`, `_includes/`, `assets/style.css` | Site design |
+| `stats.html` | The Stats page: charts and numbers computed in the browser from `_data/read.json` (books, pages, pace, ratings, authors) |
 | `about.md` | The About page (a starting draft that Lindsey may edit) |
 
 ## Where reviews come from

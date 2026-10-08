@@ -1,0 +1,283 @@
+---
+title: Stats
+permalink: /stats/
+---
+<section class="intro">
+  <h1>Reading stats</h1>
+  <p class="lede">The {{ site.data.read.year }} reading year in numbers, refreshed every morning from Goodreads.</p>
+</section>
+
+<div class="tiles" id="tiles"></div>
+
+<section class="stat-block">
+  <h2 class="section-h">Progress toward {{ site.data.reading.goal }} books</h2>
+  <p class="stat-note" id="pace-note"></p>
+  <div class="chart-wrap" id="pace-wrap">
+    <svg id="pace" viewBox="0 0 720 280" role="img" aria-label="Books finished over the year compared with the pace needed to reach the goal"></svg>
+  </div>
+  <p class="legend"><span class="key key-line"></span> Books finished <span class="key key-dash"></span> Pace needed for the goal</p>
+</section>
+
+<div class="stat-grid">
+  <section class="stat-block">
+    <h2 class="section-h">Books by month</h2>
+    <div class="bars" id="by-month-books"></div>
+  </section>
+  <section class="stat-block">
+    <h2 class="section-h">Pages by month</h2>
+    <div class="bars" id="by-month-pages"></div>
+  </section>
+</div>
+
+<div class="stat-grid">
+  <section class="stat-block">
+    <h2 class="section-h">Ratings</h2>
+    <div class="hbars" id="ratings"></div>
+  </section>
+  <section class="stat-block">
+    <h2 class="section-h">Book length</h2>
+    <div class="hbars" id="lengths"></div>
+  </section>
+</div>
+
+<div class="stat-grid">
+  <section class="stat-block">
+    <h2 class="section-h">When the books were published</h2>
+    <div class="hbars" id="eras"></div>
+  </section>
+  <section class="stat-block">
+    <h2 class="section-h">Most-read authors</h2>
+    <div class="hbars" id="authors"></div>
+  </section>
+</div>
+
+<section class="stat-block">
+  <h2 class="section-h">Superlatives</h2>
+  <dl class="facts" id="facts"></dl>
+</section>
+
+<section class="stat-block">
+  <details class="table-view">
+    <summary>Month-by-month table</summary>
+    <table id="month-table">
+      <thead><tr><th>Month</th><th>Books</th><th>Pages</th><th>Average rating</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </details>
+</section>
+
+<div class="tip" id="tip" hidden></div>
+
+<script>
+(function () {
+  var BOOKS = {{ site.data.read.books | jsonify }};
+  var GOAL = {{ site.data.reading.goal | default: 100 }};
+  var YEAR = {{ site.data.read.year | default: 2026 }};
+  var UPDATED = "{{ site.data.reading.updated }}";
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var DAY = 86400000;
+
+  function utc(s) { var p = s.split("-"); return Date.UTC(+p[0], +p[1] - 1, +p[2]); }
+  function doy(t) { return Math.round((t - Date.UTC(YEAR, 0, 1)) / DAY) + 1; }
+  function fmt(n) { return n.toLocaleString("en-US"); }
+  function nice(t) { var d = new Date(t); return MONTHS[d.getUTCMonth()] + " " + d.getUTCDate(); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function plural(n, w) { return n + " " + w + (n === 1 ? "" : "s"); }
+
+  var books = BOOKS.map(function (b) { return Object.assign({}, b, { t: utc(b.date) }); }).sort(function (a, b) { return a.t - b.t; });
+  var yearDays = (Date.UTC(YEAR + 1, 0, 1) - Date.UTC(YEAR, 0, 1)) / DAY;
+  var lastT = books.length ? books[books.length - 1].t : Date.UTC(YEAR, 0, 1);
+  var todayT = Math.min(Math.max(UPDATED ? utc(UPDATED) : lastT, lastT), Date.UTC(YEAR, 11, 31));
+  var today = doy(todayT), n = books.length;
+  var pages = books.reduce(function (s, b) { return s + (b.pages || 0); }, 0);
+  var rated = books.filter(function (b) { return b.rating > 0; });
+  var avgRating = rated.length ? rated.reduce(function (s, b) { return s + b.rating; }, 0) / rated.length : 0;
+  var target = GOAL * today / yearDays, projected = Math.round(n / today * yearDays);
+  var lastMonth = new Date(todayT).getUTCMonth();
+
+  /* tooltip shared by every chart */
+  var tip = document.getElementById("tip");
+  function showTip(html, x, y) {
+    tip.innerHTML = html; tip.hidden = false;
+    var w = tip.offsetWidth, left = Math.min(Math.max(8, x - w / 2), window.innerWidth - w - 8);
+    tip.style.left = left + window.scrollX + "px"; tip.style.top = y + window.scrollY - tip.offsetHeight - 10 + "px";
+  }
+  function hideTip() { tip.hidden = true; }
+  function hover(node, html) {
+    node.tabIndex = 0;
+    function on() { var r = node.getBoundingClientRect(); showTip(html, r.left + r.width / 2, r.top); }
+    node.addEventListener("mouseenter", on); node.addEventListener("focus", on);
+    node.addEventListener("mouseleave", hideTip); node.addEventListener("blur", hideTip);
+  }
+
+  /* headline tiles */
+  var tiles = [
+    [fmt(n), "books finished", "of a goal of " + GOAL],
+    [fmt(pages), "pages read", "about " + fmt(Math.round(pages / today)) + " a day"],
+    [(today / n).toFixed(1), "days per book", "goal pace is " + (yearDays / GOAL).toFixed(1)],
+    [avgRating.toFixed(1), "average rating", "out of 5, across " + rated.length + " rated"],
+    [fmt(Math.round(pages / n)), "pages per book", "on average"],
+    [fmt(projected), "projected for the year", "at the current pace"]
+  ];
+  var tw = document.getElementById("tiles");
+  tiles.forEach(function (t) {
+    var d = el("div", "tile"); d.appendChild(el("span", "tile-num", t[0])); d.appendChild(el("span", "tile-label", t[1])); d.appendChild(el("span", "tile-sub", t[2])); tw.appendChild(d);
+  });
+
+  /* progress vs goal pace */
+  var diff = n - target;
+  document.getElementById("pace-note").textContent =
+    "As of " + nice(todayT) + ": " + n + " finished, " + Math.abs(diff).toFixed(1) + " books " + (diff >= 0 ? "ahead of" : "behind") +
+    " the pace for " + GOAL + ". " + (n >= GOAL ? "Goal reached." : (GOAL - n) + " to go, which means one every " +
+    ((yearDays - today) / (GOAL - n)).toFixed(1) + " days from here.");
+  (function () {
+    var svg = document.getElementById("pace"), NS = "http://www.w3.org/2000/svg";
+    var L = 34, R = 692, T = 14, B = 244, top = Math.max(GOAL, n);
+    function X(d) { return L + (d - 1) / (yearDays - 1) * (R - L); }
+    function Y(v) { return B - v / top * (B - T); }
+    function add(tag, attrs, text) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; svg.appendChild(e); return e; }
+    [0, 0.25, 0.5, 0.75, 1].forEach(function (f) {
+      var v = Math.round(top * f);
+      add("line", { x1: L, x2: R, y1: Y(v), y2: Y(v), class: "grid" });
+      add("text", { x: L - 8, y: Y(v) + 4, class: "axis", "text-anchor": "end" }, v);
+    });
+    MONTHS.forEach(function (m, i) {
+      var a = doy(Date.UTC(YEAR, i, 1)), b = doy(Date.UTC(YEAR, i + 1, 1));
+      add("text", { x: (X(a) + X(b)) / 2, y: B + 20, class: "axis", "text-anchor": "middle" }, m);
+    });
+    add("line", { x1: X(1), y1: Y(0), x2: X(yearDays), y2: Y(GOAL), class: "pace-line" });
+    var cum = [], c = 0, bi = 0, pts = [[X(1), Y(0)]];
+    for (var d = 1; d <= today; d++) {
+      while (bi < n && doy(books[bi].t) <= d) {
+        if (c === bi) pts.push([X(d), Y(c)]);
+        bi++; c = bi; pts.push([X(d), Y(c)]);
+      }
+      cum[d] = c;
+    }
+    pts.push([X(today), Y(n)]);
+    add("path", { d: "M" + pts.map(function (p) { return p[0].toFixed(1) + " " + p[1].toFixed(1); }).join("L"), class: "actual-line" });
+    add("circle", { cx: X(today), cy: Y(n), r: 5, class: "actual-dot" });
+    add("text", { x: Math.min(X(today) + 10, R - 20), y: Y(n) + (diff >= 0 ? -10 : 18), class: "label" }, n);
+    var cross = add("line", { y1: T, y2: B, class: "cross", visibility: "hidden" });
+    var dot = add("circle", { r: 4, class: "actual-dot", visibility: "hidden" });
+    var hit = add("rect", { x: L, y: T, width: R - L, height: B - T, fill: "transparent" });
+    function move(ev) {
+      var r = svg.getBoundingClientRect(), px = (ev.touches ? ev.touches[0].clientX : ev.clientX) - r.left;
+      var d = Math.round(1 + (px / r.width * 720 - L) / (R - L) * (yearDays - 1));
+      d = Math.max(1, Math.min(today, d));
+      cross.setAttribute("x1", X(d)); cross.setAttribute("x2", X(d)); cross.setAttribute("visibility", "visible");
+      dot.setAttribute("cx", X(d)); dot.setAttribute("cy", Y(cum[d])); dot.setAttribute("visibility", "visible");
+      showTip("<strong>" + nice(Date.UTC(YEAR, 0, d)) + "</strong>" + plural(cum[d], "book") + " finished<br>pace needed: " + (GOAL * d / yearDays).toFixed(1),
+        r.left + X(d) / 720 * r.width, r.top + Y(cum[d]) / 280 * r.height);
+    }
+    function out() { cross.setAttribute("visibility", "hidden"); dot.setAttribute("visibility", "hidden"); hideTip(); }
+    hit.addEventListener("mousemove", move); hit.addEventListener("touchstart", move, { passive: true });
+    hit.addEventListener("touchmove", move, { passive: true }); hit.addEventListener("mouseleave", out); hit.addEventListener("touchend", out);
+  })();
+
+  /* by month */
+  var byMonth = MONTHS.map(function (m, i) { return { m: m, books: [], pages: 0, rsum: 0, rn: 0 }; });
+  books.forEach(function (b) {
+    var s = byMonth[new Date(b.t).getUTCMonth()]; s.books.push(b); s.pages += b.pages || 0;
+    if (b.rating > 0) { s.rsum += b.rating; s.rn++; }
+  });
+  var live = byMonth.slice(0, lastMonth + 1);
+  function columns(id, val, unit) {
+    var wrap = document.getElementById(id), max = Math.max.apply(null, live.map(val)) || 1;
+    live.forEach(function (s, i) {
+      var v = val(s), col = el("div", "col"), bar = el("div", "col-bar");
+      bar.style.height = Math.max(v / max * 100, v ? 2 : 0) + "%";
+      var track = el("div", "col-track"); track.appendChild(el("span", "col-val", fmt(v))); track.appendChild(bar);
+      col.appendChild(track); col.appendChild(el("span", "col-label", s.m)); wrap.appendChild(col);
+      hover(col, "<strong>" + s.m + (i === lastMonth ? " (so far)" : "") + "</strong>" + fmt(v) + " " + unit + (v === 1 ? "" : "s") +
+        (unit === "book" && s.books.length ? "<br><span class='tip-list'>" + s.books.map(function (b) { return b.title; }).join(" · ") + "</span>" : ""));
+    });
+  }
+  columns("by-month-books", function (s) { return s.books.length; }, "book");
+  columns("by-month-pages", function (s) { return s.pages; }, "page");
+
+  /* horizontal bar lists */
+  function rows(id, items, cls) {
+    var wrap = document.getElementById(id), max = Math.max.apply(null, items.map(function (i) { return i.v; })) || 1;
+    items.forEach(function (i) {
+      var row = el("div", "hrow"); row.appendChild(el("span", "hlabel", i.label));
+      var track = el("div", "htrack"), bar = el("div", "hbar" + (cls ? " " + cls : ""));
+      bar.style.width = (i.v / max * 100) + "%"; track.appendChild(bar); row.appendChild(track);
+      row.appendChild(el("span", "hval", fmt(i.v))); wrap.appendChild(row);
+      if (i.tip) hover(row, i.tip);
+    });
+  }
+  function titles(list) { return "<span class='tip-list'>" + list.map(function (b) { return b.title; }).join(" · ") + "</span>"; }
+  function bucket(label, test) {
+    var list = books.filter(test);
+    return { label: label, v: list.length, tip: "<strong>" + label + "</strong>" + plural(list.length, "book") + (list.length && list.length <= 14 ? "<br>" + titles(list) : "") };
+  }
+  rows("ratings", [5, 4, 3, 2, 1].map(function (r) {
+    return bucket("★★★★★".slice(0, r), function (b) { return b.rating === r; });
+  }).concat(books.length > rated.length ? [bucket("Not rated", function (b) { return !b.rating; })] : []), "gilt");
+  rows("lengths", [
+    bucket("Under 150 pages", function (b) { return b.pages > 0 && b.pages < 150; }),
+    bucket("150 to 249", function (b) { return b.pages >= 150 && b.pages < 250; }),
+    bucket("250 to 349", function (b) { return b.pages >= 250 && b.pages < 350; }),
+    bucket("350 to 449", function (b) { return b.pages >= 350 && b.pages < 450; }),
+    bucket("450 and up", function (b) { return b.pages >= 450; })
+  ]);
+  rows("eras", [
+    bucket("Before 1950", function (b) { return b.published > 0 && b.published < 1950; }),
+    bucket("1950 to 1999", function (b) { return b.published >= 1950 && b.published < 2000; }),
+    bucket("2000 to 2009", function (b) { return b.published >= 2000 && b.published < 2010; }),
+    bucket("2010 to 2019", function (b) { return b.published >= 2010 && b.published < 2020; }),
+    bucket("2020 to " + (YEAR - 2), function (b) { return b.published >= 2020 && b.published < YEAR - 1; }),
+    bucket((YEAR - 1) + " and " + YEAR, function (b) { return b.published >= YEAR - 1; })
+  ]);
+  var byAuthor = {};
+  books.forEach(function (b) { (byAuthor[b.author] = byAuthor[b.author] || []).push(b); });
+  var authors = Object.keys(byAuthor).filter(function (a) { return byAuthor[a].length > 1; })
+    .sort(function (a, b) { return byAuthor[b].length - byAuthor[a].length || a.localeCompare(b); }).slice(0, 8);
+  rows("authors", authors.map(function (a) { return { label: a, v: byAuthor[a].length, tip: "<strong>" + a + "</strong>" + titles(byAuthor[a]) }; }));
+
+  /* superlatives */
+  var facts = document.getElementById("facts");
+  function fact(k, v) { if (!v) return; facts.appendChild(el("dt", null, k)); facts.appendChild(el("dd", null, v)); }
+  var withPages = books.filter(function (b) { return b.pages > 0; }).sort(function (a, b) { return a.pages - b.pages; });
+  var withYear = books.filter(function (b) { return b.published > 0; }).sort(function (a, b) { return a.published - b.published; });
+  function book(b, extra) { return b.title + " by " + b.author + " (" + extra + ")"; }
+  if (withPages.length) {
+    fact("Longest book", book(withPages[withPages.length - 1], fmt(withPages[withPages.length - 1].pages) + " pages"));
+    fact("Shortest book", book(withPages[0], withPages[0].pages + " pages"));
+  }
+  if (withYear.length) fact("Oldest book", book(withYear[0], withYear[0].published));
+  var busiest = live.slice().sort(function (a, b) { return b.books.length - a.books.length; })[0];
+  if (busiest) fact("Busiest month", busiest.m + ", with " + plural(busiest.books.length, "book") + " and " + fmt(busiest.pages) + " pages");
+  var bestM = live.filter(function (s) { return s.rn >= 3; }).sort(function (a, b) { return b.rsum / b.rn - a.rsum / a.rn; });
+  if (bestM.length > 1) {
+    fact("Best-rated month", bestM[0].m + ", averaging " + (bestM[0].rsum / bestM[0].rn).toFixed(1) + " stars");
+    fact("Worst-rated month", bestM[bestM.length - 1].m + ", averaging " + (bestM[bestM.length - 1].rsum / bestM[bestM.length - 1].rn).toFixed(1) + " stars");
+  }
+  var gap = null;
+  for (var i = 1; i < n; i++) { var g = (books[i].t - books[i - 1].t) / DAY; if (!gap || g > gap.g) gap = { g: g, a: books[i - 1], b: books[i] }; }
+  if (gap) fact("Longest wait between finishes", Math.round(gap.g) + " days, from " + nice(gap.a.t) + " (" + gap.a.title + ") to " + nice(gap.b.t) + " (" + gap.b.title + ")");
+  var byDay = {}; books.forEach(function (b) { (byDay[b.date] = byDay[b.date] || []).push(b); });
+  var doubles = Object.keys(byDay).filter(function (d) { return byDay[d].length > 1; });
+  if (doubles.length) fact("Two-book days", doubles.length + " (" + doubles.map(function (d) { return nice(utc(d)); }).join(", ") + ")");
+  var cmp = rated.filter(function (b) { return b.avg_rating > 0; });
+  if (cmp.length) {
+    var d = cmp.reduce(function (s, b) { return s + b.rating - b.avg_rating; }, 0) / cmp.length;
+    fact("Compared with Goodreads readers", "On average " + Math.abs(d).toFixed(2) + " stars " + (d < 0 ? "tougher" : "more generous") + " than the Goodreads average for the same books");
+    var s = cmp.slice().sort(function (a, b) { return (a.rating - a.avg_rating) - (b.rating - b.avg_rating); });
+    fact("Biggest disagreement, lower", book(s[0], s[0].rating + " stars against a Goodreads average of " + s[0].avg_rating.toFixed(2)));
+    fact("Biggest disagreement, higher", book(s[s.length - 1], s[s.length - 1].rating + " stars against a Goodreads average of " + s[s.length - 1].avg_rating.toFixed(2)));
+  }
+
+  /* table view */
+  var tb = document.querySelector("#month-table tbody");
+  live.forEach(function (s) {
+    var tr = el("tr");
+    [s.m, s.books.length, fmt(s.pages), s.rn ? (s.rsum / s.rn).toFixed(1) : "–"].forEach(function (c) { tr.appendChild(el("td", null, c)); });
+    tb.appendChild(tr);
+  });
+  var tr = el("tr", "total");
+  ["Total", n, fmt(pages), avgRating.toFixed(1)].forEach(function (c) { tr.appendChild(el("td", null, c)); });
+  tb.appendChild(tr);
+})();
+</script>

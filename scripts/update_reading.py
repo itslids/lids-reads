@@ -31,9 +31,12 @@ def fetch(shelf, page=1):
     items = []
     for it in root.find("channel").findall("item"):
         g = lambda t: ((it.find(t).text or "").strip() if it.find(t) is not None else "")
-        items.append({k: g(k) for k in ("title", "author_name", "book_large_image_url",
-                                        "book_image_url", "book_id", "user_read_at", "user_date_added",
-                                        "user_rating")})
+        item = {k: g(k) for k in ("title", "author_name", "book_large_image_url",
+                                  "book_image_url", "book_id", "user_read_at", "user_date_added",
+                                  "user_rating", "average_rating", "book_published")}
+        pages = it.find("book/num_pages")
+        item["num_pages"] = (pages.text or "").strip() if pages is not None else ""
+        items.append(item)
     return items
 
 
@@ -47,6 +50,11 @@ def parse_date(s):
 def clean_title(t):
     t = re.sub(r"\s*\([^)]*#\d+[^)]*\)\s*$", "", t)   # drop "(Series, #1)"
     return t.split(":")[0].strip()                    # drop subtitles
+
+
+def num(s):
+    m = re.search(r"\d+", s or "")
+    return int(m.group()) if m else 0
 
 
 def cover(item):
@@ -73,7 +81,9 @@ def main():
     # books finished this year that Goodreads doesn't have; dropped once the feed lists them
     books = [
         {"id": b["book_id"], "title": clean_title(b["title"]), "author": " ".join(b["author_name"].split()),
-         "cover": cover(b), "rating": int(b["user_rating"] or 0), "date": d.strftime("%Y-%m-%d")}
+         "cover": cover(b), "rating": int(b["user_rating"] or 0), "date": d.strftime("%Y-%m-%d"),
+         "pages": num(b["num_pages"]), "published": num(b["book_published"]),
+         "avg_rating": float(b["average_rating"] or 0)}
         for d, b in finished
     ]
     if os.path.exists(MANUAL):
@@ -82,7 +92,9 @@ def main():
             if m["date"].startswith(str(YEAR)) and m["title"].lower() not in seen:
                 books.append({"id": "manual-" + re.sub(r"[^a-z0-9]+", "-", m["title"].lower()).strip("-"),
                               "title": m["title"], "author": m["author"], "cover": m.get("cover", ""),
-                              "rating": m.get("rating", 0), "date": m["date"]})
+                              "rating": m.get("rating", 0), "date": m["date"],
+                              "pages": m.get("pages", 0), "published": m.get("published", 0),
+                              "avg_rating": 0})
     books.sort(key=lambda b: b["date"], reverse=True)
     read_count = len(books)
 

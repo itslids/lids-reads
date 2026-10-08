@@ -7,7 +7,10 @@
       "author": "Iain Reid",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644353572l/60209475.jpg",
       "rating": 3,
-      "date": "2026-10-04"
+      "date": "2026-10-04",
+      "pages": 289,
+      "published": 2022,
+      "avg_rating": 3.74
     },
     {
       "id": "228394781",
@@ -15,7 +18,10 @@
       "author": "Vincent Delecroix",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1741272009l/228394781._SY475_.jpg",
       "rating": 5,
-      "date": "2026-09-29"
+      "date": "2026-09-29",
+      "pages": 122,
+      "published": 2023,
+      "avg_rating": 3.97
     },
     {
       "id": "23453099",
@@ -23,7 +29,10 @@
       "author": "Ottessa Moshfegh",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1479545528l/23453099._SX318_.jpg",
       "rating": 3,
-      "date": "2026-09-27"
+      "date": "2026-09-27",
+      "pages": 260,
+      "published": 2015,
+      "avg_rating": 3.56
     },
     {
       "id": "238176234",
@@ -31,7 +40,10 @@
       "author": "Polly Barton",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1752090797l/238176234._SY475_.jpg",
       "rating": 0,
-      "date": "2026-09-20"
+      "date": "2026-09-20",
+      "pages": 248,
+      "published": 2026,
+      "avg_rating": 3.45
     },
     {
       "id": "manual-mapping-the-interior",
@@ -39,7 +51,10 @@
       "author": "Stephen Graham Jones",
       "cover": "https://covers.openlibrary.org/b/isbn/9780765395108-L.jpg",
       "rating": 0,
-      "date": "2026-09-16"
+      "date": "2026-09-16",
+      "pages": 112,
+      "published": 2017,
+      "avg_rating": 0
     },
     {
       "id": "75293507",
@@ -47,7 +62,10 @@
       "author": "Shane Hawk",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1685990593l/75293507.jpg",
       "rating": 3,
-      "date": "2026-09-12"
+      "date": "2026-09-12",
+      "pages": 400,
+      "published": 2023,
+      "avg_rating": 3.83
     },
     {
       "id": "242512669",
@@ -55,7 +73,10 @@
       "author": "Laura Sims",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1762405681l/242512669._SY475_.jpg",
       "rating": 3,
-      "date": "2026-09-10"
+      "date": "2026-09-10",
+      "pages": 304,
+      "published": 2026,
+      "avg_rating": 3.3
     },
     {
       "id": "60243188",
@@ -63,7 +84,10 @@
       "author": "Ling Ma",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1650397247l/60243188.jpg",
       "rating": 5,
-      "date": "2026-09-04"
+      "date": "2026-09-04",
+      "pages": 228,
+      "published": 2022,
+      "avg_rating": 3.88
     },
     {
       "id": "71872930",
@@ -71,7 +95,10 @@
       "author": "Daniel Mason",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684816182l/71872930.jpg",
       "rating": 4,
-      "date": "2026-08-31"
+      "date": "2026-08-31",
+      "pages": 372,
+      "published": 2023,
+      "avg_rating": 4.09
     },
     {
       "id": "228110489",
@@ -79,7 +106,10 @@
       "author": "Lily King",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1745508457l/228110489._SY475_.jpg",
       "rating": 4,
-      "date": "2026-08-24"
+      "date": "2026-08-24",
+      "pages": 256,
+      "published": 2025,
+      "avg_rating": 4.13
     },
     {
       "id": "7628",
@@ -87,7 +117,10 @@
       "author": "Ford Madox Ford",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1777366360l/7628._SY475_.jpg",
       "rating": 4,
-      "date": "2026-08-22"
+      "date": "2026-08-22",
+      "pages": 368,
+      "published": 1915,
+      "avg_rating": 3.68
     },
     {
       "id": "55628983",
@@ -95,7 +128,10 @@
       "author": "Riley Sager",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603780911l/55628983.jpg",
       "rating": 1,
-      "date": "2026-08-14"
+      "date": "2026-08-14",
+      "pages": 324,
+      "published": 2021,
+      "avg_rating": 3.5
     },
     {
       "id": "60372438",
@@ -103,7 +139,10 @@
       "author": "Johanne Lykke Holm",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1652965907l/60372438.jpg",
       "rating": 3,
-      "date": "2026-08-12"
+      "date": "2026-08-12",
+      "pages": 208,
+      "published": 2020,
+      "avg_rating": 3.13
     },
     {
       "id": "174156218",
@@ -111,7 +150,10 @@
       "author": "Rita Bullwinkel",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1691077222l/174156218._SY475_.jpg",
       "rating": 3,
-      "date": "2026-08-02"
+      "date": "2026-08-02",
+      "pages": 224,
+      "published": 2024,
+      "avg_rating": 3.45
     },
     {
       "id": "62039259",
@@ -119,7 +161,10 @@
       "author": "Henry Hoke",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1667852289l/62039259.jpg",
       "rating": 5,
-      "date": "2026-08-01"
+      "date": "2026-08-01",
+      "pages": 160,
+      "published": 2023,
+      "avg_rating": 4.0
     },
     {
       "id": "214986269",
@@ -127,7 +172,10 @@
       "author": "Saou Ichikawa",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1740937485l/214986269._SY475_.jpg",
       "rating": 1,
-      "date": "2026-07-30"
+      "date": "2026-07-30",
+      "pages": 112,
+      "published": 2023,
+      "avg_rating": 3.34
     },
     {
       "id": "63313297",
@@ -135,7 +183,10 @@
       "author": "Ia Genberg",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1669323616l/63313297.jpg",
       "rating": 4,
-      "date": "2026-07-26"
+      "date": "2026-07-26",
+      "pages": 144,
+      "published": 2022,
+      "avg_rating": 3.92
     },
     {
       "id": "50269327",
@@ -143,7 +194,10 @@
       "author": "Sayaka Murata",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580144195l/50269327._SY475_.jpg",
       "rating": 3,
-      "date": "2026-07-24"
+      "date": "2026-07-24",
+      "pages": 247,
+      "published": 2018,
+      "avg_rating": 3.59
     },
     {
       "id": "55711559",
@@ -151,7 +205,10 @@
       "author": "Lisa Taddeo",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623264432l/55711559._SX318_.jpg",
       "rating": 2,
-      "date": "2026-07-18"
+      "date": "2026-07-18",
+      "pages": 336,
+      "published": 2021,
+      "avg_rating": 3.7
     },
     {
       "id": "238873074",
@@ -159,7 +216,10 @@
       "author": "George Saunders",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
       "rating": 4,
-      "date": "2026-07-14"
+      "date": "2026-07-14",
+      "pages": 174,
+      "published": 2026,
+      "avg_rating": 3.39
     },
     {
       "id": "199635125",
@@ -167,7 +227,10 @@
       "author": "Tony Tulathimutte",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
       "rating": 5,
-      "date": "2026-07-14"
+      "date": "2026-07-14",
+      "pages": 272,
+      "published": 2024,
+      "avg_rating": 3.74
     },
     {
       "id": "7631105",
@@ -175,7 +238,10 @@
       "author": "James Dashner",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388240248l/7631105.jpg",
       "rating": 3,
-      "date": "2026-07-11"
+      "date": "2026-07-11",
+      "pages": 362,
+      "published": 2010,
+      "avg_rating": 3.9
     },
     {
       "id": "36348525",
@@ -183,7 +249,10 @@
       "author": "Ling Ma",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1507060524l/36348525._SY475_.jpg",
       "rating": 5,
-      "date": "2026-07-10"
+      "date": "2026-07-10",
+      "pages": 291,
+      "published": 2018,
+      "avg_rating": 3.87
     },
     {
       "id": "238227104",
@@ -191,7 +260,10 @@
       "author": "Tana French",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757472113l/238227104._SY475_.jpg",
       "rating": 4,
-      "date": "2026-07-08"
+      "date": "2026-07-08",
+      "pages": 496,
+      "published": 2026,
+      "avg_rating": 4.09
     },
     {
       "id": "126262032",
@@ -199,7 +271,10 @@
       "author": "Claire Keegan",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
       "rating": 4,
-      "date": "2026-07-05"
+      "date": "2026-07-05",
+      "pages": 128,
+      "published": 2022,
+      "avg_rating": 3.94
     },
     {
       "id": "674155",
@@ -207,7 +282,10 @@
       "author": "Gabriel García Márquez",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg",
       "rating": 4,
-      "date": "2026-07-05"
+      "date": "2026-07-05",
+      "pages": 120,
+      "published": 1981,
+      "avg_rating": 3.85
     },
     {
       "id": "61022861",
@@ -215,7 +293,10 @@
       "author": "Claire Keegan",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
       "rating": 5,
-      "date": "2026-07-04"
+      "date": "2026-07-04",
+      "pages": 128,
+      "published": 2010,
+      "avg_rating": 4.33
     },
     {
       "id": "238226942",
@@ -223,7 +304,10 @@
       "author": "Caro Claire Burke",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg",
       "rating": 3,
-      "date": "2026-07-04"
+      "date": "2026-07-04",
+      "pages": 400,
+      "published": 2026,
+      "avg_rating": 3.82
     },
     {
       "id": "58662236",
@@ -231,7 +315,10 @@
       "author": "Claire Keegan",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734631773l/58662236._SX318_.jpg",
       "rating": 4,
-      "date": "2026-07-02"
+      "date": "2026-07-02",
+      "pages": 118,
+      "published": 2021,
+      "avg_rating": 4.06
     },
     {
       "id": "24911006",
@@ -239,7 +326,10 @@
       "author": "Jon Krakauer",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1491227618l/24911006._SY475_.jpg",
       "rating": 4,
-      "date": "2026-06-30"
+      "date": "2026-06-30",
+      "pages": 368,
+      "published": 2015,
+      "avg_rating": 4.11
     },
     {
       "id": "60353768",
@@ -247,7 +337,10 @@
       "author": "Maggie O'Farrell",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655741851l/60353768.jpg",
       "rating": 5,
-      "date": "2026-06-27"
+      "date": "2026-06-27",
+      "pages": 355,
+      "published": 2022,
+      "avg_rating": 3.96
     },
     {
       "id": "241823",
@@ -255,7 +348,10 @@
       "author": "Clarissa Pinkola Estés",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1662139742l/241823._SY475_.jpg",
       "rating": 3,
-      "date": "2026-06-23"
+      "date": "2026-06-23",
+      "pages": 537,
+      "published": 1992,
+      "avg_rating": 4.1
     },
     {
       "id": "242693052",
@@ -263,7 +359,10 @@
       "author": "Ann Patchett",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1761863582l/242693052._SY475_.jpg",
       "rating": 5,
-      "date": "2026-06-18"
+      "date": "2026-06-18",
+      "pages": 295,
+      "published": 2026,
+      "avg_rating": 4.27
     },
     {
       "id": "6186357",
@@ -271,7 +370,10 @@
       "author": "James Dashner",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375596592l/6186357.jpg",
       "rating": 4,
-      "date": "2026-06-14"
+      "date": "2026-06-14",
+      "pages": 384,
+      "published": 2009,
+      "avg_rating": 4.06
     },
     {
       "id": "197798168",
@@ -279,7 +381,10 @@
       "author": "Miranda July",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1695913995l/197798168._SY475_.jpg",
       "rating": 2,
-      "date": "2026-06-12"
+      "date": "2026-06-12",
+      "pages": 336,
+      "published": 2024,
+      "avg_rating": 3.39
     },
     {
       "id": "61884832",
@@ -287,7 +392,10 @@
       "author": "S.A. Cosby",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663544598l/61884832.jpg",
       "rating": 4,
-      "date": "2026-06-05"
+      "date": "2026-06-05",
+      "pages": 338,
+      "published": 2023,
+      "avg_rating": 4.16
     },
     {
       "id": "240424526",
@@ -295,7 +403,10 @@
       "author": "Jennette McCurdy",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
       "rating": 2,
-      "date": "2026-05-30"
+      "date": "2026-05-30",
+      "pages": 288,
+      "published": 2026,
+      "avg_rating": 3.19
     },
     {
       "id": "36739755",
@@ -303,7 +414,10 @@
       "author": "Sayaka Murata",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg",
       "rating": 4,
-      "date": "2026-05-30"
+      "date": "2026-05-30",
+      "pages": 163,
+      "published": 2016,
+      "avg_rating": 3.63
     },
     {
       "id": "207571151",
@@ -311,7 +425,10 @@
       "author": "Katherine Greene",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708004345l/207571151._SY475_.jpg",
       "rating": 1,
-      "date": "2026-05-29"
+      "date": "2026-05-29",
+      "pages": 320,
+      "published": 2024,
+      "avg_rating": 3.79
     },
     {
       "id": "54304105",
@@ -319,7 +436,10 @@
       "author": "Melissa Broder",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610290064l/54304105.jpg",
       "rating": 3,
-      "date": "2026-05-25"
+      "date": "2026-05-25",
+      "pages": 304,
+      "published": 2021,
+      "avg_rating": 3.55
     },
     {
       "id": "222700466",
@@ -327,7 +447,10 @@
       "author": "Rozie Kelly",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1772673526l/222700466._SY475_.jpg",
       "rating": 3,
-      "date": "2026-05-23"
+      "date": "2026-05-23",
+      "pages": 212,
+      "published": 2025,
+      "avg_rating": 3.88
     },
     {
       "id": "203578775",
@@ -335,7 +458,10 @@
       "author": "Eliza Moss",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708547134l/203578775._SY475_.jpg",
       "rating": 3,
-      "date": "2026-05-19"
+      "date": "2026-05-19",
+      "pages": 320,
+      "published": 2024,
+      "avg_rating": 3.6
     },
     {
       "id": "216407333",
@@ -343,7 +469,10 @@
       "author": "Shida Bazyar",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1721291204l/216407333._SY475_.jpg",
       "rating": 5,
-      "date": "2026-05-17"
+      "date": "2026-05-17",
+      "pages": 228,
+      "published": 2016,
+      "avg_rating": 3.74
     },
     {
       "id": "41057294",
@@ -351,7 +480,10 @@
       "author": "Sally Rooney",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571423190l/41057294._SY475_.jpg",
       "rating": 3,
-      "date": "2026-05-10"
+      "date": "2026-05-10",
+      "pages": 273,
+      "published": 2018,
+      "avg_rating": 3.81
     },
     {
       "id": "238766811",
@@ -359,7 +491,10 @@
       "author": "Marie NDiaye",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1779026593l/238766811._SY475_.jpg",
       "rating": 4,
-      "date": "2026-05-04"
+      "date": "2026-05-04",
+      "pages": 144,
+      "published": 1996,
+      "avg_rating": 2.85
     },
     {
       "id": "18521",
@@ -367,7 +502,10 @@
       "author": "Virginia Woolf",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327883012l/18521.jpg",
       "rating": 5,
-      "date": "2026-05-03"
+      "date": "2026-05-03",
+      "pages": 112,
+      "published": 1929,
+      "avg_rating": 4.22
     },
     {
       "id": "334643",
@@ -375,7 +513,10 @@
       "author": "Garth Nix",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401683669l/334643.jpg",
       "rating": 4,
-      "date": "2026-04-30"
+      "date": "2026-04-30",
+      "pages": 358,
+      "published": 2003,
+      "avg_rating": 4.24
     },
     {
       "id": "157184735",
@@ -383,7 +524,10 @@
       "author": "Mona Awad",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684423250l/157184735._SY475_.jpg",
       "rating": 4,
-      "date": "2026-04-24"
+      "date": "2026-04-24",
+      "pages": 383,
+      "published": 2023,
+      "avg_rating": 3.53
     },
     {
       "id": "239051491",
@@ -391,7 +535,10 @@
       "author": "Emma Straub",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1758250558l/239051491._SY475_.jpg",
       "rating": 1,
-      "date": "2026-04-22"
+      "date": "2026-04-22",
+      "pages": 304,
+      "published": 2026,
+      "avg_rating": 3.07
     },
     {
       "id": "33460",
@@ -399,7 +546,10 @@
       "author": "Bill Buford",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388264544l/33460.jpg",
       "rating": 5,
-      "date": "2026-04-09"
+      "date": "2026-04-09",
+      "pages": 320,
+      "published": 1990,
+      "avg_rating": 4.11
     },
     {
       "id": "25716567",
@@ -407,7 +557,10 @@
       "author": "Mona Awad",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445534207l/25716567.jpg",
       "rating": 4,
-      "date": "2026-04-02"
+      "date": "2026-04-02",
+      "pages": 212,
+      "published": 2016,
+      "avg_rating": 3.1
     },
     {
       "id": "47624",
@@ -415,7 +568,10 @@
       "author": "Garth Nix",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266458951l/47624.jpg",
       "rating": 5,
-      "date": "2026-03-31"
+      "date": "2026-03-31",
+      "pages": 464,
+      "published": 2001,
+      "avg_rating": 4.29
     },
     {
       "id": "150373",
@@ -423,7 +579,10 @@
       "author": "Shahrnush Parsipur",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348209043l/150373.jpg",
       "rating": 1,
-      "date": "2026-03-26"
+      "date": "2026-03-26",
+      "pages": 192,
+      "published": 1973,
+      "avg_rating": 3.73
     },
     {
       "id": "44279110",
@@ -431,7 +590,10 @@
       "author": "Ottessa Moshfegh",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597676656l/44279110._SY475_.jpg",
       "rating": 3,
-      "date": "2026-03-25"
+      "date": "2026-03-25",
+      "pages": 289,
+      "published": 2018,
+      "avg_rating": 3.59
     },
     {
       "id": "53137893",
@@ -439,7 +601,10 @@
       "author": "Rachel Hawkins",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609506208l/53137893._SY475_.jpg",
       "rating": 1,
-      "date": "2026-03-23"
+      "date": "2026-03-23",
+      "pages": 290,
+      "published": 2021,
+      "avg_rating": 3.7
     },
     {
       "id": "518848",
@@ -447,7 +612,10 @@
       "author": "Garth Nix",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1293655399l/518848.jpg",
       "rating": 5,
-      "date": "2026-03-22"
+      "date": "2026-03-22",
+      "pages": 496,
+      "published": 1995,
+      "avg_rating": 4.17
     },
     {
       "id": "25622850",
@@ -455,7 +623,10 @@
       "author": "Patricia Highsmith",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1451790279l/25622850.jpg",
       "rating": 3,
-      "date": "2026-03-16"
+      "date": "2026-03-16",
+      "pages": 304,
+      "published": 1952,
+      "avg_rating": 4.02
     },
     {
       "id": "52878453",
@@ -463,7 +634,10 @@
       "author": "Ottessa Moshfegh",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567702645l/52878453._SX318_SY475_.jpg",
       "rating": 4,
-      "date": "2026-03-15"
+      "date": "2026-03-15",
+      "pages": 259,
+      "published": 2020,
+      "avg_rating": 3.23
     },
     {
       "id": "139400713",
@@ -471,7 +645,10 @@
       "author": "Kaveh Akbar",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1683818219l/139400713.jpg",
       "rating": 5,
-      "date": "2026-03-13"
+      "date": "2026-03-13",
+      "pages": 332,
+      "published": 2024,
+      "avg_rating": 4.15
     },
     {
       "id": "54680228",
@@ -479,7 +656,10 @@
       "author": "Eliot Higgins",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596434293l/54680228.jpg",
       "rating": 3,
-      "date": "2026-03-05"
+      "date": "2026-03-05",
+      "pages": 272,
+      "published": 2021,
+      "avg_rating": 4.09
     },
     {
       "id": "53285047",
@@ -487,7 +667,10 @@
       "author": "Mona Awad",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588043687l/53285047.jpg",
       "rating": 5,
-      "date": "2026-02-28"
+      "date": "2026-02-28",
+      "pages": 305,
+      "published": 2019,
+      "avg_rating": 3.38
     },
     {
       "id": "39968782",
@@ -495,7 +678,10 @@
       "author": "John Marrs",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556726792l/39968782.jpg",
       "rating": 0,
-      "date": "2026-02-26"
+      "date": "2026-02-26",
+      "pages": 438,
+      "published": 2016,
+      "avg_rating": 4.09
     },
     {
       "id": "16692",
@@ -503,7 +689,10 @@
       "author": "J.R.R. Tolkien",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388237830l/16692.jpg",
       "rating": 0,
-      "date": "2026-02-21"
+      "date": "2026-02-21",
+      "pages": 128,
+      "published": 1998,
+      "avg_rating": 3.94
     },
     {
       "id": "53138099",
@@ -511,7 +700,10 @@
       "author": "Elle Cosimano",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659447956l/53138099._SY475_.jpg",
       "rating": 3,
-      "date": "2026-02-17"
+      "date": "2026-02-17",
+      "pages": 368,
+      "published": 2021,
+      "avg_rating": 3.96
     },
     {
       "id": "50548197",
@@ -519,7 +711,10 @@
       "author": "Naomi Novik",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596909044l/50548197._SY475_.jpg",
       "rating": 3,
-      "date": "2026-02-12"
+      "date": "2026-02-12",
+      "pages": 320,
+      "published": 2020,
+      "avg_rating": 3.91
     },
     {
       "id": "43208407",
@@ -527,7 +722,10 @@
       "author": "Jacqueline Harpman",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554973792l/43208407._SY475_.jpg",
       "rating": 4,
-      "date": "2026-02-07"
+      "date": "2026-02-07",
+      "pages": 188,
+      "published": 1995,
+      "avg_rating": 4.16
     },
     {
       "id": "56791389",
@@ -535,7 +733,10 @@
       "author": "Matt Dinniman",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734203042l/56791389._SY475_.jpg",
       "rating": 3,
-      "date": "2026-01-31"
+      "date": "2026-01-31",
+      "pages": 464,
+      "published": 2020,
+      "avg_rating": 4.44
     },
     {
       "id": "238365535",
@@ -543,7 +744,10 @@
       "author": "Freida McFadden",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1774686324l/238365535._SY475_.jpg",
       "rating": 2,
-      "date": "2026-01-29"
+      "date": "2026-01-29",
+      "pages": 327,
+      "published": 2026,
+      "avg_rating": 3.85
     },
     {
       "id": "33375622",
@@ -551,7 +755,10 @@
       "author": "Carmen Maria Machado",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1485266434l/33375622.jpg",
       "rating": 2,
-      "date": "2026-01-26"
+      "date": "2026-01-26",
+      "pages": 248,
+      "published": 2017,
+      "avg_rating": 3.82
     },
     {
       "id": "34845512",
@@ -559,7 +766,10 @@
       "author": "Han Kang",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1770780197l/34845512._SY475_.jpg",
       "rating": 1,
-      "date": "2026-01-20"
+      "date": "2026-01-20",
+      "pages": 185,
+      "published": 2007,
+      "avg_rating": 3.57
     },
     {
       "id": "3698",
@@ -567,7 +777,10 @@
       "author": "Graham Greene",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753926448l/3698._SY475_.jpg",
       "rating": 5,
-      "date": "2026-01-18"
+      "date": "2026-01-18",
+      "pages": 180,
+      "published": 1955,
+      "avg_rating": 3.97
     },
     {
       "id": "46038742",
@@ -575,7 +788,10 @@
       "author": "Anna North",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589885553l/46038742._SY475_.jpg",
       "rating": 3,
-      "date": "2026-01-10"
+      "date": "2026-01-10",
+      "pages": 272,
+      "published": 2021,
+      "avg_rating": 3.7
     },
     {
       "id": "42283862",
@@ -583,7 +799,10 @@
       "author": "Joseph Menn",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1543035549l/42283862.jpg",
       "rating": 5,
-      "date": "2026-01-07"
+      "date": "2026-01-07",
+      "pages": 256,
+      "published": 2019,
+      "avg_rating": 3.73
     },
     {
       "id": "13079982",
@@ -591,7 +810,10 @@
       "author": "Ray Bradbury",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1383718290l/13079982.jpg",
       "rating": 3,
-      "date": "2026-01-06"
+      "date": "2026-01-06",
+      "pages": 249,
+      "published": 1963,
+      "avg_rating": 3.98
     },
     {
       "id": "211004089",
@@ -599,7 +821,10 @@
       "author": "Charlotte McConaghy",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715784093l/211004089._SY475_.jpg",
       "rating": 3,
-      "date": "2026-01-03"
+      "date": "2026-01-03",
+      "pages": 298,
+      "published": 2025,
+      "avg_rating": 4.05
     },
     {
       "id": "52581895",
@@ -607,7 +832,10 @@
       "author": "Paul Tremblay",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1575564155l/52581895.jpg",
       "rating": 4,
-      "date": "2026-01-01"
+      "date": "2026-01-01",
+      "pages": 320,
+      "published": 2020,
+      "avg_rating": 3.58
     }
   ]
 }
