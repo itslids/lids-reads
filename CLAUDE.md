@@ -40,5 +40,6 @@ When converting a vault review into `_reviews/<slug>.md`:
 ## Conventions
 
 - Lindsey works in Mountain Time.
+- Never put her children's names on the site (her instruction, 2026-10-08). "My daughter" / "my kid" from her own posts is fine.
 - The vault has its own CLAUDE.md; follow it when working inside the vault. This repo should only ever read from the vault, never write to it.
 - After changes: commit with a clear message and push to `main`. Pages redeploys in a minute or two.
