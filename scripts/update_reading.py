@@ -62,8 +62,10 @@ def main():
     while True:
         books = fetch("read", page)
         dates = [parse_date(b["user_read_at"]) for b in books]
-        read_count += sum(1 for d in dates if d and d.year == YEAR)
-        finished += [(d, b) for d, b in zip(dates, books) if d and d.year == YEAR]
+        # a book shelved as read with no finish date counts on the day it was added
+        when = [d or parse_date(b["user_date_added"]) for d, b in zip(dates, books)]
+        read_count += sum(1 for d in when if d and d.year == YEAR)
+        finished += [(d, b) for d, b in zip(when, books) if d and d.year == YEAR]
         known = [d for d in dates if d]
         if len(books) < 200 or (known and min(known).year < YEAR):
             break
