@@ -75,6 +75,7 @@ permalink: /stats/
   var YEAR = {{ site.data.read.year | default: 2026 }};
   var UPDATED = "{{ site.data.reading.updated }}";
   var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var FULL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var DAY = 86400000;
 
   function utc(s) { var p = s.split("-"); return Date.UTC(+p[0], +p[1] - 1, +p[2]); }
@@ -176,7 +177,7 @@ permalink: /stats/
   })();
 
   /* by month */
-  var byMonth = MONTHS.map(function (m, i) { return { m: m, books: [], pages: 0, rsum: 0, rn: 0 }; });
+  var byMonth = MONTHS.map(function (m, i) { return { m: m, full: FULL[i], books: [], pages: 0, rsum: 0, rn: 0 }; });
   books.forEach(function (b) {
     var s = byMonth[new Date(b.t).getUTCMonth()]; s.books.push(b); s.pages += b.pages || 0;
     if (b.rating > 0) { s.rsum += b.rating; s.rn++; }
@@ -248,11 +249,11 @@ permalink: /stats/
   }
   if (withYear.length) fact("Oldest book", book(withYear[0], withYear[0].published));
   var busiest = live.slice().sort(function (a, b) { return b.books.length - a.books.length; })[0];
-  if (busiest) fact("Busiest month", busiest.m + ", with " + plural(busiest.books.length, "book") + " and " + fmt(busiest.pages) + " pages");
+  if (busiest) fact("Busiest month", busiest.full + ", with " + plural(busiest.books.length, "book") + " and " + fmt(busiest.pages) + " pages");
   var bestM = live.filter(function (s) { return s.rn >= 3; }).sort(function (a, b) { return b.rsum / b.rn - a.rsum / a.rn; });
   if (bestM.length > 1) {
-    fact("Best-rated month", bestM[0].m + ", averaging " + (bestM[0].rsum / bestM[0].rn).toFixed(1) + " stars");
-    fact("Worst-rated month", bestM[bestM.length - 1].m + ", averaging " + (bestM[bestM.length - 1].rsum / bestM[bestM.length - 1].rn).toFixed(1) + " stars");
+    fact("Best-rated month", bestM[0].full + ", averaging " + (bestM[0].rsum / bestM[0].rn).toFixed(1) + " stars");
+    fact("Worst-rated month", bestM[bestM.length - 1].full + ", averaging " + (bestM[bestM.length - 1].rsum / bestM[bestM.length - 1].rn).toFixed(1) + " stars");
   }
   var gap = null;
   for (var i = 1; i < n; i++) { var g = (books[i].t - books[i - 1].t) / DAY; if (!gap || g > gap.g) gap = { g: g, a: books[i - 1], b: books[i] }; }
@@ -265,8 +266,8 @@ permalink: /stats/
     var d = cmp.reduce(function (s, b) { return s + b.rating - b.avg_rating; }, 0) / cmp.length;
     fact("Compared with Goodreads readers", "On average " + Math.abs(d).toFixed(2) + " stars " + (d < 0 ? "tougher" : "more generous") + " than the Goodreads average for the same books");
     var s = cmp.slice().sort(function (a, b) { return (a.rating - a.avg_rating) - (b.rating - b.avg_rating); });
-    fact("Biggest disagreement, lower", book(s[0], s[0].rating + " stars against a Goodreads average of " + s[0].avg_rating.toFixed(2)));
-    fact("Biggest disagreement, higher", book(s[s.length - 1], s[s.length - 1].rating + " stars against a Goodreads average of " + s[s.length - 1].avg_rating.toFixed(2)));
+    fact("Biggest disagreement, lower", book(s[0], plural(s[0].rating, "star") + " against a Goodreads average of " + s[0].avg_rating.toFixed(2)));
+    fact("Biggest disagreement, higher", book(s[s.length - 1], plural(s[s.length - 1].rating, "star") + " against a Goodreads average of " + s[s.length - 1].avg_rating.toFixed(2)));
   }
 
   /* table view */

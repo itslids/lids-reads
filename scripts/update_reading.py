@@ -13,6 +13,7 @@ import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 GOODREADS_USER_ID = "6818060"
 GOAL = 100
@@ -99,7 +100,7 @@ def main():
     read_count = len(books)
 
     data = {
-        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "updated": datetime.now(ZoneInfo("America/Denver")).strftime("%Y-%m-%d"),  # Lindsey's day, not UTC
         "year": YEAR,
         "goal": GOAL,
         "read_this_year": read_count,

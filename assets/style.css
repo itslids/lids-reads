@@ -135,7 +135,7 @@ nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underl
 .only input { accent-color: var(--accent); }
 
 /* stats page */
-.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-bottom: 36px; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 36px; }
 .tile { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 16px 16px 14px; display: flex; flex-direction: column; }
 .tile-num { font-family: var(--display); font-weight: 600; font-size: 42px; line-height: 1; font-variant-numeric: tabular-nums; }
 .tile-label { margin-top: 6px; font-size: 15px; }
@@ -185,6 +185,7 @@ nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underl
 .tip-list { opacity: .85; }
 @media (max-width: 560px) {
   .tile-num { font-size: 34px; }
+  .tiles { grid-template-columns: repeat(2, 1fr); }
   .facts { grid-template-columns: 1fr; gap: 2px; }
   .facts dd { margin-bottom: 10px; }
   .col-val { font-size: 10.5px; }
