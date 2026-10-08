@@ -11,6 +11,8 @@ vibes:
   - "a perfect little machine to move you"
   - "not a word wasted"
   - "the good but hard thing"
+part_of:
+  - "My Claire Keegan obsession"
 ---
 
 George Saunders referred to this book as "a perfect little machine to move you" and I think that's such a good description that I could never top.

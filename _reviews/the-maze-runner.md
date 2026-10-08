@@ -9,12 +9,14 @@ cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/13
 genre: "Young adult"
 verdict: "Fun, creative, and enjoyable to listen to with my kid."
 vibes:
-  - "read with my daughter"
+  - "read with my kid"
   - "definite writing issues"
   - "fun and creative"
+part_of:
+  - "The Maze Runner series"
 ---
 
-Read this with my daughter and enjoyed it.
+Read this with my kid and enjoyed it.
 
 There were some definite writing issues: the whole plot is basically revealed in one character's monologue which is annoying.
 
