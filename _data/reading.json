@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "year": 2026,
   "goal": 100,
-  "read_this_year": 76,
+  "read_this_year": 77,
   "currently_reading": [
     {
       "title": "Three Guineas",
@@ -27,12 +27,6 @@
       "author": "Jenny Hval",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596041196l/39216527._SY475_.jpg",
       "link": "https://www.goodreads.com/book/show/39216527"
-    },
-    {
-      "title": "Say Nothing",
-      "author": "Patrick Radden Keefe",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537315266l/40163119._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/40163119"
     }
   ]
 }
