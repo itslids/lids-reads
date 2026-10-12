@@ -281,6 +281,13 @@ permalink: /stats/
     fact("Shortest book", book(withPages[0], withPages[0].pages + " pages"));
   }
   if (withYear.length) fact("Oldest book", book(withYear[0], withYear[0].published));
+  if (withYear.length) {
+    // Goodreads only gives the publication year, so several books can tie for newest
+    var top = withYear[withYear.length - 1].published;
+    var newest = withYear.filter(function (b) { return b.published === top; }).sort(function (a, b) { return b.t - a.t; });
+    fact(newest.length === 1 ? "Newest book" : "Newest books", newest.length === 1 ? book(newest[0], top) :
+      newest.length + " published in " + top + ": " + newest.map(function (b) { return b.title; }).join(", "));
+  }
   var busiest = live.slice().sort(function (a, b) { return b.books.length - a.books.length; })[0];
   if (busiest) fact("Busiest month", busiest.full + ", with " + plural(busiest.books.length, "book") + " and " + fmt(busiest.pages) + " pages");
   var bestM = live.filter(function (s) { return s.rn >= 3; }).sort(function (a, b) { return b.rsum / b.rn - a.rsum / a.rn; });
