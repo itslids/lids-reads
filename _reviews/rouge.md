@@ -4,6 +4,7 @@ author: "Mona Awad"
 goodreads_id: "157184735"
 date: 2026-04-24
 rating: 4
+format: "physical"
 cover: "https://covers.openlibrary.org/b/id/13481659-L.jpg"
 genre: "Horror"
 verdict: "Moms + daughters, beauty cults, vampires but with squids?"

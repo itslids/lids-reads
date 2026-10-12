@@ -4,6 +4,7 @@ author: "Mona Awad"
 goodreads_id: "25716567"
 date: 2026-04-02
 rating: 4
+format: "physical"
 cover: "https://covers.openlibrary.org/b/isbn/9780143128489-L.jpg"
 genre: "Fiction"
 verdict: "No spec fic, no genre-bending, just darkly funny and very sharp."

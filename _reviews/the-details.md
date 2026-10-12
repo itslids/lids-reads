@@ -4,6 +4,7 @@ author: "Ia Genberg"
 goodreads_id: "63313297"
 date: 2026-07-26
 rating: 4
+format: "audio + ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1669323616l/63313297.jpg"
 genre: "Literary fiction"
 verdict: "Nothing really \"happens\" here, so don't read if you're here for the plot."

@@ -4,6 +4,7 @@ author: "S.A. Cosby"
 goodreads_id: "61884832"
 date: 2026-06-05
 rating: 4
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663544598l/61884832.jpg"
 genre: "Crime"
 verdict: "A solid southern noir."

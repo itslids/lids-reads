@@ -4,6 +4,7 @@ author: "Ann Patchett"
 goodreads_id: "242693052"
 date: 2026-06-18
 rating: 5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1761863582l/242693052._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "Ann Patchett is a national treasure."

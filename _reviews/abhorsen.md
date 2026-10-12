@@ -5,6 +5,7 @@ goodreads_id: "334643"
 series: "Abhorsen #3"
 date: 2026-04-30
 rating: 4
+format: "audio + physical"
 cover: "https://covers.openlibrary.org/b/isbn/9780060528737-L.jpg"
 genre: "Fantasy"
 verdict: "A supreme fantasy."

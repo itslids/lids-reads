@@ -4,6 +4,7 @@ author: "Ottessa Moshfegh"
 goodreads_id: "52878453"
 date: 2026-03-15
 rating: 4
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567702645l/52878453._SX318_SY475_.jpg"
 genre: "Literary fiction"
 verdict: "I love a narrator who's going a little mad (or is she?)."

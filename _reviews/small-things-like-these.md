@@ -4,6 +4,7 @@ author: "Claire Keegan"
 goodreads_id: "58662236"
 date: 2026-07-02
 rating: 4
+format: "physical (library)"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734631773l/58662236._SX318_.jpg"
 genre: "Literary fiction"
 verdict: "Christmas Carol meets \"Hills Like White Elephants\"-era Hemingway but Irish."

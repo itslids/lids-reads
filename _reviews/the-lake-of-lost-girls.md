@@ -4,6 +4,7 @@ author: "Katherine Greene"
 goodreads_id: "207571151"
 date: 2026-05-29
 rating: 1
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708004345l/207571151._SY475_.jpg"
 genre: "Thriller"
 verdict: "Called the plot twist in the first 30 minutes."

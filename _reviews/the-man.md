@@ -4,6 +4,7 @@ author: "Laura Sims"
 goodreads_id: "242512669"
 date: 2026-09-10
 rating: 3
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1762405681l/242512669._SY475_.jpg"
 genre: "Thriller"
 verdict: "A thriller. Somehow also boring."

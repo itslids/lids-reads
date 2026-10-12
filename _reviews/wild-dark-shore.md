@@ -4,6 +4,7 @@ author: "Charlotte McConaghy"
 goodreads_id: "211004089"
 date: 2026-01-03
 rating: 3.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1715784093l/211004089._SY475_.jpg"
 genre: "Thriller"
 verdict: "Still immensely readable."

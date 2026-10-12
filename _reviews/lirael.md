@@ -5,6 +5,7 @@ goodreads_id: "47624"
 series: "Abhorsen #2"
 date: 2026-03-31
 rating: 5
+format: "audio + ebook"
 cover: "https://covers.openlibrary.org/b/id/6394324-L.jpg"
 genre: "Fantasy"
 verdict: "This series knows what it's doing."

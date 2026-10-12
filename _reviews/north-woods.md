@@ -4,6 +4,7 @@ author: "Daniel Mason"
 goodreads_id: "71872930"
 date: 2026-08-31
 rating: 3.75
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684816182l/71872930.jpg"
 genre: "Historical fiction"
 verdict: "Landed closer to a 4 but not quite there."

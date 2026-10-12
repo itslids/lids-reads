@@ -4,6 +4,7 @@ author: "George Saunders"
 goodreads_id: "238873074"
 date: 2026-07-14
 rating: 4
+format: "audio + ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "A sub-3-star review? Never."

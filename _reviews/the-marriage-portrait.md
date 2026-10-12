@@ -4,6 +4,7 @@ author: "Maggie O'Farrell"
 goodreads_id: "60353768"
 date: 2026-06-27
 rating: 5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655741851l/60353768.jpg"
 genre: "Historical fiction"
 verdict: "It's my first Maggie O'Farrell and I'm hooked."

@@ -4,6 +4,7 @@ author: "Ottessa Moshfegh"
 goodreads_id: "44279110"
 date: 2026-03-25
 rating: 3
+format: "audio"
 cover: "https://covers.openlibrary.org/b/id/14605019-L.jpg"
 genre: "Literary fiction"
 verdict: "I both loved and hated this book."

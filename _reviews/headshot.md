@@ -4,6 +4,7 @@ author: "Rita Bullwinkel"
 goodreads_id: "174156218"
 date: 2026-08-02
 rating: 2.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1691077222l/174156218._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "The longest five-hour audiobook of my life."

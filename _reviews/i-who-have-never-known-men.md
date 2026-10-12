@@ -4,6 +4,7 @@ author: "Jacqueline Harpman"
 goodreads_id: "43208407"
 date: 2026-02-07
 rating: 4
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554973792l/43208407._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "Somehow simple, sad, and radical."

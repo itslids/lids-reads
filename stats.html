@@ -51,6 +51,18 @@ permalink: /stats/
   </section>
 </div>
 
+<div class="stat-grid">
+  <section class="stat-block">
+    <h2 class="section-h">How I read them</h2>
+    <div class="hbars" id="formats"></div>
+    <p class="stat-note below" id="formats-note"></p>
+  </section>
+  <section class="stat-block">
+    <h2 class="section-h">Average rating by format</h2>
+    <div class="hbars" id="format-ratings"></div>
+  </section>
+</div>
+
 <section class="stat-block">
   <h2 class="section-h">Superlatives</h2>
   <dl class="facts" id="facts"></dl>
@@ -74,6 +86,7 @@ permalink: /stats/
   var GOAL = {{ site.data.reading.goal | default: 100 }};
   var YEAR = {{ site.data.read.year | default: 2026 }};
   var UPDATED = "{{ site.data.reading.updated }}";
+  var FORMATS = { {% for rv in site.reviews %}{% if rv.format and rv.goodreads_id %}"{{ rv.goodreads_id }}": {{ rv.format | jsonify }},{% endif %}{% endfor %} };
   var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   var FULL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var DAY = 86400000;
@@ -198,13 +211,13 @@ permalink: /stats/
   columns("by-month-pages", function (s) { return s.pages; }, "page");
 
   /* horizontal bar lists */
-  function rows(id, items, cls) {
-    var wrap = document.getElementById(id), max = Math.max.apply(null, items.map(function (i) { return i.v; })) || 1;
+  function rows(id, items, cls, top) {
+    var wrap = document.getElementById(id), max = top || Math.max.apply(null, items.map(function (i) { return i.v; })) || 1;
     items.forEach(function (i) {
       var row = el("div", "hrow"); row.appendChild(el("span", "hlabel", i.label));
       var track = el("div", "htrack"), bar = el("div", "hbar" + (cls ? " " + cls : ""));
       bar.style.width = (i.v / max * 100) + "%"; track.appendChild(bar); row.appendChild(track);
-      row.appendChild(el("span", "hval", fmt(i.v))); wrap.appendChild(row);
+      row.appendChild(el("span", "hval", i.text || fmt(i.v))); wrap.appendChild(row);
       if (i.tip) hover(row, i.tip);
     });
   }
@@ -236,6 +249,24 @@ permalink: /stats/
   var authors = Object.keys(byAuthor).filter(function (a) { return byAuthor[a].length > 1; })
     .sort(function (a, b) { return byAuthor[b].length - byAuthor[a].length || a.localeCompare(b); }).slice(0, 8);
   rows("authors", authors.map(function (a) { return { label: a, v: byAuthor[a].length, tip: "<strong>" + a + "</strong>" + titles(byAuthor[a]) }; }));
+
+  /* how each book was read; a book read two ways counts under both */
+  var MODES = [["audio", "Audiobook"], ["ebook", "Ebook"], ["physical", "Print"]];
+  var known = books.filter(function (b) { return FORMATS[b.id]; });
+  function has(b, mode) { return FORMATS[b.id].indexOf(mode) > -1; }
+  if (known.length) {
+    rows("formats", MODES.map(function (m) { return bucket(m[1], function (b) { return FORMATS[b.id] && has(b, m[0]); }); }));
+    var two = known.filter(function (b) { return FORMATS[b.id].indexOf("+") > -1; }), lib = known.filter(function (b) { return has(b, "library"); });
+    document.getElementById("formats-note").textContent = plural(two.length, "book") + " read two ways at once, counted under both. " +
+      plural(lib.length, "book") + " from the library." + (known.length < n ? " Format not recorded yet for " + plural(n - known.length, "book") + "." : "");
+    rows("format-ratings", MODES.map(function (m) {
+      var list = known.filter(function (b) { return has(b, m[0]) && b.rating > 0; });
+      var avg = list.length ? list.reduce(function (s, b) { return s + b.rating; }, 0) / list.length : 0;
+      return { label: m[1], v: avg, text: avg ? avg.toFixed(1) : "–", tip: "<strong>" + m[1] + "</strong>" + (avg ? avg.toFixed(2) + " stars across " + plural(list.length, "rated book") : "No rated books") };
+    }), "gilt", 5);
+  } else {
+    document.getElementById("formats").parentNode.parentNode.hidden = true;
+  }
 
   /* superlatives */
   var facts = document.getElementById("facts");

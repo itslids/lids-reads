@@ -4,6 +4,7 @@ author: "Han Kang"
 goodreads_id: "34845512"
 date: 2026-01-20
 rating: 1
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1770780197l/34845512._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "I get it and I also hate it."

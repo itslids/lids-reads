@@ -4,6 +4,7 @@ author: "Freida McFadden"
 goodreads_id: "238365535"
 date: 2026-01-29
 rating: 2
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1774686324l/238365535._SY475_.jpg"
 genre: "Thriller"
 verdict: "Meh."

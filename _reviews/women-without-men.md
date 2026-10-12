@@ -4,6 +4,7 @@ author: "Shahrnush Parsipur"
 goodreads_id: "150373"
 date: 2026-03-26
 rating: 1
+format: "ebook"
 cover: "https://covers.openlibrary.org/b/id/1548130-L.jpg"
 genre: "Literary fiction"
 verdict: "So much potential and fell totally flat."

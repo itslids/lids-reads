@@ -4,6 +4,7 @@ author: "Henry Hoke"
 goodreads_id: "62039259"
 date: 2026-08-01
 rating: 5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1667852289l/62039259.jpg"
 genre: "Literary fiction"
 verdict: "So, so unexpectedly good."

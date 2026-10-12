@@ -5,6 +5,7 @@ goodreads_id: "7631105"
 series: "The Maze Runner #2"
 date: 2026-07-11
 rating: 3
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388240248l/7631105.jpg"
 genre: "Young adult"
 verdict: "Fun and twisty YA."

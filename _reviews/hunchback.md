@@ -4,6 +4,7 @@ author: "Saou Ichikawa"
 goodreads_id: "214986269"
 date: 2026-07-30
 rating: 1
+format: "audio + ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1740937485l/214986269._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "Well, at least it was short."

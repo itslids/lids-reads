@@ -4,6 +4,7 @@ author: "Patrick Radden Keefe"
 goodreads_id: "40163119"
 date: 2026-10-10
 rating: 5
+format: "audio + physical (library)"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537315266l/40163119._SY475_.jpg"
 genre: "Nonfiction"
 verdict: "5 billion/5 stars. Easily one of my favorite books of the year."

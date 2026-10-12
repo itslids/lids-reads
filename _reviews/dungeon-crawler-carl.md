@@ -4,6 +4,7 @@ author: "Matt Dinniman"
 goodreads_id: "56791389"
 date: 2026-01-31
 rating: 3.5
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734203042l/56791389._SY475_.jpg"
 genre: "Science fiction"
 verdict: "Pantsless man and fussy cat compete in a post-apocalyptic video game show for their alien overlords."

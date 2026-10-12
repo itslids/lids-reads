@@ -4,6 +4,7 @@ author: "Lisa Taddeo"
 goodreads_id: "55711559"
 date: 2026-07-18
 rating: 2
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623264432l/55711559._SX318_.jpg"
 genre: "Literary fiction"
 verdict: "This was mostly a no from me, dawg."

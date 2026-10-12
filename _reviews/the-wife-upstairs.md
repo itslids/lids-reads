@@ -4,6 +4,7 @@ author: "Rachel Hawkins"
 goodreads_id: "53137893"
 date: 2026-03-23
 rating: 1
+format: "audio"
 cover: "https://covers.openlibrary.org/b/id/14594740-L.jpg"
 genre: "Thriller"
 verdict: "A misleading comp is its own category of crime."

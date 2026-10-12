@@ -4,6 +4,7 @@ author: "Clarissa Pinkola Estés"
 goodreads_id: "241823"
 date: 2026-06-23
 rating: 2.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1662139742l/241823._SY475_.jpg"
 genre: "Nonfiction"
 verdict: "Not my vibe."

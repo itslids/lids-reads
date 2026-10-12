@@ -4,6 +4,7 @@ author: "Ray Bradbury"
 goodreads_id: "13079982"
 date: 2026-01-06
 rating: 3
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1383718290l/13079982.jpg"
 genre: "Classic"
 verdict: "Underage manic pixie dream girl trigger warning."

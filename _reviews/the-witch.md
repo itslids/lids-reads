@@ -4,6 +4,7 @@ author: "Marie NDiaye"
 goodreads_id: "238766811"
 date: 2026-05-04
 rating: 4
+format: "ebook + physical"
 cover: "https://covers.openlibrary.org/b/id/15213149-L.jpg"
 genre: "Literary fiction"
 verdict: "A strange, domestic magical realism piece."

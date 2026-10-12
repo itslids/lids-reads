@@ -4,6 +4,7 @@ author: "Stephen Graham Jones"
 goodreads_id: "31189134"
 date: 2026-09-14
 rating: 4.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484278994l/31189134._SY475_.jpg"
 genre: "Horror"
 verdict: "Impossibly skilled."

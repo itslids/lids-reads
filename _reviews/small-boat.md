@@ -4,6 +4,7 @@ author: "Vincent Delecroix"
 goodreads_id: "228394781"
 date: 2026-09-29
 rating: 5
+format: "physical (library)"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1741272009l/228394781._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "I felt absolutely skewered."

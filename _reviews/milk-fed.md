@@ -4,6 +4,7 @@ author: "Melissa Broder"
 goodreads_id: "54304105"
 date: 2026-05-25
 rating: 3.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610290064l/54304105.jpg"
 genre: "Literary fiction"
 verdict: "The character connection was there but her character arc didn't cut it."

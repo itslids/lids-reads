@@ -4,6 +4,7 @@ author: "Virginia Woolf"
 goodreads_id: "18521"
 date: 2026-05-03
 rating: 5
+format: "physical"
 cover: "https://covers.openlibrary.org/b/isbn/9780156787338-L.jpg"
 genre: "Essay"
 verdict: "Brilliant, funny, absorbing, sharp, and witty."

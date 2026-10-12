@@ -4,6 +4,7 @@ author: "Sally Rooney"
 goodreads_id: "41057294"
 date: 2026-05-10
 rating: 3
+format: "audio"
 cover: "https://covers.openlibrary.org/b/isbn/9780571334650-L.jpg"
 genre: "Literary fiction"
 verdict: "I kind of didn't care about anyone in this book."

@@ -4,6 +4,7 @@ author: "Kaveh Akbar"
 goodreads_id: "139400713"
 date: 2026-03-13
 rating: 5
+format: "audio"
 cover: "https://covers.openlibrary.org/b/id/14562207-L.jpg"
 genre: "Literary fiction"
 verdict: "A nearly perfect little novel."

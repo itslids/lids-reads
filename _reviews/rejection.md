@@ -4,6 +4,7 @@ author: "Tony Tulathimutte"
 goodreads_id: "199635125"
 date: 2026-07-14
 rating: 5
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg"
 genre: "Short stories"
 verdict: "The secondhand embarrassment will kill you."

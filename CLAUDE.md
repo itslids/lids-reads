@@ -32,6 +32,7 @@ When converting a vault review into `_reviews/<slug>.md`:
 - Don't publish the **Reading Playlist**; Lindsey had playlists removed from the site (2026-10-06).
 - `goodreads_id` is the book's id from `_data/read.json` (the number in its Goodreads URL), quoted as a string. It is what swaps a book's placeholder card for the real review card, so always set it.
 - `genre` and `series` are optional, factual labels.
+- `format` is how she read it, using the same labels as the backup README's Format column: `audio`, `ebook`, `physical`, `ebook (library)`, `physical (library)`, or two joined with ` + ` (audio first). Goodreads doesn't record this, so ask her for it with every new review. The Stats page charts it.
 - `vibes` are short tags (shown as chips, searchable on the home page). Build them from phrases in her review and recommendation, not new descriptions.
 - `why` ("Why I picked it up") is only filled in when she states the reason herself: a **Why I picked it up** line in the vault, or a sentence in the review that says it. Otherwise leave it out.
 - `part_of` groups reviews into a reading project; reviews sharing a label link to each other. Current labels: "Tracking the International Booker Prize", "The Abhorsen series", "My Mona Awad micro-obsession", "Obsession stories". Reuse the exact label text.

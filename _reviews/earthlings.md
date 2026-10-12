@@ -4,6 +4,7 @@ author: "Sayaka Murata"
 goodreads_id: "50269327"
 date: 2026-07-24
 rating: 2.75
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580144195l/50269327._SY475_.jpg"
 genre: "Horror"
 verdict: "I do not enjoy surprise cannibalism."

@@ -4,6 +4,7 @@ author: "Sayaka Murata"
 goodreads_id: "36739755"
 date: 2026-05-30
 rating: 4
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg"
 genre: "Literary fiction"
 verdict: "175 bleak but surprisingly relatable pages."

@@ -4,6 +4,7 @@ author: "Jennette McCurdy"
 goodreads_id: "240424526"
 date: 2026-05-30
 rating: 1.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "Shallow, uncomfortable, but oddly satisfying descriptions of rampant consumerism."

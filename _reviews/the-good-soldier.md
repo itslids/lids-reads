@@ -4,6 +4,7 @@ author: "Ford Madox Ford"
 goodreads_id: "7628"
 date: 2026-08-22
 rating: 4
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1777366360l/7628._SY475_.jpg"
 genre: "Classic"
 verdict: "What a twisted love triangle (pentagon?)."

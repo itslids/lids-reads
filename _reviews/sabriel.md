@@ -5,6 +5,7 @@ goodreads_id: "518848"
 series: "Abhorsen #1"
 date: 2026-03-22
 rating: 5
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1293655399l/518848.jpg"
 genre: "Fantasy"
 verdict: "Such a creative and interesting fantasy world that I really savored it."

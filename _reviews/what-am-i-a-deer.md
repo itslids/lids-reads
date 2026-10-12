@@ -4,6 +4,7 @@ author: "Polly Barton"
 goodreads_id: "238176234"
 date: 2026-09-20
 rating: 3.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1752090797l/238176234._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "Was this good or just breathy?"

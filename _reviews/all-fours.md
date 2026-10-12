@@ -4,6 +4,7 @@ author: "Miranda July"
 goodreads_id: "197798168"
 date: 2026-06-12
 rating: 1.5
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1695913995l/197798168._SY475_.jpg"
 genre: "Literary fiction"
 verdict: "Like, what the hell did I just read?"

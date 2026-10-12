@@ -4,6 +4,7 @@ author: "Caro Claire Burke"
 goodreads_id: "238226942"
 date: 2026-07-04
 rating: 3
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg"
 genre: "Thriller"
 verdict: "The backstory was better than the book."

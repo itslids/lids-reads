@@ -4,6 +4,7 @@ author: "Elle Cosimano"
 goodreads_id: "53138099"
 date: 2026-02-17
 rating: 3
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659447956l/53138099._SY475_.jpg"
 genre: "Mystery"
 verdict: "Not great, but fine!"

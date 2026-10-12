@@ -4,6 +4,7 @@ author: "Johanne Lykke Holm"
 goodreads_id: "60372438"
 date: 2026-08-12
 rating: 3
+format: "audio"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1652965907l/60372438.jpg"
 genre: "Literary fiction"
 verdict: "I think I wanted more thriller and less magical realism."

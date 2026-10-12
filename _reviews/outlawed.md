@@ -4,6 +4,7 @@ author: "Anna North"
 goodreads_id: "46038742"
 date: 2026-01-10
 rating: 3
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589885553l/46038742._SY475_.jpg"
 genre: "Western"
 verdict: "Dystopian western where the badass outlaws are shes and theys!"
