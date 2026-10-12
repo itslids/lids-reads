@@ -257,10 +257,10 @@ permalink: /stats/
   function has(b, mode) { return FORMATS[b.id].indexOf(mode) > -1; }
   if (known.length) {
     rows("formats", MODES.map(function (m) { return bucket(m[1], function (b) { return FORMATS[b.id] && has(b, m[0]); }); }));
-    var two = known.filter(function (b) { return FORMATS[b.id].indexOf("+") > -1; }), lib = known.filter(function (b) { return has(b, "library"); });
+    var two = known.filter(function (b) { return FORMATS[b.id].indexOf("+") > -1; });
     document.getElementById("formats-note").textContent = "Immersive reading is a book read more than one way, like listening while following along in print. Those " +
       two.length + " also count under each of their formats. " +
-      plural(lib.length, "book") + " from the library." + (known.length < n ? " Format not recorded yet for " + plural(n - known.length, "book") + "." : "");
+      "Every book this year came from the library, in print or through the library app." + (known.length < n ? " Format not recorded yet for " + plural(n - known.length, "book") + "." : "");
     rows("format-ratings", MODES.map(function (m) {
       var list = known.filter(function (b) { return has(b, m[0]) && b.rating > 0; });
       var avg = list.length ? list.reduce(function (s, b) { return s + b.rating; }, 0) / list.length : 0;

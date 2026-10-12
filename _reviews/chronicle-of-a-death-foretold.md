@@ -4,7 +4,7 @@ author: "Gabriel García Márquez"
 goodreads_id: "674155"
 date: 2026-07-05
 rating: 4.75
-format: "physical (library)"
+format: "physical"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg"
 genre: "Classic"
 verdict: "Really perfect except it ends too abruptly."

@@ -4,7 +4,7 @@ author: "Shane Hawk"
 goodreads_id: "75293507"
 date: 2026-09-12
 rating: 3.5
-format: "audio + physical (library)"
+format: "audio + physical"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1685990593l/75293507.jpg"
 genre: "Short stories"
 verdict: "Admittedly, I'm bad at short story collections."

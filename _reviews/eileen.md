@@ -4,7 +4,7 @@ author: "Ottessa Moshfegh"
 goodreads_id: "23453099"
 date: 2026-09-27
 rating: 3
-format: "physical (library)"
+format: "physical"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1479545528l/23453099._SX318_.jpg"
 genre: "Literary fiction"
 verdict: "It's too mean."

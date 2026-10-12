@@ -4,7 +4,7 @@ author: "Claire Keegan"
 goodreads_id: "126262032"
 date: 2026-07-05
 rating: 3.5
-format: "physical (library)"
+format: "physical"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg"
 genre: "Short stories"
 verdict: "Keegan's signature brevity and everydayness."

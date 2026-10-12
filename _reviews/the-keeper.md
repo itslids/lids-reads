@@ -5,7 +5,7 @@ goodreads_id: "238227104"
 series: "Cal Hooper #3"
 date: 2026-07-08
 rating: 3.75
-format: "ebook (library)"
+format: "ebook"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757472113l/238227104._SY475_.jpg"
 genre: "Crime"
 verdict: "Her B- is everyone else's A."

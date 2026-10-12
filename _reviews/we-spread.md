@@ -4,7 +4,7 @@ author: "Iain Reid"
 goodreads_id: "60209475"
 date: 2026-10-04
 rating: 3
-format: "audio + physical (library)"
+format: "audio + physical"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644353572l/60209475.jpg"
 genre: "Literary thriller"
 verdict: "It could have been half as long."
