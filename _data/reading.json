@@ -5,6 +5,12 @@
   "read_this_year": 77,
   "currently_reading": [
     {
+      "title": "The Girls",
+      "author": "Emma Cline",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492065338l/26893819.jpg",
+      "link": "https://www.goodreads.com/book/show/26893819"
+    },
+    {
       "title": "Three Guineas",
       "author": "Virginia Woolf",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442463839l/18854._SY475_.jpg",
