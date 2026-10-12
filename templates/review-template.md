@@ -10,6 +10,7 @@ isbn: ""                  # optional: pulls the cover from Open Library
 genre: "Literary fiction" # optional
 verdict: "One line from the review that sums it up."
 quotes_heading: ""        # optional, e.g. "Favorite moment" (default: "Favorite quote(s)")
+quotes_intro: ""          # optional: a line of context shown above the quotes
 quotes:                   # optional
   - "\"A favorite quote.\""
 recommend_to: "Who should read it."
