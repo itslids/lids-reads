@@ -8,6 +8,8 @@ permalink: /about/
 
 Call me Lids. I read about 100 books a year and I have opinions about all of them, so here they are.
 
+Part of my reading challenge this year is reading everything from the library: physical, ebook, or audiobook. I have several library cards and I use them all very frequently!
+
 What I love: weird, dark, smart books about women who don't quite fit where they're planted. Translated fiction. A sad little uplift. Horror that actually means something. A main character who is kind of awful. History and crime.
 
 Favorite authors: Mona Awad, Ann Patchett, Donna Tartt, Tana French, Claire Keegan, Maggie O'Farrell, Ling Ma, Paul Tremblay.
