@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "26893819",
+      "title": "The Girls",
+      "author": "Emma Cline",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492065338l/26893819.jpg",
+      "rating": 3,
+      "date": "2026-10-12",
+      "pages": 355,
+      "published": 2016,
+      "avg_rating": 3.48
+    },
+    {
       "id": "40163119",
       "title": "Say Nothing",
       "author": "Patrick Radden Keefe",
@@ -593,7 +604,7 @@
       "date": "2026-03-26",
       "pages": 192,
       "published": 1973,
-      "avg_rating": 3.72
+      "avg_rating": 3.73
     },
     {
       "id": "44279110",
