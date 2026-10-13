@@ -1,9 +1,15 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "year": 2026,
   "goal": 100,
   "read_this_year": 78,
   "currently_reading": [
+    {
+      "title": "Fruit Fly",
+      "author": "Josh  Silver",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1774327034l/243596291._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/243596291"
+    },
     {
       "title": "Three Guineas",
       "author": "Virginia Woolf",
