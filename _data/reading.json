@@ -1,9 +1,15 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "year": 2026,
   "goal": 100,
   "read_this_year": 79,
   "currently_reading": [
+    {
+      "title": "May We Feed the King",
+      "author": "Rebecca  Perry",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1759331180l/242252419._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/242252419"
+    },
     {
       "title": "Switzy",
       "author": "Emma Cline",
@@ -15,12 +21,6 @@
       "author": "Daniel Kraus",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1778522455l/220160849._SY475_.jpg",
       "link": "https://www.goodreads.com/book/show/220160849"
-    },
-    {
-      "title": "Three Guineas",
-      "author": "Virginia Woolf",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442463839l/18854._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/18854"
     },
     {
       "title": "Land",
