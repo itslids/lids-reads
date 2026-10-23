@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "244969690",
+      "title": "Switzy",
+      "author": "Emma Cline",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1768016818l/244969690._SY475_.jpg",
+      "rating": 3,
+      "date": "2026-10-22",
+      "pages": 352,
+      "published": 2026,
+      "avg_rating": 4.06
+    },
+    {
       "id": "243596291",
       "title": "Fruit Fly",
       "author": "Josh Silver",
@@ -10,7 +21,7 @@
       "date": "2026-10-14",
       "pages": 372,
       "published": 2026,
-      "avg_rating": 4.13
+      "avg_rating": 4.12
     },
     {
       "id": "26893819",
@@ -21,7 +32,7 @@
       "date": "2026-10-12",
       "pages": 355,
       "published": 2016,
-      "avg_rating": 3.48
+      "avg_rating": 3.49
     },
     {
       "id": "40163119",
