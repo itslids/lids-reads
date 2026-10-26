@@ -11,7 +11,7 @@ genre: "Fantasy"
 verdict: "A supreme fantasy."
 quotes_heading: "Favorite moments"
 quotes:
-  - "The descriptions of the Abhorsen's home, the Seers' ice mountains, and crossing the threshold into Death."
+  - "The descriptions of the Abhorsen's home, the Clayr's ice mountains, and crossing the threshold into Death."
 recommend_to: "Young adults and adults who enjoy magic and sort of classic fantasy with Familiars and other talking beasts."
 vibes:
   - "original world-building"
