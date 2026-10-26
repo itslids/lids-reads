@@ -23,24 +23,28 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 
 ## Where reviews come from
 
-Lindsey writes her reviews in her Obsidian vault at `~/Desktop/MyWorld/AI-GEN/reading-reviews-2026.md`. Each book is a `## *Title* — Author` section with **Finished**, **Rating** (★), cover image, **My Review**, **Favorite quote(s)**, **Would recommend to**, and an optional **Reading Playlist**. Sections still containing `_Add your review here_` are unwritten stubs. Skip those.
+As of 2026-10-26 this repo is the gold copy of Lindsey's reviews. She no longer keeps them in Obsidian (the old vault file, `~/Desktop/MyWorld/AI-GEN/reading-reviews-2026.md`, is retired).
 
-When converting a vault review into `_reviews/<slug>.md`:
+The workflow:
+1. She finishes a book and marks it read on Goodreads. The daily Action adds it to `_data/read.json`, and the home page shows a "Review to come" card.
+2. A Claude scheduled task checks twice a day (about 7:36 AM and 6:36 PM Mountain) for books in `read.json` with no review, and reminds her in her Lids Reads Claude project.
+3. She writes the review there: rating, format, review, favorite quote(s), who she'd recommend it to, and optionally why she picked it up. Rough notes are fine.
+4. Claude turns it into `_reviews/<slug>.md` using the rules below, shows her the draft, and commits and pushes only after her explicit OK.
+
+When turning her review into `_reviews/<slug>.md`:
 - **Keep Lindsey's wording exactly.** Don't rewrite, polish or summarize her review, quotes or recommendations.
 - `verdict` is the short teaser line on the card: a sentence, or a trimmed piece of one, lifted word for word from her review. Cut it down to the sharpest part, but never add or change words.
-- `rating` comes from the number of ★. `date` is the Finished date (YYYY-MM-DD). Use the cover URL from the vault in `cover`.
+- `rating` comes from the number of ★. `date` is the Finished date (YYYY-MM-DD). Use the cover URL from `_data/read.json` in `cover`.
 - Don't publish the **Reading Playlist**; Lindsey had playlists removed from the site (2026-10-06).
 - `goodreads_id` is the book's id from `_data/read.json` (the number in its Goodreads URL), quoted as a string. It is what swaps a book's placeholder card for the real review card, so always set it.
 - `genre` and `series` are optional, factual labels.
-- `format` is how she read it, one of `audio`, `ebook`, `physical`, or two joined with ` + ` (audio first). Don't add "(library)": everything she reads comes from the library (print copies or the library app), so it isn't tracked per book. Goodreads doesn't record this, so ask her for it with every new review. The Stats page charts it.
+- `format` is how she read it, one of `audio`, `ebook`, `physical`, or two joined with ` + ` (audio first). Don't add "(library)": everything she reads comes from the library (print copies or the library app), so it isn't tracked per book. Goodreads doesn't record this, so ask her for it if she leaves it out. The Stats page charts it.
 - `vibes` are short tags (shown as chips, searchable on the home page). Build them from phrases in her review and recommendation, not new descriptions.
-- `why` ("Why I picked it up") is only filled in when she states the reason herself: a **Why I picked it up** line in the vault, or a sentence in the review that says it. Otherwise leave it out.
-- `part_of` groups reviews into a reading project; reviews sharing a label link to each other. Current labels: "Tracking the International Booker Prize", "The Abhorsen series", "My Mona Awad micro-obsession", "Obsession stories". Reuse the exact label text.
-- Published so far: every written review in the vault as of 2026-10-06 (18). Check `_reviews/` against the vault for new ones.
+- `why` ("Why I picked it up") is only filled in when she states the reason herself: a "why I picked it up" line in what she sends, or a sentence in the review that says it. Otherwise leave it out.
+- `part_of` groups reviews into a reading project; reviews sharing a label link to each other. Current labels: "Tracking the International Booker Prize", "The Abhorsen series", "My Mona Awad micro-obsession", "My Claire Keegan obsession", "The Maze Runner series", "Obsession stories". Reuse the exact label text.
 
 ## Conventions
 
 - Lindsey works in Mountain Time.
 - Never put her children's names on the site (her instruction, 2026-10-08). Write "my kid", not "my daughter" or "my son" (her instruction, 2026-10-08).
-- The vault has its own CLAUDE.md; follow it when working inside the vault. This repo should only ever read from the vault, never write to it.
 - After changes: commit with a clear message and push to `main`. Pages redeploys in a minute or two.
