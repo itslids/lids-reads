@@ -1,9 +1,15 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "year": 2026,
   "goal": 100,
   "read_this_year": 80,
   "currently_reading": [
+    {
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1722944318l/6149._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/6149"
+    },
     {
       "title": "May We Feed the King",
       "author": "Rebecca  Perry",
