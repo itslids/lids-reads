@@ -20,7 +20,7 @@ vibes:
 
 A really beautifully written story about a young Iranian-American man searching for meaning in life, feeling displaced and disconnected, with a poet's heart. It's quite funny and sentimental and strange.
 
-This was Goldfinch vibes, but with beautiful and poetic prose written by a real poet, a much more interesting and emotionally vast main character, and a more digestible page count. Cyrus is a little depressed but also so funny. He was genuine, warm, weird, and lovable.
+This was *The Goldfinch* vibes, but with beautiful and poetic prose written by a real poet, a much more interesting and emotionally vast main character, and a more digestible page count. Cyrus is a little depressed but also so funny. He was genuine, warm, weird, and lovable.
 
 The narrator of the audiobook, Arian Moayed, had this quality of youth and incandescence and a balance of heaviness and lightness. It was perfect.
 

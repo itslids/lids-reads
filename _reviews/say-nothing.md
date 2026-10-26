@@ -19,6 +19,6 @@ vibes:
   - "flawed and fraught"
 ---
 
-This was easily one of my favorite books of the year. This story is incredible: the body of a missing widowed mother of ten is found 40 years after the fact, and Patrick Radden Keefe impeccably uses this event to unpack the charged history (and present) of the Troubles in Northern Ireland.
+This was easily one of my favorite books of the year. This story is incredible: the body of a missing widowed mother of ten is found about 30 years after the fact, and Patrick Radden Keefe impeccably uses this event to unpack the charged history (and present) of the Troubles in Northern Ireland.
 
 He somehow manages to keep it literary while also pulling from a blend of factual records and, most compellingly, firsthand "oral histories" that may or may not be flawed, fraught, and misleading.

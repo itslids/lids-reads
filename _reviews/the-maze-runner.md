@@ -19,6 +19,6 @@ part_of:
 
 Read this with my kid and enjoyed it.
 
-There were some definite writing issues: the whole plot is basically revealed in one character's monologue which is annoying.
+There were some definite writing issues: the whole plot is basically revealed in one character's monologue, which is annoying.
 
 But it was fun, creative, and enjoyable to listen to with my kid. She's already on to the next one!

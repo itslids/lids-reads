@@ -17,6 +17,6 @@ why: "My work friend recommended this book."
 
 My work friend recommended this book—I loved it! It's my first Maggie O'Farrell and I'm hooked.
 
-I did the "immersive reading" thing, i.e. reading the physical book and listening to the audiobook at the same time. Sublime!
+I did the "immersive reading" thing, i.e., reading the physical book and listening to the audiobook at the same time. Sublime!
 
 I really like a well-done historical fiction "reimagining of mystery or tragedy" thing.
