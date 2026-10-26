@@ -16,7 +16,7 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 | `_data/read_manual.json` | Hand-kept list of books finished this year that aren't on Goodreads (title, author, date, rating, cover). The script merges them into `read.json` and the goal count, and skips one once Goodreads lists the same title |
 | `_data/reading.json` | Currently-reading shelf + yearly goal, rendered on the home page |
 | `scripts/update_reading.py` | Refreshes `_data/reading.json` from Lindsey's public Goodreads RSS shelves (user 6818060) |
-| `.github/workflows/currently-reading.yml` | Runs that script daily at about 7:17 AM Mountain and commits any change |
+| `.github/workflows/currently-reading.yml` | Runs that script twice a day, at about 7:17 AM and 6:17 PM Mountain, and commits any change |
 | `_layouts/`, `_includes/`, `assets/style.css` | Site design |
 | `stats.html` | The Stats page: charts and numbers computed in the browser from `_data/read.json` (books, pages, pace, ratings, authors) |
 | `about.md` | The About page. Lindsey approved this wording line by line (2026-10-07); don't reword it without her |
@@ -26,7 +26,7 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 As of 2026-10-26 this repo is the gold copy of Lindsey's reviews. She no longer keeps them in Obsidian (the old vault file, `~/Desktop/MyWorld/AI-GEN/reading-reviews-2026.md`, is retired).
 
 The workflow:
-1. She finishes a book and marks it read on Goodreads. The daily Action adds it to `_data/read.json`, and the home page shows a "Review to come" card.
+1. She finishes a book and marks it read on Goodreads. The Action (twice a day) adds it to `_data/read.json`, and the home page shows a "Review to come" card.
 2. A Claude scheduled task checks twice a day (about 7:36 AM and 6:36 PM Mountain) for books in `read.json` with no review, and reminds her in her Lids Reads Claude project.
 3. She writes the review there: rating, format, review, favorite quote(s), who she'd recommend it to, and optionally why she picked it up. Rough notes are fine.
 4. Claude turns it into `_reviews/<slug>.md` using the rules below, shows her the draft, and commits and pushes only after her explicit OK.

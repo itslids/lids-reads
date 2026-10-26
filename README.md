@@ -18,4 +18,4 @@ New reviews also appear in the RSS feed at `/feed/reviews.xml`.
 
 ## Currently reading
 
-The "Currently reading" shelf and the yearly goal on the home page come from `_data/reading.json`. A GitHub Action (`.github/workflows/currently-reading.yml`) refreshes that file every morning from Lindsey's public Goodreads shelves, using `scripts/update_reading.py`. To refresh it on demand, open **Actions → Update currently reading → Run workflow**.
+The "Currently reading" shelf and the yearly goal on the home page come from `_data/reading.json`. A GitHub Action (`.github/workflows/currently-reading.yml`) refreshes that file twice a day (morning and evening) from Lindsey's public Goodreads shelves, using `scripts/update_reading.py`. To refresh it on demand, open **Actions → Update currently reading → Run workflow**.

@@ -2,7 +2,8 @@ name: Update currently reading
 
 on:
   schedule:
-    - cron: "17 13 * * *"   # daily, about 7:17 AM Mountain
+    - cron: "17 13 * * *"   # about 7:17 AM Mountain
+    - cron: "17 0 * * *"    # about 6:17 PM Mountain, before the evening review reminder
   workflow_dispatch:         # lets you run it by hand from the Actions tab
 
 permissions:
