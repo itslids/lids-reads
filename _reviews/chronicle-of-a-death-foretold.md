@@ -14,4 +14,4 @@ vibes:
   - "journalists at heart"
 ---
 
-This book is really perfect except it ends too abruptly (minus one-quarter of a star). Reading this made me wonder about GGM's real life nonfiction and I learned he was actually a prolific journalist. I don't know why this surprised me—so many good fiction writers are journalists at heart. I've added his nonfiction essays to my reading list.
+This book is really perfect except it ends too abruptly (minus one-quarter of a star). Reading this made me wonder about GGM's real-life nonfiction and I learned he was actually a prolific journalist. I don't know why this surprised me—so many good fiction writers are journalists at heart. I've added his nonfiction essays to my reading list.

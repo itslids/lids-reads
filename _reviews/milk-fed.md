@@ -23,4 +23,4 @@ Rachel is a calorie-counting twenty-something in LA who falls for Miriam, the gi
 
 I love a main character who is flawed but relatable in a "do I do this?" way. I liked *My Year of Rest and Relaxation* for the same reason. Like all the Hannah Horvaths before her, Rachel made me think: wow, I too am a millennial terror.
 
-But the "journey" was shallow. I never felt the obsession with the froyo girl happening. It just happened, and then it was the plot of the entire book. I wanted a more drawn out "falling for Miriam" thread. The character connection was there but her character arc didn't cut it.
+But the "journey" was shallow. I never felt the obsession with the froyo girl happening. It just happened, and then it was the plot of the entire book. I wanted a more drawn-out "falling for Miriam" thread. The character connection was there but her character arc didn't cut it.

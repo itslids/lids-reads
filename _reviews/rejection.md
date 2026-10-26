@@ -15,7 +15,7 @@ vibes:
   - "cleverly designed stories"
 ---
 
-How I adored this book! But let me be clear up front, it's not for the faint of heart. It's grotesque and perverted and the secondhand embarrassment will kill you.
+How I adored this book! But let me be clear up front: it's not for the faint of heart. It's grotesque and perverted and the secondhand embarrassment will kill you.
 
 But I loved it so much, and the writing was so good and the stories were so cleverly designed.
 

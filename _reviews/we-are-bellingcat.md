@@ -10,7 +10,7 @@ genre: "Nonfiction"
 verdict: "A great origin story."
 quotes:
   - "\"We have no agenda but we do have a credo: evidence exists.\""
-recommend_to: "Would recommend specifically to people interested in the last decade+ evolution of open-source research and journalism, or specific fans of Bellingcat."
+recommend_to: "Specifically people interested in the last decade+ evolution of open-source research and journalism, or specific fans of Bellingcat."
 vibes:
   - "open-source research"
   - "journalism"

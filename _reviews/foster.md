@@ -15,4 +15,4 @@ part_of:
   - "My Claire Keegan obsession"
 ---
 
-I'm obsessed with Claire Keegan now. This one is even better than Small Things Like These, in my opinion. It's so short, but it's everything it needs to be to make you feel moved.
+I'm obsessed with Claire Keegan now. This one is even better than *Small Things Like These*, in my opinion. It's so short, but it's everything it needs to be to make you feel moved.

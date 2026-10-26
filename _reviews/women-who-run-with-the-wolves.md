@@ -11,7 +11,7 @@ verdict: "Not my vibe."
 vibes:
   - "weird girls doing weird shit"
   - "dated"
-  - "weirdly self helpy"
+  - "weirdly self-helpy"
 why: "It kept coming up as a recommendation given my usual reading preferences (\"weird girls doing weird shit\")."
 ---
 
@@ -19,6 +19,6 @@ This book kept coming up as a recommendation given my usual reading preferences 
 
 It feels dated, like feminism has evolved so much in the last 40 years that the self-important tone of this book is hard to take seriously.
 
-It's also weirdly self helpy. Like, "don't pick the wrong mate like La Llorona."
+It's also weirdly self-helpy. Like, "don't pick the wrong mate like La Llorona."
 
 Not my vibe.
