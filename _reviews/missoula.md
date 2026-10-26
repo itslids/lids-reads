@@ -18,4 +18,4 @@ The horrific court proceedings, the shoddy police interviews, the woman-hating f
 
 If anyone ever asks why a sexual assault victim didn't do XYZ, they should have to listen to this book on headphones while walking through the grocery store and making eye contact with neighbors, friends, and other "normal people."
 
-A lot of reviews say this book is eye opening. My eyes have been open on this topic for a long time. But I'm thankful for good journalists who will do the hard work of putting this horrific shit in one place for people to have their eyes opened.
+A lot of reviews say this book is eye-opening. My eyes have been open on this topic for a long time. But I'm thankful for good journalists who will do the hard work of putting this horrific shit in one place for people to have their eyes opened.

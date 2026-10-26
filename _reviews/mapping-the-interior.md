@@ -13,9 +13,9 @@ quotes:
 vibes:
   - "short horror novella"
   - "killer sentence structure"
-  - "a little off balance"
+  - "a little off-balance"
 ---
 
-Short horror novella. SGJ is a true talent—his horror is the top notch and his sentence structure is so killer. My brain always feels a little off balance reading his work. Like he makes me work for it as a reader. Impossibly skilled.
+Short horror novella. SGJ is a true talent—his horror is top-notch and his sentence structure is so killer. My brain always feels a little off-balance reading his work. Like he makes me work for it as a reader. Impossibly skilled.
 
 I loved this one and felt he was really at his very best here.

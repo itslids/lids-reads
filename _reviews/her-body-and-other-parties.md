@@ -13,4 +13,4 @@ vibes:
   - "272 Law & Order: SVU episodes"
 ---
 
-Maybe I would have liked this 10 years ago? Mostly really did not. Undeniably impressed by the weird fiction retelling of 272 Law & Order: SVU episodes though…?
+Maybe I would have liked this 10 years ago? Mostly really did not. Undeniably impressed by the weird fiction retelling of 272 *Law & Order: SVU* episodes though…?

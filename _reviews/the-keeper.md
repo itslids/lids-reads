@@ -18,7 +18,7 @@ vibes:
 
 I've been a devoted Tana French fan for almost 20 years, so I have *thawts* on this one. Sorry! 👩🏻‍💻
 
-Okay. First of all. Elephant in the room. We all keep waiting for Tana French to be as good as she was in the Broken Harbor/Faithful Place days and it hasn't happened with this Cal Hooper series, so I feel like I gotta get that out there first.
+Okay. First of all. Elephant in the room. We all keep waiting for Tana French to be as good as she was in the *Broken Harbor*/*Faithful Place* days and it hasn't happened with this Cal Hooper series, so I feel like I gotta get that out there first.
 
 That being said, her B- is everyone else's A. So I will keep reading her.
 

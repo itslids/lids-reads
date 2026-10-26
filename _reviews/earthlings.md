@@ -14,6 +14,6 @@ vibes:
   - "surprise cannibalism"
 ---
 
-I don't think you should read this unless you like grotesque domestic horror. I don't but I fell into this subgenre because I liked a different Sayaka Murata book.
+I don't think you should read this unless you like grotesque domestic horror. I don't, but I fell into this subgenre because I liked a different Sayaka Murata book.
 
 I loved the premise of this book: a child imagines she's an alien to cope with trauma. But it got too dark and strange for me. Also, *spoilerish*, I do not enjoy surprise cannibalism. No thank you. Leave me out.

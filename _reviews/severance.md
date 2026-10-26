@@ -14,6 +14,6 @@ vibes:
   - "the value of work and community"
 ---
 
-This was un-put-downable for me. The atmosphere, the backstory and the way the plot moved around in time, were all excellent. I'll be thinking about this for a while: the value of work and community, or not. Also, this book is like if Station Eleven didn't annoy me with melodrama.
+This was un-put-downable for me. The atmosphere, the backstory, and the way the plot moved around in time were all excellent. I'll be thinking about this for a while: the value of work and community, or not. Also, this book is like if *Station Eleven* didn't annoy me with melodrama.
 
 Incredible and eerie that this was written pre-pandemic.

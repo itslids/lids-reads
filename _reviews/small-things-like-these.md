@@ -7,7 +7,7 @@ rating: 4
 format: "physical"
 cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734631773l/58662236._SX318_.jpg"
 genre: "Literary fiction"
-verdict: "Christmas Carol meets \"Hills Like White Elephants\"-era Hemingway but Irish."
+verdict: "A Christmas Carol meets \"Hills Like White Elephants\"-era Hemingway but Irish."
 vibes:
   - "a perfect little machine to move you"
   - "not a word wasted"
@@ -18,7 +18,7 @@ part_of:
 
 George Saunders referred to this book as "a perfect little machine to move you" and I think that's such a good description that I could never top.
 
-This was Christmas Carol meets "Hills Like White Elephants"-era Hemingway but Irish.
+This was *A Christmas Carol* meets "Hills Like White Elephants"-era Hemingway but Irish.
 
 Moral of the story: anyone can do the good but hard thing. It's a choice.
 

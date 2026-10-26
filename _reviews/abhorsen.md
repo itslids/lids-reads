@@ -22,4 +22,4 @@ part_of:
   - "The Abhorsen series"
 ---
 
-I adored this series. The world-building is so original and immersive, but not so outrageous that I couldn't imagine being in it. I loved the devotion of the Disreputable Dog to Lirael, and I'll be thinking even about Moggett, Sabriel, and Sam for a long time. This book really had the ability to stick in my thoughts as a supreme fantasy. I'd love to see it made into a movie or television series.
+I adored this series. The world-building is so original and immersive, but not so outrageous that I couldn't imagine being in it. I loved the devotion of the Disreputable Dog to Lirael, and I'll be thinking even about Mogget, Sabriel, and Sam for a long time. This book really had the ability to stick in my thoughts as a supreme fantasy. I'd love to see it made into a movie or television series.
