@@ -27,7 +27,7 @@ As of 2026-10-26 this repo is the gold copy of Lindsey's reviews. She no longer 
 
 The workflow:
 1. She finishes a book and marks it read on Goodreads. The Action (twice a day) adds it to `_data/read.json`, and the home page shows a "Review to come" card.
-2. A Claude scheduled task checks twice a day (about 7:36 AM and 6:36 PM Mountain) for books in `read.json` with no review, and reminds her in her Lids Reads Claude project.
+2. A Claude scheduled task checks twice a day (about 12:36 PM and 9:36 PM Mountain, after the Action's runs land; GitHub often starts scheduled runs hours late) for books in `read.json` with no review, and reminds her in her Lids Reads Claude project.
 3. She writes the review there: rating, format, review, favorite quote(s), who she'd recommend it to, and optionally why she picked it up. Rough notes are fine.
 4. Claude turns it into `_reviews/<slug>.md` using the rules below, shows her the draft, and commits and pushes only after her explicit OK.
 
