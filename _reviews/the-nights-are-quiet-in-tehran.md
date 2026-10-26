@@ -11,7 +11,7 @@ verdict: "A beautiful book spanning several decades."
 quotes:
   - "\"The nights are quiet in Tehran. The days so loud. The people in the house so loud. Talking so loudly about unimportant things, and hesitating so loudly about important things.\""
   - "\"If I were a mother, a sister, an aunt, I would be sitting there doing the same; I would take every opportunity to kiss these little souls, because they’re so joyful, and no matter what is happening outside, no matter what they’re learning at school, no matter that their schoolbooks are suddenly endorsing the opposite of what they did a few weeks previously, no matter if a while ago their parents were still spending their nights on the roof and their days on the streets, returning with bloodied clothes — the children still spend their days laughing, questioning, eating, interrupting, sleeping. They deserve all the kisses in the world, I think, but maybe the life that is just around the corner, still wavering a little — maybe that is the much greater gift.\""
-recommend_to: "Would recommend for anyone who enjoys a multi-generational, multi-perspective story about family love and identity."
+recommend_to: "Anyone who enjoys a multi-generational, multi-perspective story about family love and identity."
 vibes:
   - "multi-generational"
   - "multi-perspective"
