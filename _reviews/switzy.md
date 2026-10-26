@@ -18,7 +18,7 @@ vibes:
   - "descent into memory loss"
 ---
 
-A once larger-than-life businessman who is now fading to Alzheimer's goes on a last journey to end his life in Switzerland (Switzy). Like if boy school repression, *The Wolf of Wall Street*, and *Dead Poets Society* were rolled into a sad version of the "Beard After Hours" Amsterdam episode of *Ted Lasso*.
+A once larger-than-life businessman who is now fading to Alzheimer's goes on a last journey to end his life in Switzerland (Switzy). Like if boy school repression, *The Wolf of Wall Street*, and *Dead Poets Society* were rolled into a sad version of the "Sunflowers" Amsterdam episode of *Ted Lasso*.
 
 Surprisingly funny, which I really enjoyed, but I think this was trying to move me in a George Saunders-esque way and it didn't do that.
 
