@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "220160849",
+      "title": "Angel Down",
+      "author": "Daniel Kraus",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1778522455l/220160849._SY475_.jpg",
+      "rating": 4,
+      "date": "2026-10-26",
+      "pages": 285,
+      "published": 2025,
+      "avg_rating": 4.01
+    },
+    {
       "id": "244969690",
       "title": "Switzy",
       "author": "Emma Cline",

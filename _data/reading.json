@@ -2,8 +2,20 @@
   "updated": "2026-10-26",
   "year": 2026,
   "goal": 100,
-  "read_this_year": 80,
+  "read_this_year": 81,
   "currently_reading": [
+    {
+      "title": "Milkman",
+      "author": "Anna Burns",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860.jpg",
+      "link": "https://www.goodreads.com/book/show/36047860"
+    },
+    {
+      "title": "Red Rising",
+      "author": "Pierce Brown",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461354651l/15839976._SY475_.jpg",
+      "link": "https://www.goodreads.com/book/show/15839976"
+    },
     {
       "title": "Beloved",
       "author": "Toni Morrison",
@@ -15,12 +27,6 @@
       "author": "Rebecca  Perry",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1759331180l/242252419._SY475_.jpg",
       "link": "https://www.goodreads.com/book/show/242252419"
-    },
-    {
-      "title": "Angel Down",
-      "author": "Daniel Kraus",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1778522455l/220160849._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/220160849"
     },
     {
       "title": "Land",
