@@ -1,0 +1,27 @@
+name: Goodreads feed probe (temporary)
+
+on:
+  push:
+    branches: [claude/goodreads-feed-probe]
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try Goodreads addresses
+        run: |
+          UA="Mozilla/5.0"
+          for u in \
+            "https://www.goodreads.com/review/list_rss/6818060?shelf=currently-reading" \
+            "https://www.goodreads.com/review/list_rss/6818060?shelf=read" \
+            "https://www.goodreads.com/review/list_rss/6818060?shelf=%23ALL%23" \
+            "https://www.goodreads.com/review/list_rss/6818060" \
+            "https://www.goodreads.com/user/updates_rss/6818060" \
+            "https://www.goodreads.com/user/show/6818060" \
+            "https://www.goodreads.com/user/show/6818060-lindsyclopedia" \
+            "https://www.goodreads.com/lindsyclopedia" \
+            "https://www.goodreads.com/review/list/6818060?shelf=currently-reading" ; do
+            echo "=== $u"
+            curl -s -A "$UA" -o body.txt -L -w 'status=%{http_code} final=%{url_effective} redirects=%{num_redirects}\n' "$u"
+            head -c 400 body.txt | tr '\n' ' '; echo; echo
+          done
