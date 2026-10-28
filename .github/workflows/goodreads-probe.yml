@@ -8,18 +8,15 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Dump profile page sections
+      - name: Try Lindsey's link and feed variants
         run: |
-          curl -s -A "Mozilla/5.0" -L -o profile.html "https://www.goodreads.com/user/show/6818060"
-          wc -c profile.html
-          python3 - <<'PY'
-          import re
-          h = open("profile.html", encoding="utf-8").read()
-          for key in ["currently-reading", "currentlyReading", "Currently Reading", "challenge", "/book/show/"]:
-              print("##", key, h.count(key))
-          i = h.find("currently-reading")
-          print(h[max(0, i-3000):i+6000])
-          j = h.find("challenge")
-          print("#### CHALLENGE")
-          print(h[max(0, j-500):j+1500])
-          PY
+          for u in \
+            "https://www.goodreads.com/review/list/6818060-l?shelf=read" \
+            "https://www.goodreads.com/review/list/6818060-l?shelf=currently-reading" \
+            "https://www.goodreads.com/review/list_rss/6818060-l?shelf=read" \
+            "https://www.goodreads.com/review/list_rss/6818060-l?shelf=currently-reading" \
+            "https://www.goodreads.com/review/list_rss/6818060?shelf=read&key=" ; do
+            echo "=== $u"
+            curl -s -A "Mozilla/5.0" -o body.txt -L -w 'status=%{http_code} final=%{url_effective}\n' "$u"
+            python3 -c "import re;h=open('body.txt',encoding='utf-8',errors='replace').read();t=re.search(r'<title>(.*?)</title>',h,re.S);print('title:',t.group(1).strip() if t else None,'| items:',h.count('<item>'),'| book rows:',h.count('class=\"bookalike review\"'))"
+          done
