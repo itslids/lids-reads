@@ -8,20 +8,18 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Try Goodreads addresses
+      - name: Dump profile page sections
         run: |
-          UA="Mozilla/5.0"
-          for u in \
-            "https://www.goodreads.com/review/list_rss/6818060?shelf=currently-reading" \
-            "https://www.goodreads.com/review/list_rss/6818060?shelf=read" \
-            "https://www.goodreads.com/review/list_rss/6818060?shelf=%23ALL%23" \
-            "https://www.goodreads.com/review/list_rss/6818060" \
-            "https://www.goodreads.com/user/updates_rss/6818060" \
-            "https://www.goodreads.com/user/show/6818060" \
-            "https://www.goodreads.com/user/show/6818060-lindsyclopedia" \
-            "https://www.goodreads.com/lindsyclopedia" \
-            "https://www.goodreads.com/review/list/6818060?shelf=currently-reading" ; do
-            echo "=== $u"
-            curl -s -A "$UA" -o body.txt -L -w 'status=%{http_code} final=%{url_effective} redirects=%{num_redirects}\n' "$u"
-            head -c 400 body.txt | tr '\n' ' '; echo; echo
-          done
+          curl -s -A "Mozilla/5.0" -L -o profile.html "https://www.goodreads.com/user/show/6818060"
+          wc -c profile.html
+          python3 - <<'PY'
+          import re
+          h = open("profile.html", encoding="utf-8").read()
+          for key in ["currently-reading", "currentlyReading", "Currently Reading", "challenge", "/book/show/"]:
+              print("##", key, h.count(key))
+          i = h.find("currently-reading")
+          print(h[max(0, i-3000):i+6000])
+          j = h.find("challenge")
+          print("#### CHALLENGE")
+          print(h[max(0, j-500):j+1500])
+          PY
