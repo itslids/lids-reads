@@ -1,51 +1,72 @@
 #!/usr/bin/env python3
 """
-update_reading.py: refreshes the "Currently reading" section of Lids Reads.
+update_reading.py: refreshes the "Currently reading" shelf and the books-read list of Lids Reads.
 
-Pulls Lindsey's public Goodreads shelves via RSS (the same feeds her Obsidian
-update_reading.py uses) and writes _data/reading.json, which the home page renders.
-Runs daily via .github/workflows/currently-reading.yml, or by hand:
-    python scripts/update_reading.py
+Reads Lindsey's Hardcover shelves through the Hardcover API (Goodreads turned off its
+RSS feeds in October 2026) and writes _data/reading.json and _data/read.json.
+Needs her Hardcover API key in the HARDCOVER_TOKEN environment variable (a repository
+secret on GitHub). Runs twice a day via .github/workflows/currently-reading.yml, or by hand:
+    HARDCOVER_TOKEN=... python scripts/update_reading.py
 """
 import json
 import os
 import re
+import sys
+import time
+import urllib.error
 import urllib.request
-import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
-GOODREADS_USER_ID = "6818060"
+API = "https://api.hardcover.app/v1/graphql"
 GOAL = 100
 YEAR = datetime.now(timezone.utc).year
 OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "reading.json")
 READ_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "read.json")
 MANUAL = os.path.join(os.path.dirname(__file__), "..", "_data", "read_manual.json")
 
+CURRENTLY_READING, READ = 2, 3   # Hardcover status ids
 
-def fetch(shelf, page=1):
-    url = (f"https://www.goodreads.com/review/list_rss/{GOODREADS_USER_ID}"
-           f"?shelf={shelf}&per_page=200&page={page}")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        root = ET.fromstring(r.read())
-    items = []
-    for it in root.find("channel").findall("item"):
-        g = lambda t: ((it.find(t).text or "").strip() if it.find(t) is not None else "")
-        item = {k: g(k) for k in ("title", "author_name", "book_large_image_url",
-                                  "book_image_url", "book_id", "user_read_at", "user_date_added",
-                                  "user_rating", "average_rating", "book_published")}
-        pages = it.find("book/num_pages")
-        item["num_pages"] = (pages.text or "").strip() if pages is not None else ""
-        items.append(item)
-    return items
+BOOK_FIELDS = "id title slug pages release_year rating cached_contributors image { url }"
+QUERY = """
+query($since: date!) {
+  me {
+    current: user_books(where: {status_id: {_eq: %d}}, order_by: {updated_at: desc}) {
+      book { %s }
+    }
+    finished: user_books(where: {status_id: {_eq: %d}, last_read_date: {_gte: $since}},
+                         order_by: {last_read_date: desc}) {
+      rating last_read_date
+      book { %s }
+    }
+  }
+}
+""" % (CURRENTLY_READING, BOOK_FIELDS, READ, BOOK_FIELDS)
 
 
-def parse_date(s):
-    try:
-        return datetime.strptime(s, "%a, %d %b %Y %H:%M:%S %z")
-    except (ValueError, TypeError):
-        return None
+def fetch():
+    token = os.environ.get("HARDCOVER_TOKEN", "").strip()
+    if not token:
+        sys.exit("HARDCOVER_TOKEN is not set")
+    if not token.lower().startswith("bearer "):
+        token = "Bearer " + token
+    body = json.dumps({"query": QUERY, "variables": {"since": f"{YEAR}-01-01"}}).encode()
+    req = urllib.request.Request(API, data=body, headers={
+        "content-type": "application/json", "authorization": token, "user-agent": "lids-reads"})
+    for attempt in range(3):   # ride out a brief Hardcover hiccup
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                res = json.load(r)
+            break
+        except (urllib.error.URLError, TimeoutError) as e:
+            if attempt == 2:
+                raise
+            print(f"Hardcover request failed ({e}), retrying")
+            time.sleep(20)
+    if res.get("errors"):
+        sys.exit(f"Hardcover API error: {res['errors']}")
+    me = res["data"]["me"]
+    return me[0] if isinstance(me, list) else me
 
 
 def clean_title(t):
@@ -53,40 +74,44 @@ def clean_title(t):
     return t.split(":")[0].strip()                    # drop subtitles
 
 
-def num(s):
-    m = re.search(r"\d+", s or "")
-    return int(m.group()) if m else 0
+def author(book):
+    for c in book.get("cached_contributors") or []:
+        name = (c.get("author") or {}).get("name")
+        if name:
+            return " ".join(name.split())
+    return ""
 
 
-def cover(item):
-    url = item["book_large_image_url"] or item["book_image_url"]
-    return "" if (not url or "nophoto" in url) else url
+def cover(book):
+    return (book.get("image") or {}).get("url") or ""
 
 
 def main():
-    current = fetch("currently-reading")
-    current.sort(key=lambda b: parse_date(b["user_date_added"]) or datetime.min.replace(tzinfo=timezone.utc),
-                 reverse=True)
+    me = fetch()
 
-    read_count, page, finished = 0, 1, []
-    while True:
-        books = fetch("read", page)
-        dates = [parse_date(b["user_read_at"]) for b in books]
-        read_count += sum(1 for d in dates if d and d.year == YEAR)
-        finished += [(d, b) for d, b in zip(dates, books) if d and d.year == YEAR]
-        known = [d for d in dates if d]
-        if len(books) < 200 or (known and min(known).year < YEAR):
-            break
-        page += 1
+    # Reviews link to books by the id in read.json. Books that were already listed keep
+    # their old (Goodreads) id so existing reviews stay matched; new ones get "hc-<id>".
+    old = {}
+    if os.path.exists(READ_OUT):
+        for b in json.load(open(READ_OUT)).get("books", []):
+            old[b["title"].lower()] = b
 
-    # books finished this year that Goodreads doesn't have; dropped once the feed lists them
-    books = [
-        {"id": b["book_id"], "title": clean_title(b["title"]), "author": " ".join(b["author_name"].split()),
-         "cover": cover(b), "rating": int(b["user_rating"] or 0), "date": d.strftime("%Y-%m-%d"),
-         "pages": num(b["num_pages"]), "published": num(b["book_published"]),
-         "avg_rating": float(b["average_rating"] or 0)}
-        for d, b in finished
-    ]
+    books = []
+    for ub in me["finished"]:
+        bk = ub["book"]
+        title = clean_title(bk["title"])
+        prev = old.get(title.lower(), {})
+        books.append({
+            "id": prev.get("id") or f"hc-{bk['id']}",
+            "title": title, "author": author(bk),
+            "cover": prev.get("cover") or cover(bk),
+            "rating": ub["rating"] or 0, "date": ub["last_read_date"],
+            "pages": bk.get("pages") or prev.get("pages") or 0,
+            "published": bk.get("release_year") or prev.get("published") or 0,
+            "avg_rating": round(bk.get("rating") or 0, 2),
+        })
+
+    # books finished this year that Hardcover doesn't have; dropped once Hardcover lists them
     if os.path.exists(MANUAL):
         seen = {b["title"].lower() for b in books}
         for m in json.load(open(MANUAL)):
@@ -97,17 +122,16 @@ def main():
                               "pages": m.get("pages", 0), "published": m.get("published", 0),
                               "avg_rating": 0})
     books.sort(key=lambda b: b["date"], reverse=True)
-    read_count = len(books)
 
     data = {
         "updated": datetime.now(ZoneInfo("America/Denver")).strftime("%Y-%m-%d"),  # Lindsey's day, not UTC
         "year": YEAR,
         "goal": GOAL,
-        "read_this_year": read_count,
+        "read_this_year": len(books),
         "currently_reading": [
-            {"title": clean_title(b["title"]), "author": b["author_name"], "cover": cover(b),
-             "link": f"https://www.goodreads.com/book/show/{b['book_id']}" if b["book_id"] else ""}
-            for b in current
+            {"title": clean_title(ub["book"]["title"]), "author": author(ub["book"]), "cover": cover(ub["book"]),
+             "link": f"https://hardcover.app/books/{ub['book']['slug']}" if ub["book"].get("slug") else ""}
+            for ub in me["current"]
         ],
     }
     with open(OUT, "w") as f:
@@ -115,11 +139,10 @@ def main():
         f.write("\n")
     # every book finished this year, newest first; the home page shows a placeholder card
     # for any that has no review yet (matched to reviews by goodreads_id)
-    read = {"year": YEAR, "books": books}
     with open(READ_OUT, "w") as f:
-        json.dump(read, f, indent=2, ensure_ascii=False)
+        json.dump({"year": YEAR, "books": books}, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    print(f"{len(data['currently_reading'])} currently reading, {read_count} read in {YEAR}")
+    print(f"{len(data['currently_reading'])} currently reading, {len(books)} read in {YEAR}")
 
 
 if __name__ == "__main__":
