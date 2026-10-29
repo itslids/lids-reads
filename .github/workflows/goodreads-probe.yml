@@ -8,40 +8,23 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Test Hardcover API
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/hardcover-sync
+      - name: Dry run of the Hardcover script (no commit)
         env:
           HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
         run: |
+          cp _data/read.json /tmp/old_read.json
+          python scripts/update_reading.py
           python3 - <<'PY'
-          import json, os, urllib.request
-          tok = os.environ.get("HARDCOVER_TOKEN", "").strip()
-          print("token present:", bool(tok), "starts with Bearer:", tok.lower().startswith("bearer"))
-          if not tok.lower().startswith("bearer"):
-              tok = "Bearer " + tok
-          def q(query):
-              req = urllib.request.Request("https://api.hardcover.app/v1/graphql",
-                  data=json.dumps({"query": query}).encode(),
-                  headers={"content-type": "application/json", "authorization": tok, "user-agent": "lids-reads-site"})
-              try:
-                  with urllib.request.urlopen(req, timeout=30) as r:
-                      return json.load(r)
-              except urllib.error.HTTPError as e:
-                  return {"http_error": e.code, "body": e.read().decode()[:500]}
-          r = q("{ me { id username } }")
-          print("ME:", json.dumps(r)[:300])
-          r = q("""{ me { user_books(where: {status_id: {_in: [2, 3]}}, order_by: {last_read_date: desc_nulls_last}, limit: 400) {
-                 status_id rating last_read_date
-                 user_book_reads { started_at finished_at }
-                 book { id title pages release_year slug cached_contributors image { url } } } } }""")
-          if "data" in r:
-              ub = r["data"]["me"][0]["user_books"] if isinstance(r["data"]["me"], list) else r["data"]["me"]["user_books"]
-              cur = [b for b in ub if b["status_id"] == 2]
-              rd = [b for b in ub if b["status_id"] == 3]
-              print("currently reading:", len(cur), "read:", len(rd))
-              for b in cur[:8]: print("  CR", b["book"]["title"], b["rating"], b["user_book_reads"][-1:] )
-              for b in rd[:6]: print("  READ", b["book"]["title"], b["rating"], b["last_read_date"], b["user_book_reads"][-1:], b["book"]["pages"], json.dumps(b["book"]["cached_contributors"])[:120], (b["book"]["image"] or {}).get("url"))
-              n26 = [b for b in rd if (b["last_read_date"] or "").startswith("2026")]
-              print("read with last_read_date in 2026:", len(n26))
-          else:
-              print("RESULT:", json.dumps(r)[:1500])
+          import json
+          old = {b["title"].lower(): b for b in json.load(open("/tmp/old_read.json"))["books"]}
+          new = {b["title"].lower(): b for b in json.load(open("_data/read.json"))["books"]}
+          print("old", len(old), "new", len(new))
+          print("only in old:", [old[t]["title"] for t in old if t not in new])
+          print("only in new:", [(new[t]["title"], new[t]["id"], new[t]["date"]) for t in new if t not in old])
+          diff = [(t, old[t]["date"], new[t]["date"], old[t]["rating"], new[t]["rating"]) for t in old if t in new and (old[t]["date"] != new[t]["date"] or old[t]["rating"] != new[t]["rating"])]
+          print("date/rating changes:", diff)
+          print("currently reading:", [b["title"] for b in json.load(open("_data/reading.json"))["currently_reading"]])
           PY
