@@ -1,44 +1,44 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "year": 2026,
   "goal": 100,
   "read_this_year": 81,
   "currently_reading": [
     {
-      "title": "Milkman",
-      "author": "Anna Burns",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860.jpg",
-      "link": "https://www.goodreads.com/book/show/36047860"
-    },
-    {
-      "title": "Red Rising",
-      "author": "Pierce Brown",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461354651l/15839976._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/15839976"
-    },
-    {
       "title": "Beloved",
       "author": "Toni Morrison",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1722944318l/6149._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/6149"
+      "cover": "https://assets.hardcover.app/editions/17695341/9080646121191414.jpg",
+      "link": "https://hardcover.app/books/beloved"
+    },
+    {
+      "title": "Milkman",
+      "author": "Anna Burns",
+      "cover": "https://assets.hardcover.app/external_data/61726015/6565ca2d2fb6987f5ef79d7a2b31df9cf1438451.jpeg",
+      "link": "https://hardcover.app/books/milkman"
     },
     {
       "title": "May We Feed the King",
-      "author": "Rebecca  Perry",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1759331180l/242252419._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/242252419"
+      "author": "Rebecca Perry",
+      "cover": "https://assets.hardcover.app/edition/32690745/11067094384dea511623d7a5314fc2cee889a97b.jpeg",
+      "link": "https://hardcover.app/books/may-we-feed-the-king"
     },
     {
       "title": "Land",
       "author": "Maggie O'Farrell",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1764056109l/241126782._SY475_.jpg",
-      "link": "https://www.goodreads.com/book/show/241126782"
+      "cover": "https://assets.hardcover.app/edition/32588396/5405ab31e447e5a72433f7b59539ade845ef0a5a.jpeg",
+      "link": "https://hardcover.app/books/land-a-novel-2026"
     },
     {
       "title": "The People in the Trees",
       "author": "Hanya Yanagihara",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356108388l/16126596.jpg",
-      "link": "https://www.goodreads.com/book/show/16126596"
+      "cover": "https://assets.hardcover.app/editions/14615082/1631410626654999.jpg",
+      "link": "https://hardcover.app/books/the-people-in-the-trees"
+    },
+    {
+      "title": "Red Rising",
+      "author": "Pierce Brown",
+      "cover": "https://assets.hardcover.app/editions/26096001/3897005112280259.jpg",
+      "link": "https://hardcover.app/books/red-rising"
     }
   ]
 }
