@@ -30,7 +30,7 @@ I have an entire English Literature degree and somehow never read *A Room of One
 
 ## Every book, not just the good ones
 
-Every book I finish shows up on the [home page]({{ '/' | relative_url }}) with my stars, even before I've written the review. The numbers are on the [Stats page]({{ '/stats/' | relative_url }}).
+Every book I finish shows up on the [home page]({{ '/' | relative_url }}) with my stars, even before I've written the review. The numbers are on the [Stats page]({{ '/stats/' | relative_url }}). I track my reading on [Hardcover](https://hardcover.app/@lindsyclopedia), which keeps the home page and Stats up to date. I moved there from Goodreads in October 2026, after Goodreads retired its RSS feeds.
 
 ## Follow along
 
