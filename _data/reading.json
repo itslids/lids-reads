@@ -1,9 +1,15 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "year": 2026,
   "goal": 100,
   "read_this_year": 81,
   "currently_reading": [
+    {
+      "title": "Black Bag",
+      "author": "Luke Kennard",
+      "cover": "https://assets.hardcover.app/edition/32475570/7f0a23cb-8d61-4d43-ad5e-2a8e3238a756.png",
+      "link": "https://hardcover.app/books/black-bag"
+    },
     {
       "title": "Beloved",
       "author": "Toni Morrison",
