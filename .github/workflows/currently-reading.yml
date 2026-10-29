@@ -17,7 +17,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Pull Goodreads shelves
+      - name: Pull Hardcover shelves
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
         run: python scripts/update_reading.py
       - name: Commit if anything changed
         run: |

@@ -4,7 +4,7 @@ permalink: /stats/
 ---
 <section class="intro">
   <h1>Reading stats</h1>
-  <p class="lede">The {{ site.data.read.year }} reading year in numbers, refreshed from Goodreads twice a day.</p>
+  <p class="lede">The {{ site.data.read.year }} reading year in numbers, refreshed from Hardcover twice a day.</p>
 </section>
 
 <div class="tiles" id="tiles"></div>
@@ -227,7 +227,7 @@ permalink: /stats/
     return { label: label, v: list.length, tip: "<strong>" + label + "</strong>" + plural(list.length, "book") + (list.length && list.length <= 14 ? "<br>" + titles(list) : "") };
   }
   rows("ratings", [5, 4, 3, 2, 1].map(function (r) {
-    return bucket("★★★★★".slice(0, r), function (b) { return b.rating === r; });
+    return bucket("★★★★★".slice(0, r), function (b) { return Math.floor(b.rating) === r; });
   }).concat(books.length > rated.length ? [bucket("No stars yet", function (b) { return !b.rating; })] : []), "gilt");
   rows("lengths", [
     bucket("Under 150 pages", function (b) { return b.pages > 0 && b.pages < 150; }),
@@ -282,7 +282,7 @@ permalink: /stats/
   }
   if (withYear.length) fact("Oldest book", book(withYear[0], withYear[0].published));
   if (withYear.length) {
-    // Goodreads only gives the publication year, so several books can tie for newest
+    // Hardcover only gives the publication year, so several books can tie for newest
     var top = withYear[withYear.length - 1].published;
     var newest = withYear.filter(function (b) { return b.published === top; }).sort(function (a, b) { return b.t - a.t; });
     fact(newest.length === 1 ? "Newest book" : "Newest books", newest.length === 1 ? book(newest[0], top) :
@@ -304,10 +304,10 @@ permalink: /stats/
   var cmp = rated.filter(function (b) { return b.avg_rating > 0; });
   if (cmp.length) {
     var d = cmp.reduce(function (s, b) { return s + b.rating - b.avg_rating; }, 0) / cmp.length;
-    fact("Compared with Goodreads readers", "On average " + Math.abs(d).toFixed(2) + " stars " + (d < 0 ? "tougher" : "more generous") + " than the Goodreads average for the same books");
+    fact("Compared with Hardcover readers", "On average " + Math.abs(d).toFixed(2) + " stars " + (d < 0 ? "tougher" : "more generous") + " than the Hardcover average for the same books");
     var s = cmp.slice().sort(function (a, b) { return (a.rating - a.avg_rating) - (b.rating - b.avg_rating); });
-    fact("Biggest disagreement, lower", book(s[0], plural(s[0].rating, "star") + " against a Goodreads average of " + s[0].avg_rating.toFixed(2)));
-    fact("Biggest disagreement, higher", book(s[s.length - 1], plural(s[s.length - 1].rating, "star") + " against a Goodreads average of " + s[s.length - 1].avg_rating.toFixed(2)));
+    fact("Biggest disagreement, lower", book(s[0], plural(s[0].rating, "star") + " against a Hardcover average of " + s[0].avg_rating.toFixed(2)));
+    fact("Biggest disagreement, higher", book(s[s.length - 1], plural(s[s.length - 1].rating, "star") + " against a Hardcover average of " + s[s.length - 1].avg_rating.toFixed(2)));
   }
 
   /* table view */
