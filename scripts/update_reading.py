@@ -74,6 +74,10 @@ def clean_title(t):
     return t.split(":")[0].strip()                    # drop subtitles
 
 
+def key(title):
+    return title.lower().replace("\u2019", "'")   # curly and straight apostrophes match
+
+
 def author(book):
     for c in book.get("cached_contributors") or []:
         name = (c.get("author") or {}).get("name")
@@ -94,13 +98,13 @@ def main():
     old = {}
     if os.path.exists(READ_OUT):
         for b in json.load(open(READ_OUT)).get("books", []):
-            old[b["title"].lower()] = b
+            old[key(b["title"])] = b
 
     books = []
     for ub in me["finished"]:
         bk = ub["book"]
         title = clean_title(bk["title"])
-        prev = old.get(title.lower(), {})
+        prev = old.get(key(title), {})
         books.append({
             "id": prev.get("id") or f"hc-{bk['id']}",
             "title": title, "author": author(bk),
@@ -113,9 +117,9 @@ def main():
 
     # books finished this year that Hardcover doesn't have; dropped once Hardcover lists them
     if os.path.exists(MANUAL):
-        seen = {b["title"].lower() for b in books}
+        seen = {key(b["title"]) for b in books}
         for m in json.load(open(MANUAL)):
-            if m["date"].startswith(str(YEAR)) and m["title"].lower() not in seen:
+            if m["date"].startswith(str(YEAR)) and key(m["title"]) not in seen:
                 books.append({"id": "manual-" + re.sub(r"[^a-z0-9]+", "-", m["title"].lower()).strip("-"),
                               "title": m["title"], "author": m["author"], "cover": m.get("cover", ""),
                               "rating": m.get("rating", 0), "date": m["date"],
