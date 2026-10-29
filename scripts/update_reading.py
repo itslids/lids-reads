@@ -32,11 +32,13 @@ QUERY = """
 query($since: date!) {
   me {
     current: user_books(where: {status_id: {_eq: %d}}, order_by: {updated_at: desc}) {
+      edition { image { url } }
       book { %s }
     }
     finished: user_books(where: {status_id: {_eq: %d}, last_read_date: {_gte: $since}},
                          order_by: {last_read_date: desc}) {
       rating last_read_date
+      edition { image { url } }
       book { %s }
     }
   }
@@ -86,8 +88,13 @@ def author(book):
     return ""
 
 
-def cover(book):
-    return (book.get("image") or {}).get("url") or ""
+def cover(ub):
+    # the edition she shelved on Hardcover, falling back to the book's default cover
+    for src in (ub.get("edition"), ub["book"]):
+        url = ((src or {}).get("image") or {}).get("url")
+        if url:
+            return url
+    return ""
 
 
 def main():
@@ -108,7 +115,7 @@ def main():
         books.append({
             "id": prev.get("id") or f"hc-{bk['id']}",
             "title": title, "author": author(bk),
-            "cover": prev.get("cover") or cover(bk),
+            "cover": prev.get("cover") or cover(ub),
             "rating": ub["rating"] or 0, "date": ub["last_read_date"],
             "pages": bk.get("pages") or prev.get("pages") or 0,
             "published": bk.get("release_year") or prev.get("published") or 0,
@@ -133,7 +140,7 @@ def main():
         "goal": GOAL,
         "read_this_year": len(books),
         "currently_reading": [
-            {"title": clean_title(ub["book"]["title"]), "author": author(ub["book"]), "cover": cover(ub["book"]),
+            {"title": clean_title(ub["book"]["title"]), "author": author(ub["book"]), "cover": cover(ub),
              "link": f"https://hardcover.app/books/{ub['book']['slug']}" if ub["book"].get("slug") else ""}
             for ub in me["current"]
         ],
