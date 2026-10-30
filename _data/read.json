@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-2418677",
+      "title": "May We Feed the King",
+      "author": "Rebecca Perry",
+      "cover": "https://assets.hardcover.app/external_data/4042044/dd0debc6c44a16238bcef059a836aaaadde066a6.jpeg",
+      "rating": 4.5,
+      "date": "2026-10-29",
+      "pages": 272,
+      "published": 2026,
+      "avg_rating": 3.98
+    },
+    {
       "id": "220160849",
       "title": "Angel Down",
       "author": "Daniel Kraus",
@@ -453,17 +464,6 @@
       "avg_rating": 4.2
     },
     {
-      "id": "36739755",
-      "title": "Convenience Store Woman",
-      "author": "Sayaka Murata",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg",
-      "rating": 4.0,
-      "date": "2026-05-30",
-      "pages": 163,
-      "published": 2016,
-      "avg_rating": 3.71
-    },
-    {
       "id": "240424526",
       "title": "Half His Age",
       "author": "Jennette McCurdy",
@@ -473,6 +473,17 @@
       "pages": 240,
       "published": 2026,
       "avg_rating": 3.24
+    },
+    {
+      "id": "36739755",
+      "title": "Convenience Store Woman",
+      "author": "Sayaka Murata",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg",
+      "rating": 4.0,
+      "date": "2026-05-30",
+      "pages": 163,
+      "published": 2016,
+      "avg_rating": 3.71
     },
     {
       "id": "207571151",
