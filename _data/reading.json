@@ -2,7 +2,7 @@
   "updated": "2026-10-30",
   "year": 2026,
   "goal": 100,
-  "read_this_year": 82,
+  "read_this_year": 83,
   "currently_reading": [
     {
       "title": "Black Bag",
@@ -15,12 +15,6 @@
       "author": "Toni Morrison",
       "cover": "https://assets.hardcover.app/edition/12241267/9124c233-2464-4fab-b064-7ff18eecc59c.jpg",
       "link": "https://hardcover.app/books/beloved"
-    },
-    {
-      "title": "Milkman",
-      "author": "Anna Burns",
-      "cover": "https://assets.hardcover.app/external_data/61726015/6565ca2d2fb6987f5ef79d7a2b31df9cf1438451.jpeg",
-      "link": "https://hardcover.app/books/milkman"
     },
     {
       "title": "Land",
