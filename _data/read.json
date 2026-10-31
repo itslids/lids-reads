@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-191013",
+      "title": "Milkman",
+      "author": "Anna Burns",
+      "cover": "https://assets.hardcover.app/external_data/61726015/6565ca2d2fb6987f5ef79d7a2b31df9cf1438451.jpeg",
+      "rating": 2.0,
+      "date": "2026-10-30",
+      "pages": 352,
+      "published": 2018,
+      "avg_rating": 3.67
+    },
+    {
       "id": "hc-2418677",
       "title": "May We Feed the King",
       "author": "Rebecca Perry",
@@ -10,7 +21,7 @@
       "date": "2026-10-29",
       "pages": 272,
       "published": 2026,
-      "avg_rating": 3.98
+      "avg_rating": 3.96
     },
     {
       "id": "220160849",
@@ -87,7 +98,7 @@
       "date": "2026-09-29",
       "pages": 160,
       "published": 2023,
-      "avg_rating": 3.92
+      "avg_rating": 3.86
     },
     {
       "id": "23453099",
@@ -263,7 +274,7 @@
       "date": "2026-07-24",
       "pages": 247,
       "published": 1983,
-      "avg_rating": 3.63
+      "avg_rating": 3.62
     },
     {
       "id": "55711559",
@@ -277,17 +288,6 @@
       "avg_rating": 3.34
     },
     {
-      "id": "199635125",
-      "title": "Rejection",
-      "author": "Tony Tulathimutte",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-14",
-      "pages": 272,
-      "published": 2024,
-      "avg_rating": 3.92
-    },
-    {
       "id": "238873074",
       "title": "Vigil",
       "author": "George Saunders",
@@ -297,6 +297,17 @@
       "pages": 179,
       "published": 2026,
       "avg_rating": 3.31
+    },
+    {
+      "id": "199635125",
+      "title": "Rejection",
+      "author": "Tony Tulathimutte",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-14",
+      "pages": 272,
+      "published": 2024,
+      "avg_rating": 3.92
     },
     {
       "id": "7631105",
@@ -450,7 +461,7 @@
       "date": "2026-06-12",
       "pages": 337,
       "published": 2024,
-      "avg_rating": 3.64
+      "avg_rating": 3.63
     },
     {
       "id": "61884832",
@@ -461,7 +472,7 @@
       "date": "2026-06-05",
       "pages": 352,
       "published": 2023,
-      "avg_rating": 4.2
+      "avg_rating": 4.21
     },
     {
       "id": "240424526",
@@ -505,7 +516,7 @@
       "date": "2026-05-25",
       "pages": 304,
       "published": 2021,
-      "avg_rating": 3.62
+      "avg_rating": 3.61
     },
     {
       "id": "222700466",
@@ -714,7 +725,7 @@
       "date": "2026-03-13",
       "pages": 313,
       "published": 2024,
-      "avg_rating": 4.12
+      "avg_rating": 4.11
     },
     {
       "id": "54680228",
@@ -857,7 +868,7 @@
       "date": "2026-01-10",
       "pages": 261,
       "published": 2021,
-      "avg_rating": 3.56
+      "avg_rating": 3.57
     },
     {
       "id": "42283862",
