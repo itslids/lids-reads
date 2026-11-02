@@ -97,6 +97,11 @@ def cover(ub):
     return ""
 
 
+def year(y):
+    """A plausible publication year, or 0."""
+    return y if isinstance(y, int) and 1000 <= y <= YEAR + 1 else 0
+
+
 def main():
     me = fetch()
 
@@ -118,7 +123,9 @@ def main():
             "cover": prev.get("cover") or cover(ub),
             "rating": ub["rating"] or 0, "date": ub["last_read_date"],
             "pages": bk.get("pages") or prev.get("pages") or 0,
-            "published": bk.get("release_year") or prev.get("published") or 0,
+            # Hardcover's release_year is often an edition's year (or junk like 4), so a year
+            # already in read.json wins; fix a wrong year by editing read.json and it sticks
+            "published": prev.get("published") or year(bk.get("release_year")),
             "avg_rating": round(bk.get("rating") or 0, 2),
         })
 
