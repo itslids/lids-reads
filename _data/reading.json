@@ -1,9 +1,15 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "year": 2026,
   "goal": 100,
   "read_this_year": 84,
   "currently_reading": [
+    {
+      "title": "Breakfast at Tiffany’s and Three Stories",
+      "author": "Truman Capote",
+      "cover": "https://assets.hardcover.app/edition/32729692/bfc598af53337aec50970af691da8b024fcef56b.jpeg",
+      "link": "https://hardcover.app/books/breakfast-at-tiffanys-and-three-stories"
+    },
     {
       "title": "Black Bag",
       "author": "Luke Kennard",
