@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-436036",
+      "title": "Minor Detail",
+      "author": "Adania Shibli",
+      "cover": "https://assets.hardcover.app/external_data/49419262/af8fda64b4dd74c1f8d3350a4573b6cff0191be3.jpeg",
+      "rating": 3.5,
+      "date": "2026-11-02",
+      "pages": 97,
+      "published": 2017,
+      "avg_rating": 4.26
+    },
+    {
       "id": "hc-191013",
       "title": "Milkman",
       "author": "Anna Burns",
@@ -343,6 +354,17 @@
       "avg_rating": 4.36
     },
     {
+      "id": "674155",
+      "title": "Chronicle of a Death Foretold",
+      "author": "Gabriel García Márquez",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg",
+      "rating": 4.0,
+      "date": "2026-07-05",
+      "pages": 130,
+      "published": 1981,
+      "avg_rating": 3.84
+    },
+    {
       "id": "126262032",
       "title": "So Late in the Day",
       "author": "Claire Keegan",
@@ -354,15 +376,15 @@
       "avg_rating": 3.82
     },
     {
-      "id": "674155",
-      "title": "Chronicle of a Death Foretold",
-      "author": "Gabriel García Márquez",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg",
-      "rating": 4.0,
-      "date": "2026-07-05",
-      "pages": 130,
-      "published": 1981,
-      "avg_rating": 3.83
+      "id": "61022861",
+      "title": "Foster",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-04",
+      "pages": 128,
+      "published": 2010,
+      "avg_rating": 4.33
     },
     {
       "id": "238226942",
@@ -374,17 +396,6 @@
       "pages": 391,
       "published": 2026,
       "avg_rating": 3.8
-    },
-    {
-      "id": "61022861",
-      "title": "Foster",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-04",
-      "pages": 128,
-      "published": 2010,
-      "avg_rating": 4.33
     },
     {
       "id": "58662236",
@@ -769,7 +780,7 @@
       "date": "2026-02-21",
       "pages": 127,
       "published": 1998,
-      "avg_rating": 3.74
+      "avg_rating": 3.71
     },
     {
       "id": "53138099",
@@ -802,7 +813,7 @@
       "date": "2026-02-07",
       "pages": 208,
       "published": 1995,
-      "avg_rating": 4.15
+      "avg_rating": 4.16
     },
     {
       "id": "56791389",
