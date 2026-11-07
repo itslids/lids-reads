@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-45874",
+      "title": "Breakfast at Tiffany’s and Three Stories",
+      "author": "Truman Capote",
+      "cover": "https://assets.hardcover.app/edition/32729692/bfc598af53337aec50970af691da8b024fcef56b.jpeg",
+      "rating": 5.0,
+      "date": "2026-11-07",
+      "pages": 157,
+      "published": 1958,
+      "avg_rating": 3.64
+    },
+    {
       "id": "hc-436036",
       "title": "Minor Detail",
       "author": "Adania Shibli",
@@ -354,6 +365,17 @@
       "avg_rating": 4.36
     },
     {
+      "id": "126262032",
+      "title": "So Late in the Day",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
+      "rating": 4.0,
+      "date": "2026-07-05",
+      "pages": 128,
+      "published": 2023,
+      "avg_rating": 3.82
+    },
+    {
       "id": "674155",
       "title": "Chronicle of a Death Foretold",
       "author": "Gabriel García Márquez",
@@ -365,15 +387,15 @@
       "avg_rating": 3.84
     },
     {
-      "id": "126262032",
-      "title": "So Late in the Day",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
-      "rating": 4.0,
-      "date": "2026-07-05",
-      "pages": 128,
-      "published": 2023,
-      "avg_rating": 3.82
+      "id": "238226942",
+      "title": "Yesteryear",
+      "author": "Caro Claire Burke",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg",
+      "rating": 3.0,
+      "date": "2026-07-04",
+      "pages": 391,
+      "published": 2026,
+      "avg_rating": 3.79
     },
     {
       "id": "61022861",
@@ -387,24 +409,13 @@
       "avg_rating": 4.33
     },
     {
-      "id": "238226942",
-      "title": "Yesteryear",
-      "author": "Caro Claire Burke",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg",
-      "rating": 3.0,
-      "date": "2026-07-04",
-      "pages": 391,
-      "published": 2026,
-      "avg_rating": 3.8
-    },
-    {
       "id": "58662236",
       "title": "Small Things Like These",
       "author": "Claire Keegan",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734631773l/58662236._SX318_.jpg",
       "rating": 4.0,
       "date": "2026-07-02",
-      "pages": 70,
+      "pages": 118,
       "published": 2021,
       "avg_rating": 4.05
     },
@@ -450,7 +461,7 @@
       "date": "2026-06-18",
       "pages": 295,
       "published": 2026,
-      "avg_rating": 4.21
+      "avg_rating": 4.22
     },
     {
       "id": "6186357",
@@ -472,7 +483,7 @@
       "date": "2026-06-12",
       "pages": 337,
       "published": 2024,
-      "avg_rating": 3.62
+      "avg_rating": 3.63
     },
     {
       "id": "61884832",
@@ -486,17 +497,6 @@
       "avg_rating": 4.18
     },
     {
-      "id": "240424526",
-      "title": "Half His Age",
-      "author": "Jennette McCurdy",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
-      "rating": 2.0,
-      "date": "2026-05-30",
-      "pages": 240,
-      "published": 2026,
-      "avg_rating": 3.22
-    },
-    {
       "id": "36739755",
       "title": "Convenience Store Woman",
       "author": "Sayaka Murata",
@@ -506,6 +506,17 @@
       "pages": 163,
       "published": 2016,
       "avg_rating": 3.71
+    },
+    {
+      "id": "240424526",
+      "title": "Half His Age",
+      "author": "Jennette McCurdy",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
+      "rating": 2.0,
+      "date": "2026-05-30",
+      "pages": 240,
+      "published": 2026,
+      "avg_rating": 3.23
     },
     {
       "id": "207571151",
