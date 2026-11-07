@@ -87,7 +87,7 @@
       "date": "2026-10-10",
       "pages": 519,
       "published": 2018,
-      "avg_rating": 4.47
+      "avg_rating": 4.46
     },
     {
       "id": "60209475",
@@ -120,7 +120,7 @@
       "date": "2026-09-27",
       "pages": 284,
       "published": 2015,
-      "avg_rating": 3.55
+      "avg_rating": 3.54
     },
     {
       "id": "238176234",
@@ -142,7 +142,7 @@
       "date": "2026-09-14",
       "pages": 96,
       "published": 2017,
-      "avg_rating": 3.82
+      "avg_rating": 3.78
     },
     {
       "id": "75293507",
@@ -175,7 +175,7 @@
       "date": "2026-09-04",
       "pages": 228,
       "published": 2022,
-      "avg_rating": 3.78
+      "avg_rating": 3.74
     },
     {
       "id": "71872930",
@@ -483,7 +483,7 @@
       "date": "2026-06-05",
       "pages": 352,
       "published": 2023,
-      "avg_rating": 4.19
+      "avg_rating": 4.18
     },
     {
       "id": "240424526",
@@ -615,7 +615,7 @@
       "date": "2026-04-24",
       "pages": 384,
       "published": 2023,
-      "avg_rating": 3.58
+      "avg_rating": 3.55
     },
     {
       "id": "239051491",
@@ -648,7 +648,7 @@
       "date": "2026-04-02",
       "pages": 212,
       "published": 2016,
-      "avg_rating": 3.04
+      "avg_rating": 3.01
     },
     {
       "id": "47624",
@@ -692,7 +692,7 @@
       "date": "2026-03-23",
       "pages": 304,
       "published": 2021,
-      "avg_rating": 3.48
+      "avg_rating": 3.46
     },
     {
       "id": "518848",
@@ -725,7 +725,7 @@
       "date": "2026-03-15",
       "pages": 274,
       "published": 2020,
-      "avg_rating": 3.35
+      "avg_rating": 3.32
     },
     {
       "id": "139400713",
@@ -846,7 +846,7 @@
       "date": "2026-01-26",
       "pages": 245,
       "published": 2017,
-      "avg_rating": 3.75
+      "avg_rating": 3.74
     },
     {
       "id": "34845512",
@@ -923,7 +923,7 @@
       "date": "2026-01-01",
       "pages": 335,
       "published": 2020,
-      "avg_rating": 3.47
+      "avg_rating": 3.44
     }
   ]
 }
