@@ -68,6 +68,13 @@ permalink: /stats/
   <dl class="facts" id="facts"></dl>
 </section>
 
+<section class="stat-block family">
+  <h2 class="section-h">The rest of the family</h2>
+  <p class="stat-note" id="family-note"></p>
+  <div class="tiles" id="family-tiles"></div>
+  <dl class="facts" id="family-facts"></dl>
+</section>
+
 <section class="stat-block">
   <details class="table-view">
     <summary>Month-by-month table</summary>
@@ -87,6 +94,8 @@ permalink: /stats/
   var YEAR = {{ site.data.read.year | default: 2026 }};
   var UPDATED = "{{ site.data.reading.updated }}";
   var FORMATS = { {% for rv in site.reviews %}{% if rv.format and rv.goodreads_id %}"{{ rv.goodreads_id }}": {{ rv.format | jsonify }},{% endif %}{% endfor %} };
+  var KIDS = {{ site.data.little_read.kids | default: "" | jsonify }};
+  var HALF = {{ site.data.better_half | default: "" | jsonify }};
   var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   var FULL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var DAY = 86400000;
@@ -309,6 +318,41 @@ permalink: /stats/
     fact("Biggest disagreement, lower", book(s[0], plural(s[0].rating, "star") + " against a Hardcover average of " + s[0].avg_rating.toFixed(2)));
     fact("Biggest disagreement, higher", book(s[s.length - 1], plural(s[s.length - 1].rating, "star") + " against a Hardcover average of " + s[s.length - 1].avg_rating.toFixed(2)));
   }
+
+  /* the rest of the family: the Little Lids and Better Half pages */
+  (function () {
+    var kids = (KIDS || []).map(function (k) {
+      var done = (k.books || []).filter(function (b) { return b.date && +b.date.slice(0, 4) === YEAR; });
+      return { name: k.name, slug: k.slug, n: done.length, pages: done.reduce(function (s, b) { return s + (b.pages || 0); }, 0) };
+    });
+    var half = (HALF && HALF.books || []).filter(function (b) { return b.date && +b.date.slice(0, 4) === YEAR; });
+    var mins = half.filter(function (b) { return b.minutes > 0; });
+    var hours = Math.round(mins.reduce(function (s, b) { return s + b.minutes; }, 0) / 60);
+    var kidTotal = kids.reduce(function (s, k) { return s + k.n; }, 0);
+    if (!kids.length && !half.length) { document.querySelector(".family").hidden = true; return; }
+    var base = "{{ site.baseurl }}";
+    document.getElementById("family-note").textContent = "Between me, my kids, and my better half, that's " +
+      plural(n + kidTotal + half.length, "book") + " finished in our house this year.";
+    var ft = document.getElementById("family-tiles");
+    function tile(num, label, sub, href) {
+      var d = el("a", "tile tile-link"); d.href = href;
+      d.appendChild(el("span", "tile-num", num)); d.appendChild(el("span", "tile-label", label)); d.appendChild(el("span", "tile-sub", sub)); ft.appendChild(d);
+    }
+    kids.forEach(function (k) {
+      tile(fmt(k.n), (k.n === 1 ? "book" : "books") + " for " + k.name, fmt(k.pages) + " pages · Little Lids", base + "/little/#" + k.slug);
+    });
+    if (half.length) tile(fmt(half.length), (half.length === 1 ? "audiobook" : "audiobooks") + " for my better half",
+      "about " + fmt(hours) + " hours of listening", base + "/better-half/");
+    var ff = document.getElementById("family-facts");
+    function fact(k, v) { ff.appendChild(el("dt", null, k)); ff.appendChild(el("dd", null, v)); }
+    function hm(m) { var h = Math.floor(m / 60), r = m % 60; return h + " hr" + (r ? " " + r + " min" : ""); }
+    if (mins.length) {
+      var avg = Math.round(mins.reduce(function (s, b) { return s + b.minutes; }, 0) / mins.length);
+      var longest = mins.slice().sort(function (a, b) { return b.minutes - a.minutes; })[0];
+      fact("Better half's average listen", hm(avg));
+      fact("Better half's longest listen", longest.title + " by " + longest.author + " (" + hm(longest.minutes) + ")");
+    }
+  })();
 
   /* table view */
   var tb = document.querySelector("#month-table tbody");
