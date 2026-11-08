@@ -23,6 +23,87 @@
       ],
       "books": [
         {
+          "id": "hc-548931",
+          "title": "Crank Palace",
+          "author": "James Dashner",
+          "cover": "https://assets.hardcover.app/external_data/32091463/a43d4245b8e1c01cb74b4b223ab78637817c8324.jpeg",
+          "pages": 109,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-382513",
+          "title": "A Good Girl's Guide to Murder",
+          "author": "Holly Jackson",
+          "cover": "https://assets.hardcover.app/book_mappings/7333023/4a5ee001a76a4b65b15e72d16bd8034c4357f5b0.jpeg",
+          "pages": 370,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-277804",
+          "title": "The Kill Order",
+          "author": "James Dashner",
+          "cover": "https://assets.hardcover.app/external_data/61838742/efbb2199a4e6b3c0dc5c1ed7b2f18691635adba3.jpeg",
+          "pages": 369,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-39629",
+          "title": "Throne of Glass",
+          "author": "Sarah J. Maas",
+          "cover": "https://assets.hardcover.app/external_data/4286546/eac1d89a354b14f570ccb7add77c89977bd16d58.jpeg",
+          "pages": 406,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-283659",
+          "title": "Crown of Midnight",
+          "author": "Sarah J. Maas",
+          "cover": "https://assets.hardcover.app/external_data/60664396/097c5674112901bdc086a32b46ba437f96842574.jpeg",
+          "pages": 418,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-1363844",
+          "title": "Heir of Fire",
+          "author": "Sarah J. Maas",
+          "cover": "https://assets.hardcover.app/external_data/4194992/6d242859f3c7059502d607a62fbbef6b55294951.jpeg",
+          "pages": 565,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-10265",
+          "title": "The Death Cure",
+          "author": "James Dashner",
+          "cover": "https://assets.hardcover.app/edition/17097412/f2b1ff99d57b802e812c8ac22e9c86ca36ad8efb.jpeg",
+          "pages": 354,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-444942",
+          "title": "The Scorch Trials",
+          "author": "James Dashner",
+          "cover": "https://assets.hardcover.app/books/427461/10107832-L.jpg",
+          "pages": 370,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-109009",
+          "title": "The Maze Runner",
+          "author": "James Dashner",
+          "cover": "https://assets.hardcover.app/external_data/26411958/a18272ac5c72149702f9c3089b4929ccb1387b7e.jpeg",
+          "pages": 386,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
           "id": "hc-153090",
           "title": "Queen of Shadows",
           "author": "Sarah J. Maas",
@@ -54,7 +135,26 @@
           "note": ""
         }
       ],
-      "books": []
+      "books": [
+        {
+          "id": "hc-617144",
+          "title": "The Three Billy Goats Gruff",
+          "author": "Mac Barnett",
+          "cover": "https://assets.hardcover.app/edition/30590746/ca3dc6f981f63f5407368abad783d05441864e82.jpeg",
+          "pages": 48,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
+          "id": "hc-167447",
+          "title": "I Want My Hat Back",
+          "author": "Jon Klassen",
+          "cover": "https://assets.hardcover.app/edition/30404263/984960408aa5dd8a85d83dcbcd67b2dc903169a4.jpeg",
+          "pages": 39,
+          "note": "",
+          "date": "2026-11-07"
+        }
+      ]
     }
   ]
 }
