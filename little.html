@@ -20,7 +20,8 @@ permalink: /little/
 <section class="kid" id="{{ k.slug }}" data-kid="{{ k.slug }}">
   <h2 class="kid-name">{{ k.name }}</h2>
   {% assign intro = site.data.little_intros[k.slug] %}
-  {% if intro %}<div class="kid-intro"><p class="kid-intro-label">A note from {{ k.name }}:</p>{{ intro | markdownify }}</div>{% endif %}
+  {% if intro %}{% if intro.text %}{% assign intro_label = intro.label %}{% assign intro_text = intro.text %}{% else %}{% capture intro_label %}A note from {{ k.name }}:{% endcapture %}{% assign intro_text = intro %}{% endif %}
+  <div class="kid-intro"><p class="kid-intro-label">{{ intro_label }}</p>{{ intro_text | markdownify }}</div>{% endif %}
   {% if k.reading and k.reading.size > 0 %}
   <h3 class="little-sub">Reading now</h3>
   <ul class="shelf little-shelf">
