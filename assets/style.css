@@ -205,3 +205,8 @@ nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underl
 .kid-tabs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
 .little-cards { margin-bottom: 40px; }
 .little-note { margin: 10px 0; padding-left: 12px; border-left: 3px solid var(--gilt); font-style: italic; font-size: 16px; line-height: 1.45; }
+
+/* Lids Better Half */
+.half-shelf { margin-bottom: 30px; }
+.half-meta { display: block; margin: 4px 0 0; font-size: 14px; color: var(--muted); }
+.card-body .half-meta { margin: 6px 0 8px; }

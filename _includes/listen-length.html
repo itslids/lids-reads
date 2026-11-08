@@ -1,0 +1,6 @@
+{%- if include.minutes and include.minutes > 0 -%}
+{%- assign h = include.minutes | divided_by: 60 -%}
+{%- assign m = include.minutes | modulo: 60 -%}
+{%- capture parts -%}{% if h > 0 %}{{ h }} hr{% endif %}|{% if m > 0 %}{{ m }} min{% endif %}{%- endcapture -%}
+{{- parts | split: "|" | join: " " | strip -}}
+{%- endif -%}

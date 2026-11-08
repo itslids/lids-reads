@@ -1,0 +1,65 @@
+---
+title: Lids Better Half
+permalink: /better-half/
+---
+{% assign half = site.data.better_half %}
+{% assign empty = "" | split: "" %}
+{% assign reading = half.reading | default: empty %}
+{% assign next = half.next | default: empty %}
+{% assign books = half.books | default: empty %}
+<section class="intro">
+  <h1>Lids <em>Better Half</em></h1>
+  <p class="lede">My better half is a serious reader in his own right: science, tech, politics and philosophy, almost all of it by audiobook. Refreshed from Hardcover twice a day.</p>
+</section>
+
+{% if reading.size > 0 %}
+<h2 class="little-sub">Listening now</h2>
+<ul class="shelf half-shelf">
+  {% for b in reading %}
+  <li>
+    {% include cover.html src=b.cover title=b.title size="mini" %}
+    <span class="shelf-title">{{ b.title }}</span>
+    <span class="shelf-author">{{ b.author }}</span>
+    {% if b.minutes > 0 %}<span class="half-meta">{% include listen-length.html minutes=b.minutes %}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if next.size > 0 %}
+<h2 class="little-sub">Next on deck</h2>
+<ul class="shelf half-shelf">
+  {% for b in next %}
+  <li>
+    {% include cover.html src=b.cover title=b.title size="mini" %}
+    <span class="shelf-title">{{ b.title }}</span>
+    <span class="shelf-author">{{ b.author }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<div class="now-head little-head">
+  <h2 class="little-sub">Finished</h2>
+  {% if half.finished_this_year > 0 %}<p class="goal"><span><span class="goal-num">{{ half.finished_this_year }}</span> {% if half.finished_this_year == 1 %}book{% else %}books{% endif %} in {{ half.year }}{% if half.hours_this_year > 0 %} · about <span class="goal-num">{{ half.hours_this_year }}</span> hours of listening{% endif %}</span></p>{% endif %}
+</div>
+{% if books.size > 0 %}
+<ol class="cards little-cards">
+  {% for b in books %}
+  <li class="card">
+    <div class="card-inner">
+      {% include cover.html src=b.cover title=b.title size="small" %}
+      <div class="card-body">
+        <h2>{{ b.title }}</h2>
+        <p class="byline">{{ b.author }}</p>
+        {% if b.minutes > 0 or b.narrator != "" %}<p class="half-meta">Audiobook{% if b.minutes > 0 %} · {% include listen-length.html minutes=b.minutes %}{% endif %}{% if b.narrator != "" %} · read by {{ b.narrator }}{% endif %}</p>{% endif %}
+        {% if b.note != "" %}<blockquote class="little-note">“{{ b.note }}”</blockquote>{% endif %}
+        <p class="finished">{{ b.date | date: "%b %-d, %Y" }}</p>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p class="empty little-cards">Nothing finished yet. He's listening.</p>
+{% endif %}

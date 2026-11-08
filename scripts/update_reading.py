@@ -6,7 +6,8 @@ Reads Lindsey's Hardcover shelves through the Hardcover API (Goodreads turned of
 RSS feeds in October 2026) and writes _data/reading.json and _data/read.json.
 Also reads her "Little Lids: <kid> Reading Now" and "Little Lids: <kid> Finished" Hardcover lists
 (two per kid; books on them are not marked Read, so they stay out of her own count) into
-_data/little_read.json.
+_data/little_read.json, and her husband's "Lids Better Half: Reading Now", "... Next On Deck" and
+"... Finished" lists (mostly audiobooks) into _data/better_half.json.
 Needs her Hardcover API key in the HARDCOVER_TOKEN environment variable (a repository
 secret on GitHub). Runs twice a day via .github/workflows/currently-reading.yml, or by hand:
     HARDCOVER_TOKEN=... python scripts/update_reading.py
@@ -29,6 +30,9 @@ READ_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "read.json")
 MANUAL = os.path.join(os.path.dirname(__file__), "..", "_data", "read_manual.json")
 LITTLE_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "little_read.json")
 LITTLE_LIST = "Little Lids"   # lists are "Little Lids: <nickname> Reading Now" / "... Finished"
+HALF_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "better_half.json")
+HALF_AUDIO = os.path.join(os.path.dirname(__file__), "..", "_data", "better_half_audio.json")
+HALF_LIST = "Lids Better Half"   # lists are "Lids Better Half: Reading Now" / "... Next On Deck" / "... Finished"
 
 CURRENTLY_READING, READ = 2, 3   # Hardcover status ids
 
@@ -61,6 +65,23 @@ LITTLE_QUERY = """
         date_added reason
         edition { image { url } }
         book { %s }
+      }
+    }
+  }
+}
+""" % BOOK_FIELDS
+
+# Her husband's lists. The edition she put on the list says whether it's the audiobook,
+# and gives its narrator and length.
+HALF_QUERY = """
+{
+  me {
+    lists(order_by: {name: asc}) {
+      name
+      list_books(order_by: {date_added: desc}) {
+        date_added reason
+        edition { audio_seconds cached_contributors image { url } }
+        book { %s audio_seconds }
       }
     }
   }
@@ -189,6 +210,10 @@ def main():
         write_little(fetch(LITTLE_QUERY, {}))
     except (Exception, SystemExit) as e:
         print(f"Skipped Little Lids: {e}")
+    try:   # same for her husband's page
+        write_better_half(fetch(HALF_QUERY, {}))
+    except (Exception, SystemExit) as e:
+        print(f"Skipped Lids Better Half: {e}")
 
 
 def name_key(t):
@@ -244,6 +269,65 @@ def write_little(me):
         json.dump({"kids": out}, f, indent=2, ensure_ascii=False)
         f.write("\n")
     print("Little Lids: " + ", ".join(f"{k['name']} {len(k['reading'])} reading, {len(k['books'])} finished" for k in out))
+
+
+def narrator(edition):
+    names = [" ".join(((c.get("author") or {}).get("name") or "").split())
+             for c in (edition or {}).get("cached_contributors") or []
+             if "narrat" in (c.get("contribution") or "").lower()]
+    return ", ".join(n for n in names if n)
+
+
+def write_better_half(me):
+    """Her husband's page, from her "Lids Better Half: Reading Now", "... Next On Deck" and "... Finished"
+    lists. A finished book is dated by when it went on the Finished list; a finished book drops off the
+    other two lists on the site."""
+    prefix = name_key(HALF_LIST)
+    shelves = {"reading": [], "next": [], "books": []}
+    # hand-kept audiobook narrators and lengths (looked up on the web), by book id, for when
+    # the list entry isn't Hardcover's audiobook edition
+    extra = json.load(open(HALF_AUDIO)) if os.path.exists(HALF_AUDIO) else {}
+    found = False
+    for lst in me.get("lists") or []:
+        if not name_key(lst["name"]).startswith(prefix):
+            continue
+        rest = name_key(lst["name"])[len(prefix):]
+        shelf = ("books" if rest.startswith("finished") else "reading" if rest.startswith("readingnow")
+                 else "next" if rest.startswith("next") else None)
+        if not shelf:
+            print(f'Skipping list "{lst["name"]}": expected "{HALF_LIST}: Reading Now", "... Next On Deck" or "... Finished"')
+            continue
+        found = True
+        for lb in lst["list_books"]:
+            bk, ed = lb["book"], lb.get("edition") or {}
+            hid, add = f"hc-{bk['id']}", extra.get(f"hc-{bk['id']}", {})
+            # Hardcover's audiobook edition wins, then the hand-kept file, then the book's usual audiobook length
+            secs = ed.get("audio_seconds") or 0
+            minutes = round(secs / 60) or add.get("minutes") or round((bk.get("audio_seconds") or 0) / 60)
+            book = {"id": hid, "title": clean_title(bk["title"]), "author": author(bk),
+                    "cover": cover(lb), "narrator": (narrator(ed) if secs else "") or add.get("narrator", ""),
+                    "minutes": minutes, "pages": bk.get("pages") or 0,
+                    "note": (lb.get("reason") or "").strip()}
+            if shelf == "books":
+                book["date"] = local_day(lb.get("date_added"))
+            shelves[shelf].append(book)
+    if not found:
+        print(f'No "{HALF_LIST}: ..." lists on Hardcover yet; leaving {os.path.basename(HALF_OUT)} alone')
+        return
+    done = {b["id"] for b in shelves["books"]}
+    for s in ("reading", "next"):
+        shelves[s] = [b for b in shelves[s] if b["id"] not in done]
+    shelves["next"] = [b for b in shelves["next"] if b["id"] not in {x["id"] for x in shelves["reading"]}]
+    shelves["books"].sort(key=lambda b: b["date"], reverse=True)
+    this_year = [b for b in shelves["books"] if b["date"].startswith(str(YEAR))]
+    out = {"year": YEAR, "finished_this_year": len(this_year),
+           "hours_this_year": round(sum(b["minutes"] for b in this_year) / 60), **shelves}
+    with open(HALF_OUT, "w") as f:
+        json.dump(out, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print(f"Lids Better Half: {len(shelves['reading'])} reading, {len(shelves['next'])} next, "
+          f"{len(shelves['books'])} finished ({out['hours_this_year']} hours this year)")
+
 
 if __name__ == "__main__":
     main()
