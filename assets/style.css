@@ -197,6 +197,8 @@ nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underl
 /* Little Lids Reads */
 .little-head { margin-top: 8px; margin-bottom: 16px; }
 .kid-name { font-family: var(--display); font-weight: 600; font-size: 38px; line-height: 1.1; margin: 8px 0 18px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+.kid-intro { max-width: 62ch; margin: 0 0 28px; font-size: 17px; line-height: 1.6; }
+.kid-intro p { margin: 0 0 12px; }
 .little-sub { font-family: var(--display); font-weight: 600; font-size: 24px; line-height: 1.1; margin: 0 0 14px; }
 .little-shelf { margin-bottom: 30px; }
 .kid-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
