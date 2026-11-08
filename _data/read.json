@@ -17,11 +17,11 @@
       "title": "Minor Detail",
       "author": "Adania Shibli",
       "cover": "https://assets.hardcover.app/external_data/49419262/af8fda64b4dd74c1f8d3350a4573b6cff0191be3.jpeg",
-      "rating": 3.5,
+      "rating": 3.0,
       "date": "2026-11-02",
       "pages": 97,
       "published": 2017,
-      "avg_rating": 4.26
+      "avg_rating": 4.25
     },
     {
       "id": "hc-191013",
@@ -351,7 +351,7 @@
       "date": "2026-07-10",
       "pages": 305,
       "published": 2018,
-      "avg_rating": 3.78
+      "avg_rating": 3.77
     },
     {
       "id": "238227104",
@@ -365,17 +365,6 @@
       "avg_rating": 4.36
     },
     {
-      "id": "126262032",
-      "title": "So Late in the Day",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
-      "rating": 4.0,
-      "date": "2026-07-05",
-      "pages": 128,
-      "published": 2023,
-      "avg_rating": 3.82
-    },
-    {
       "id": "674155",
       "title": "Chronicle of a Death Foretold",
       "author": "Gabriel García Márquez",
@@ -387,15 +376,15 @@
       "avg_rating": 3.84
     },
     {
-      "id": "238226942",
-      "title": "Yesteryear",
-      "author": "Caro Claire Burke",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg",
-      "rating": 3.0,
-      "date": "2026-07-04",
-      "pages": 391,
-      "published": 2026,
-      "avg_rating": 3.79
+      "id": "126262032",
+      "title": "So Late in the Day",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
+      "rating": 4.0,
+      "date": "2026-07-05",
+      "pages": 128,
+      "published": 2023,
+      "avg_rating": 3.82
     },
     {
       "id": "61022861",
@@ -407,6 +396,17 @@
       "pages": 128,
       "published": 2010,
       "avg_rating": 4.33
+    },
+    {
+      "id": "238226942",
+      "title": "Yesteryear",
+      "author": "Caro Claire Burke",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753932705l/238226942._SY475_.jpg",
+      "rating": 3.0,
+      "date": "2026-07-04",
+      "pages": 391,
+      "published": 2026,
+      "avg_rating": 3.79
     },
     {
       "id": "58662236",

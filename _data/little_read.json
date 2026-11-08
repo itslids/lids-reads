@@ -1,3 +1,60 @@
 {
-  "kids": []
+  "kids": [
+    {
+      "name": "Banana",
+      "slug": "banana",
+      "reading": [
+        {
+          "id": "hc-446681",
+          "title": "Dungeon Crawler Carl",
+          "author": "Matt Dinniman",
+          "cover": "https://assets.hardcover.app/edition/32130845/69028b14-c32e-4028-ad97-ffefa56b432a.png",
+          "pages": 465,
+          "note": ""
+        },
+        {
+          "id": "hc-379288",
+          "title": "Shatter Me",
+          "author": "Tahereh Mafi",
+          "cover": "https://assets.hardcover.app/edition/30480192/c6e776efb30a6534c6c558d39a7476c422e3435e.jpeg",
+          "pages": 339,
+          "note": ""
+        }
+      ],
+      "books": [
+        {
+          "id": "hc-153090",
+          "title": "Queen of Shadows",
+          "author": "Sarah J. Maas",
+          "cover": "https://assets.hardcover.app/edition/23725784/fcaf4d239b8ae92a2dee5b6647aac5b609edb737.jpeg",
+          "pages": 672,
+          "note": "",
+          "date": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "name": "Turkey",
+      "slug": "turkey",
+      "reading": [
+        {
+          "id": "hc-1948290",
+          "title": "The Dragonet Prophecy: A Graphic Novel",
+          "author": "Tui T. Sutherland",
+          "cover": "https://assets.hardcover.app/edition/30858311/85ffd086f22f5006ede40a2e69b4810a7ec92813.jpeg",
+          "pages": 224,
+          "note": ""
+        },
+        {
+          "id": "hc-1465151",
+          "title": "Leina and the Lord of the Toadstools",
+          "author": "Myriam Dahman",
+          "cover": "https://assets.hardcover.app/edition/31509896/48d01f4348dda5fd52a331235629ea81bba0dadc.jpeg",
+          "pages": 48,
+          "note": ""
+        }
+      ],
+      "books": []
+    }
+  ]
 }
