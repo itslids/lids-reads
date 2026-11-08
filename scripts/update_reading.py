@@ -4,8 +4,9 @@ update_reading.py: refreshes the "Currently reading" shelf and the books-read li
 
 Reads Lindsey's Hardcover shelves through the Hardcover API (Goodreads turned off its
 RSS feeds in October 2026) and writes _data/reading.json and _data/read.json.
-Also reads her "Little Lids: <kid>" Hardcover lists (one per kid, books they finished, added
-to the list but not marked Read, so they stay out of her own count) into _data/little_read.json.
+Also reads her "Little Lids: <kid> Reading Now" and "Little Lids: <kid> Finished" Hardcover lists
+(two per kid; books on them are not marked Read, so they stay out of her own count) into
+_data/little_read.json.
 Needs her Hardcover API key in the HARDCOVER_TOKEN environment variable (a repository
 secret on GitHub). Runs twice a day via .github/workflows/currently-reading.yml, or by hand:
     HARDCOVER_TOKEN=... python scripts/update_reading.py
@@ -27,7 +28,7 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "reading.json")
 READ_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "read.json")
 MANUAL = os.path.join(os.path.dirname(__file__), "..", "_data", "read_manual.json")
 LITTLE_OUT = os.path.join(os.path.dirname(__file__), "..", "_data", "little_read.json")
-LITTLE_LIST = "Little Lids"   # each kid's list is "Little Lids: <nickname>" (any capitalization)
+LITTLE_LIST = "Little Lids"   # lists are "Little Lids: <nickname> Reading Now" / "... Finished"
 
 CURRENTLY_READING, READ = 2, 3   # Hardcover status ids
 
@@ -50,7 +51,7 @@ query($since: date!) {
 """ % (CURRENTLY_READING, BOOK_FIELDS, READ, BOOK_FIELDS)
 
 # Hardcover doesn't allow name searches (ilike), so this takes all her lists and the
-# script keeps the "Little Lids: ..." ones. Tags she puts on a book come back as taggings.
+# script keeps the "Little Lids: ..." ones.
 LITTLE_QUERY = """
 {
   me {
@@ -61,9 +62,6 @@ LITTLE_QUERY = """
         edition { image { url } }
         book { %s }
       }
-    }
-    taggings(where: {taggable_type: {_eq: "Book"}}, order_by: {created_at: asc}) {
-      taggable_id created_at tag { tag }
     }
   }
 }
@@ -193,14 +191,8 @@ def main():
         print(f"Skipped Little Lids: {e}")
 
 
-def tag_key(t):
+def name_key(t):
     return re.sub(r"[^a-z]", "", t.lower())
-
-
-def is_reading_now(tag):
-    # "Reading Now", "reading now", even the "Readig Now" typo
-    k = tag_key(tag)
-    return k.endswith("now") and k.startswith("read")
 
 
 def local_day(ts):
@@ -212,42 +204,46 @@ def local_day(ts):
 
 
 def write_little(me):
-    """One section per "Little Lids: <nickname>" list. A book tagged "Reading Now" in Hardcover goes on
-    that kid's Reading now shelf; everything else counts as finished, dated by its "Finished" tag
-    (or, without one, by when it was added to the list)."""
-    prefix = tag_key(LITTLE_LIST)
-    lists = [l for l in me.get("lists") or [] if tag_key(l["name"]).startswith(prefix)]
-    if not lists:
-        print(f'No Hardcover list named "{LITTLE_LIST}: ..." yet; leaving {os.path.basename(LITTLE_OUT)} alone')
-        return
-    tags = {}   # book id -> {tag key: (tag, day tagged)}, latest tagging wins
-    for t in me.get("taggings") or []:
-        tags.setdefault(t["taggable_id"], {})[tag_key(t["tag"]["tag"])] = (t["tag"]["tag"], local_day(t.get("created_at")))
-    kids = []
-    for lst in lists:
-        label = lst["name"][len(LITTLE_LIST):].strip(" :-\u2013\u2014") or LITTLE_LIST
-        reading, finished = [], []
+    """One section per kid, from her "Little Lids: <nickname> Reading Now" and "Little Lids: <nickname> Finished"
+    lists. A finished book is dated by when it was added to the Finished list. A book on both lists counts
+    as finished."""
+    prefix = name_key(LITTLE_LIST)
+    kids = {}   # nickname -> {"reading": [...], "books": [...]}, in list-name order
+    for lst in me.get("lists") or []:
+        if not name_key(lst["name"]).startswith(prefix):
+            continue
+        rest = lst["name"].strip()[len(LITTLE_LIST):].strip(" :-\u2013\u2014")
+        m = re.match(r"(.*?)[\s:\-\u2013\u2014(]*(reading\s*now|finished)\)?$", rest, re.I)
+        if not m or not m.group(1).strip():
+            print(f'Skipping list "{lst["name"]}": expected "{LITTLE_LIST}: <name> Reading Now" or "... Finished"')
+            continue
+        label, shelf = m.group(1).strip(), ("books" if m.group(2).lower() == "finished" else "reading")
+        kid = kids.setdefault(label, {"reading": [], "books": []})
         for lb in lst["list_books"]:
             bk = lb["book"]
-            btags = tags.get(bk["id"], {})
             book = {
                 # keep subtitles: kids' series books are often only told apart by them ("Dog Man: Fetch-22")
                 "id": f"hc-{bk['id']}", "title": re.sub(r"\s*\([^)]*#\d+[^)]*\)\s*$", "", bk["title"]).strip(),
                 "author": author(bk), "cover": cover(lb), "pages": bk.get("pages") or 0,
                 "note": (lb.get("reason") or "").strip(),   # the note on the list entry, shown on the card
             }
-            if any(is_reading_now(t) for t, _ in btags.values()):
-                reading.append(book)
-            else:
-                book["date"] = (btags.get("finished") or (None, ""))[1] or local_day(lb.get("date_added"))
-                finished.append(book)
-        finished.sort(key=lambda b: b["date"], reverse=True)
-        kids.append({"name": label, "slug": re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-"),
-                     "reading": reading, "books": finished})
+            if shelf == "books":
+                book["date"] = local_day(lb.get("date_added"))
+            kid[shelf].append(book)
+    if not kids:
+        print(f'No "{LITTLE_LIST}: ..." lists on Hardcover yet; leaving {os.path.basename(LITTLE_OUT)} alone')
+        return
+    out = []
+    for label, kid in kids.items():
+        done = {b["id"] for b in kid["books"]}
+        kid["reading"] = [b for b in kid["reading"] if b["id"] not in done]
+        kid["books"].sort(key=lambda b: b["date"], reverse=True)
+        out.append({"name": label, "slug": re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-"),
+                    "reading": kid["reading"], "books": kid["books"]})
     with open(LITTLE_OUT, "w") as f:
-        json.dump({"kids": kids}, f, indent=2, ensure_ascii=False)
+        json.dump({"kids": out}, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    print("Little Lids: " + ", ".join(f"{k['name']} {len(k['reading'])} reading, {len(k['books'])} finished" for k in kids))
+    print("Little Lids: " + ", ".join(f"{k['name']} {len(k['reading'])} reading, {len(k['books'])} finished" for k in out))
 
 if __name__ == "__main__":
     main()
