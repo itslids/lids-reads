@@ -1,0 +1,262 @@
+{
+  "year": 2026,
+  "finished_this_year": 11,
+  "hours_this_year": 105,
+  "reading": [
+    {
+      "id": "hc-2990832",
+      "title": "I Disagree",
+      "author": "Jessica Tarlov",
+      "cover": "https://assets.hardcover.app/external_data/4307416/e6d31aa1bd42fb2bc5b8a3e4af1ba7a8c6942aa6.jpeg",
+      "narrator": "Jessica Tarlov",
+      "minutes": 0,
+      "pages": 272,
+      "note": ""
+    },
+    {
+      "id": "hc-375634",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "cover": "https://assets.hardcover.app/edition/1014761/175a425a-fb6c-4cb6-afdc-6e1818246f9d.jpg",
+      "narrator": "Derek Perkins",
+      "minutes": 918,
+      "pages": 443,
+      "note": ""
+    },
+    {
+      "id": "hc-1178132",
+      "title": "Wireless Wars",
+      "author": "Jonathan Pelson",
+      "cover": "https://assets.hardcover.app/external_data/60339283/2f0379782b89ff691e65ce06c92c26bcb4e67553.jpeg",
+      "narrator": "Chris Abell",
+      "minutes": 481,
+      "pages": 328,
+      "note": ""
+    },
+    {
+      "id": "hc-2768867",
+      "title": "Probably the Best Book on Statistics Ever Written",
+      "author": "Haim Shapira",
+      "cover": "https://assets.hardcover.app/external_data/3253577/fd2dc00a6e12dd3af31562d821d4083d8eaebd3e.jpeg",
+      "narrator": "Qarie Marshall",
+      "minutes": 596,
+      "pages": 272,
+      "note": ""
+    },
+    {
+      "id": "hc-2114207",
+      "title": "How Progress Ends",
+      "author": "Carl Benedikt Frey",
+      "cover": "https://assets.hardcover.app/edition/32313262/e7552e4f750af2474a4acd06a762f53ec3210641.jpeg",
+      "narrator": "Richard Lyddon",
+      "minutes": 1074,
+      "pages": 552,
+      "note": ""
+    },
+    {
+      "id": "hc-635982",
+      "title": "Tracers in the Dark",
+      "author": "Andy Greenberg",
+      "cover": "https://assets.hardcover.app/external_data/59683113/8accf8e46d9fe341e7b19f529049bcebe543a41a.jpeg",
+      "narrator": "Ari Fliakos",
+      "minutes": 646,
+      "pages": 323,
+      "note": ""
+    }
+  ],
+  "next": [
+    {
+      "id": "hc-443168",
+      "title": "We Are Bellingcat",
+      "author": "Eliot Higgins",
+      "cover": "https://assets.hardcover.app/edition/30442291/77eb9ab358d3de07ac470c6344ccb31341e58296.jpeg",
+      "narrator": "Eliot Higgins",
+      "minutes": 434,
+      "pages": 0,
+      "note": ""
+    },
+    {
+      "id": "hc-443162",
+      "title": "This Is How They Tell Me the World Ends",
+      "author": "Nicole Perlroth",
+      "cover": "https://assets.hardcover.app/external_data/4351957/47ff3444a780584ae9c4d268bb6b7aedf0c12978.jpeg",
+      "narrator": "Allyson Ryan",
+      "minutes": 1112,
+      "pages": 505,
+      "note": ""
+    },
+    {
+      "id": "hc-510553",
+      "title": "The Pentagon's Brain",
+      "author": "Annie Jacobsen",
+      "cover": "https://assets.hardcover.app/edition/30462632/6899b927bb8a02f7b8ac545c493dadcb30b3a2e5.jpeg",
+      "narrator": "Annie Jacobsen",
+      "minutes": 1102,
+      "pages": 560,
+      "note": ""
+    },
+    {
+      "id": "hc-89354",
+      "title": "Operation Paperclip",
+      "author": "Annie Jacobsen",
+      "cover": "https://assets.hardcover.app/editions/3025231/c27ede09-6409-45a6-9d9c-a9af445991f6.jpg",
+      "narrator": "Annie Jacobsen",
+      "minutes": 1166,
+      "pages": 592,
+      "note": ""
+    },
+    {
+      "id": "hc-2885980",
+      "title": "Liberal Fascisms",
+      "author": "Slavoj Žižek",
+      "cover": "https://assets.hardcover.app/edition/33217400/da138ae809a796aa73368c16320a1bb22042a650.jpeg",
+      "narrator": "Joe Jameson",
+      "minutes": 349,
+      "pages": 200,
+      "note": ""
+    },
+    {
+      "id": "hc-2063123",
+      "title": "Clearing the Air",
+      "author": "Hannah Ritchie",
+      "cover": "https://assets.hardcover.app/external_data/3174207/3b0bf2ca7d0ee4848a8825a95fdeb6fef1f2beba.jpeg",
+      "narrator": "Hannah Ritchie",
+      "minutes": 417,
+      "pages": 215,
+      "note": ""
+    },
+    {
+      "id": "hc-1350727",
+      "title": "Christian Atheism",
+      "author": "Slavoj Žižek",
+      "cover": "https://assets.hardcover.app/external_data/60477642/5cbd974618fa9bc3a6c60ec0cc754c5bea490c4c.jpeg",
+      "narrator": "Joe Jameson",
+      "minutes": 682,
+      "pages": 0,
+      "note": ""
+    }
+  ],
+  "books": [
+    {
+      "id": "hc-63625",
+      "title": "The Cuckoo's Egg",
+      "author": "Clifford Stoll",
+      "cover": "https://assets.hardcover.app/edition/23117221/5743bf3a-79e4-4098-a34f-a58f4d8a018e.jpg",
+      "narrator": "Will Damron",
+      "minutes": 766,
+      "pages": 326,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-2428439",
+      "title": "Biological War",
+      "author": "Annie Jacobsen",
+      "cover": "https://assets.hardcover.app/edition/32702401/785a309d33ae58a633db2f85e17b217d85b5258a.jpeg",
+      "narrator": "Annie Jacobsen",
+      "minutes": 674,
+      "pages": 432,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-2646584",
+      "title": "The Reverse Centaur’s Guide to Life After AI",
+      "author": "Cory Doctorow",
+      "cover": "https://assets.hardcover.app/edition/32952734/7c3272ae-d622-48d4-8a4d-398fc204b361.jpg",
+      "narrator": "Cory Doctorow",
+      "minutes": 328,
+      "pages": 240,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-2585134",
+      "title": "The Great Heist",
+      "author": "David R. Shedd",
+      "cover": "https://assets.hardcover.app/edition/32886563/f2e25bf15318224d353c1bf4be338ee7fe0dc7f4.jpeg",
+      "narrator": "Fred Sanders",
+      "minutes": 696,
+      "pages": 368,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-3044714",
+      "title": "The Next World War",
+      "author": "Peter Apps",
+      "cover": "https://assets.hardcover.app/external_data/4403240/e322261cf39b59fdd510b04485f27d502797947b.jpeg",
+      "narrator": "Peter Apps",
+      "minutes": 772,
+      "pages": 460,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-1475210",
+      "title": "Unit X",
+      "author": "Raj Shah",
+      "cover": "https://assets.hardcover.app/edition/31521515/2dec97a63433beb55e4f653d8081cd93c16b0b5d.jpeg",
+      "narrator": "Sean Patrick Hopkins, Raj M. Shah, Christopher Kirchhoff",
+      "minutes": 577,
+      "pages": 336,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-1430332",
+      "title": "Autocracy, Inc.",
+      "author": "Anne Applebaum",
+      "cover": "https://assets.hardcover.app/edition/31466597/4d9242051bbef5cadcaf167fdf4cc59174919157.jpeg",
+      "narrator": "Anne Applebaum",
+      "minutes": 288,
+      "pages": 224,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-1765782",
+      "title": "Twilight of Democracy",
+      "author": "Anne Applebaum",
+      "cover": "https://assets.hardcover.app/edition/31874201/7c319df4f66e876c8e5e9fed16916c736572c9a3.jpeg",
+      "narrator": "Anne Applebaum",
+      "minutes": 315,
+      "pages": 0,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-565239",
+      "title": "Chip War",
+      "author": "Chris Miller",
+      "cover": "https://assets.hardcover.app/edition/30526208/aa4e64f4-b253-499b-a578-b914c579724d.jpg",
+      "narrator": "Stephen Graybill",
+      "minutes": 758,
+      "pages": 431,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-1294462",
+      "title": "Means of Control",
+      "author": "Byron Tau",
+      "cover": "https://assets.hardcover.app/edition/31319576/001bc9763209fd5e08870c71f57b04c888f67dce.jpeg",
+      "narrator": "Sean Patrick Hopkins",
+      "minutes": 666,
+      "pages": 401,
+      "note": "",
+      "date": "2026-11-07"
+    },
+    {
+      "id": "hc-1765480",
+      "title": "Abundance",
+      "author": "Ezra Klein",
+      "cover": "https://assets.hardcover.app/edition/31873858/38ecb9044c6b2a464372efbebaab6e5a4c2bc39d.jpeg",
+      "narrator": "Ezra Klein, Derek Thompson",
+      "minutes": 434,
+      "pages": 226,
+      "note": "",
+      "date": "2026-11-07"
+    }
+  ]
+}
