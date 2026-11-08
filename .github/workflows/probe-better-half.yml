@@ -1,0 +1,33 @@
+name: Probe Better Half lists (temporary)
+on:
+  push:
+    branches: [claude/project-thread-pcrb9l]
+    paths: [.github/workflows/probe-better-half.yml]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List titles on the Better Half lists
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+        shell: python
+        run: |
+          import json, os, urllib.request
+          q = """{ me { lists { name list_books { book { id title release_year audio_seconds
+                cached_contributors } } } } }"""
+          t = os.environ["HARDCOVER_TOKEN"].strip()
+          t = t if t.lower().startswith("bearer ") else "Bearer " + t
+          req = urllib.request.Request("https://api.hardcover.app/v1/graphql",
+              data=json.dumps({"query": q}).encode(),
+              headers={"content-type": "application/json", "authorization": t, "user-agent": "lids-reads"})
+          res = json.load(urllib.request.urlopen(req, timeout=30))
+          if res.get("errors"):
+              print("ERRORS", [e.get("message") for e in res["errors"]]); raise SystemExit
+          me = res["data"]["me"]; me = me[0] if isinstance(me, list) else me
+          for l in me["lists"]:
+              if not l["name"].lower().startswith("lids better half"): continue
+              print("==", l["name"])
+              for x in l["list_books"]:
+                  b = x["book"]
+                  a = ", ".join((c.get("author") or {}).get("name", "") for c in b.get("cached_contributors") or [])
+                  print(f'hc-{b["id"]} | {b["title"]} | {a} | {b.get("release_year")} | audio_s={b.get("audio_seconds")}')
