@@ -39,6 +39,15 @@
       ],
       "books": [
         {
+          "id": "hc-228700",
+          "title": "The Cheerleaders",
+          "author": "Kara Thomas",
+          "cover": "https://assets.hardcover.app/edition/5635237/106c9d009bbf2f8157254b3b9af3ec101b4b57d8.jpeg",
+          "pages": 402,
+          "note": "",
+          "date": "2026-11-07"
+        },
+        {
           "id": "hc-548931",
           "title": "Crank Palace",
           "author": "James Dashner",
