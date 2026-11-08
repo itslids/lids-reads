@@ -18,6 +18,7 @@ Lindsey's ("Lids") public book review site, built with Jekyll and published by G
 | `scripts/update_reading.py` | Refreshes `_data/reading.json` and `_data/read.json` from Lindsey's Hardcover shelves (user lindsyclopedia) through the Hardcover API, using the `HARDCOVER_TOKEN` repository secret. Goodreads turned off its RSS feeds in October 2026 |
 | `.github/workflows/currently-reading.yml` | Runs that script twice a day, at about 7:17 AM and 6:17 PM Mountain, and commits any change |
 | `_layouts/`, `_includes/`, `assets/style.css` | Site design |
+| `little.html`, `_data/little_read.json` | The Little Lids Reads page (`/little/`): her two kids' books, by nickname only ("Banana" and "Turkey"). The same script fills the JSON from four Hardcover lists, "Little Lids: <nickname> Reading Now" and "Little Lids: <nickname> Finished". Those books are never marked Read, so they stay out of her own count. A finished book's date is when it went on the Finished list, and a list entry's note shows as a quote |
 | `stats.html` | The Stats page: charts and numbers computed in the browser from `_data/read.json` (books, pages, pace, ratings, authors) |
 | `about.md` | The About page. Lindsey approved this wording line by line (2026-10-07); don't reword it without her |
 

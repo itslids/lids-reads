@@ -1,0 +1,76 @@
+---
+title: Little Lids Reads
+permalink: /little/
+---
+{% assign kids = site.data.little_read.kids %}
+{% unless kids %}{% assign kids = "" | split: "" %}{% endunless %}
+<section class="intro">
+  <h1>Little Lids <em>Reads</em></h1>
+  <p class="lede">What my kids have been reading on our reading-and-coffee dates, refreshed from Hardcover twice a day.</p>
+</section>
+
+{% if kids.size > 0 %}
+{% if kids.size > 1 %}
+<nav class="kid-tabs" aria-label="Choose a reader" hidden>
+  <button type="button" data-kid="" aria-pressed="true">Both</button>
+  {% for k in kids %}<button type="button" data-kid="{{ k.slug }}" aria-pressed="false">{{ k.name }}</button>{% endfor %}
+</nav>
+{% endif %}
+{% for k in kids %}
+<section class="kid" id="{{ k.slug }}" data-kid="{{ k.slug }}">
+  <h2 class="kid-name">{{ k.name }}</h2>
+  {% if k.reading and k.reading.size > 0 %}
+  <h3 class="little-sub">Reading now</h3>
+  <ul class="shelf little-shelf">
+    {% for b in k.reading %}
+    <li>
+      {% include cover.html src=b.cover title=b.title size="mini" %}
+      <span class="shelf-title">{{ b.title }}</span>
+      <span class="shelf-author">{{ b.author }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <div class="now-head little-head">
+    <h3 class="little-sub">Finished</h3>
+    <p class="goal"><span class="goal-num">{{ k.books.size }}</span> {% if k.books.size == 1 %}book{% else %}books{% endif %}</p>
+  </div>
+  {% if k.books.size > 0 %}
+  <ol class="cards little-cards">
+    {% for b in k.books %}
+    <li class="card">
+      <div class="card-inner">
+        {% include cover.html src=b.cover title=b.title size="small" %}
+        <div class="card-body">
+          <h2>{{ b.title }}</h2>
+          <p class="byline">{{ b.author }}</p>
+          {% if b.note != "" %}<blockquote class="little-note">“{{ b.note }}”</blockquote>{% endif %}
+          <p class="finished">{{ b.date | date: "%b %-d, %Y" }}</p>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="empty little-cards">Nothing here yet. The next coffee date is coming.</p>
+  {% endif %}
+</section>
+{% endfor %}
+<script>
+  (function () {
+    var nav = document.querySelector('.kid-tabs'); if (!nav) return;
+    var btns = nav.querySelectorAll('button'), secs = document.querySelectorAll('section.kid');
+    function show(kid) {
+      btns.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.kid === kid); });
+      secs.forEach(function (s) { s.hidden = kid && s.dataset.kid !== kid; });
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () {
+      show(b.dataset.kid); history.replaceState(null, '', b.dataset.kid ? '#' + b.dataset.kid : location.pathname);
+    }); });
+    nav.hidden = false;
+    var h = location.hash.slice(1); if (document.querySelector('section.kid[data-kid="' + h + '"]')) show(h);
+  })();
+</script>
+{% else %}
+<p class="empty">The first little review is on its way.</p>
+{% endif %}
