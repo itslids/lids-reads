@@ -5,6 +5,22 @@
       "slug": "banana",
       "reading": [
         {
+          "id": "hc-514157",
+          "title": "One Dark Window",
+          "author": "Rachel Gillig",
+          "cover": "https://assets.hardcover.app/external_data/60106902/9f35824da28fb2f31ea3b6441f5be619a2d138aa.jpeg",
+          "pages": 421,
+          "note": ""
+        },
+        {
+          "id": "hc-183545",
+          "title": "Empire of Storms",
+          "author": "Sarah J. Maas",
+          "cover": "https://assets.hardcover.app/edition/1604689/f02307da-ee07-49e1-bf36-eefcddbe156f.jpg",
+          "pages": 689,
+          "note": ""
+        },
+        {
           "id": "hc-446681",
           "title": "Dungeon Crawler Carl",
           "author": "Matt Dinniman",
