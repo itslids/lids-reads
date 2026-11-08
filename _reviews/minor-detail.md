@@ -3,7 +3,7 @@ title: "Minor Detail"
 author: "Adania Shibli"
 goodreads_id: "hc-436036"
 date: 2026-11-02
-rating: 3.5
+rating: 3
 format: "physical"
 cover: "https://assets.hardcover.app/external_data/49419262/af8fda64b4dd74c1f8d3350a4573b6cff0191be3.jpeg"
 genre: "Literary fiction"
