@@ -7,7 +7,7 @@ rating: 3.5
 format: "physical"
 cover: "https://assets.hardcover.app/external_data/49419262/af8fda64b4dd74c1f8d3350a4573b6cff0191be3.jpeg"
 genre: "Literary fiction"
-verdict: "The difficulty of reconstructing history where the occupying forces have real, visceral control over what gets recorded and saved."
+verdict: "The difficulty of reconstructing history when occupying forces are still controlling the narrative."
 vibes:
   - "two halves separated by many years"
   - "quite brutal"
