@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-2073053",
+      "title": "London Falling",
+      "author": "Patrick Radden Keefe",
+      "cover": "https://assets.hardcover.app/edition/32506698/e2b05a80-d834-48a4-bbb0-cbf25f394424.jpg",
+      "rating": 5.0,
+      "date": "2026-11-10",
+      "pages": 361,
+      "published": 2026,
+      "avg_rating": 4.22
+    },
+    {
       "id": "hc-45874",
       "title": "Breakfast at Tiffany’s and Three Stories",
       "author": "Truman Capote",
@@ -387,17 +398,6 @@
       "avg_rating": 3.83
     },
     {
-      "id": "61022861",
-      "title": "Foster",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-04",
-      "pages": 128,
-      "published": 2010,
-      "avg_rating": 4.33
-    },
-    {
       "id": "238226942",
       "title": "Yesteryear",
       "author": "Caro Claire Burke",
@@ -407,6 +407,17 @@
       "pages": 391,
       "published": 2026,
       "avg_rating": 3.79
+    },
+    {
+      "id": "61022861",
+      "title": "Foster",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-04",
+      "pages": 128,
+      "published": 2010,
+      "avg_rating": 4.33
     },
     {
       "id": "58662236",
