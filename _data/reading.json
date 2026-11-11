@@ -1,9 +1,15 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "year": 2026,
   "goal": 100,
   "read_this_year": 86,
   "currently_reading": [
+    {
+      "title": "Empire of Pain",
+      "author": "Patrick Radden Keefe",
+      "cover": "https://assets.hardcover.app/edition/31482849/e35efceed6c2cc861ed43613d73291df44727a53.jpeg",
+      "link": "https://hardcover.app/books/empire-of-pain"
+    },
     {
       "title": "Black Bag",
       "author": "Luke Kennard",
