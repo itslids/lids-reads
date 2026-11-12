@@ -39,6 +39,15 @@
       ],
       "books": [
         {
+          "id": "hc-204230",
+          "title": "Stargirl",
+          "author": "Jerry Spinelli",
+          "cover": "https://assets.hardcover.app/edition/32439948/30e7ec98-9f73-4a1b-9a3a-b7ff183ecab5.jpg",
+          "pages": 208,
+          "note": "",
+          "date": "2026-11-11"
+        },
+        {
           "id": "hc-228700",
           "title": "The Cheerleaders",
           "author": "Kara Thomas",
