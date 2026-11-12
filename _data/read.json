@@ -87,7 +87,7 @@
       "date": "2026-10-14",
       "pages": 372,
       "published": 2026,
-      "avg_rating": 4.13
+      "avg_rating": 4.14
     },
     {
       "id": "26893819",
@@ -321,17 +321,6 @@
       "avg_rating": 3.35
     },
     {
-      "id": "238873074",
-      "title": "Vigil",
-      "author": "George Saunders",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
-      "rating": 4.0,
-      "date": "2026-07-14",
-      "pages": 179,
-      "published": 2026,
-      "avg_rating": 3.34
-    },
-    {
       "id": "199635125",
       "title": "Rejection",
       "author": "Tony Tulathimutte",
@@ -341,6 +330,17 @@
       "pages": 272,
       "published": 2024,
       "avg_rating": 3.92
+    },
+    {
+      "id": "238873074",
+      "title": "Vigil",
+      "author": "George Saunders",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
+      "rating": 4.0,
+      "date": "2026-07-14",
+      "pages": 179,
+      "published": 2026,
+      "avg_rating": 3.35
     },
     {
       "id": "7631105",
@@ -376,17 +376,6 @@
       "avg_rating": 4.36
     },
     {
-      "id": "674155",
-      "title": "Chronicle of a Death Foretold",
-      "author": "Gabriel García Márquez",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg",
-      "rating": 4.0,
-      "date": "2026-07-05",
-      "pages": 130,
-      "published": 1981,
-      "avg_rating": 3.85
-    },
-    {
       "id": "126262032",
       "title": "So Late in the Day",
       "author": "Claire Keegan",
@@ -398,6 +387,17 @@
       "avg_rating": 3.83
     },
     {
+      "id": "674155",
+      "title": "Chronicle of a Death Foretold",
+      "author": "Gabriel García Márquez",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1323027404l/674155.jpg",
+      "rating": 4.0,
+      "date": "2026-07-05",
+      "pages": 130,
+      "published": 1981,
+      "avg_rating": 3.85
+    },
+    {
       "id": "238226942",
       "title": "Yesteryear",
       "author": "Caro Claire Burke",
@@ -406,7 +406,7 @@
       "date": "2026-07-04",
       "pages": 391,
       "published": 2026,
-      "avg_rating": 3.79
+      "avg_rating": 3.8
     },
     {
       "id": "61022861",
@@ -508,6 +508,17 @@
       "avg_rating": 4.17
     },
     {
+      "id": "240424526",
+      "title": "Half His Age",
+      "author": "Jennette McCurdy",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
+      "rating": 2.0,
+      "date": "2026-05-30",
+      "pages": 240,
+      "published": 2026,
+      "avg_rating": 3.23
+    },
+    {
       "id": "36739755",
       "title": "Convenience Store Woman",
       "author": "Sayaka Murata",
@@ -517,17 +528,6 @@
       "pages": 163,
       "published": 2016,
       "avg_rating": 3.7
-    },
-    {
-      "id": "240424526",
-      "title": "Half His Age",
-      "author": "Jennette McCurdy",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
-      "rating": 2.0,
-      "date": "2026-05-30",
-      "pages": 240,
-      "published": 2026,
-      "avg_rating": 3.24
     },
     {
       "id": "207571151",
@@ -747,7 +747,7 @@
       "date": "2026-03-15",
       "pages": 274,
       "published": 2020,
-      "avg_rating": 3.33
+      "avg_rating": 3.32
     },
     {
       "id": "139400713",
@@ -791,7 +791,7 @@
       "date": "2026-02-26",
       "pages": 418,
       "published": 2016,
-      "avg_rating": 3.93
+      "avg_rating": 3.92
     },
     {
       "id": "16692",
@@ -835,7 +835,7 @@
       "date": "2026-02-07",
       "pages": 208,
       "published": 1995,
-      "avg_rating": 4.16
+      "avg_rating": 4.17
     },
     {
       "id": "56791389",
@@ -844,7 +844,7 @@
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734203042l/56791389._SY475_.jpg",
       "rating": 3.0,
       "date": "2026-01-31",
-      "pages": 465,
+      "pages": 450,
       "published": 2020,
       "avg_rating": 4.34
     },
@@ -868,7 +868,7 @@
       "date": "2026-01-26",
       "pages": 245,
       "published": 2017,
-      "avg_rating": 3.74
+      "avg_rating": 3.75
     },
     {
       "id": "34845512",
