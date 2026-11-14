@@ -7,6 +7,26 @@
 #     text: |
 #       The review.
 banana:
+  hc-382513:  # A Good Girl's Guide to Murder, Holly Jackson
+    rating: 3
+    text: |
+      I liked this. I feel like the evidence was a little slow and repetitive, but it was otherwise pretty good.
+  hc-283659:  # Crown of Midnight, Sarah J. Maas
+    rating: 3.5
+    text: |
+      This one felt like it was a lot of Celaena and Chaol together. Nothing else, really.
+  hc-1363844:  # Heir of Fire, Sarah J. Maas
+    rating: 5
+    text: |
+      Rowan is amazing and Celaena just gets worse. I cannot get over Doranelle.
+  hc-548931:  # Crank Palace, James Dashner
+    rating: 4
+    text: |
+      Cried a lot.
+  hc-277804:  # The Kill Order, James Dashner
+    rating: 2.5
+    text: |
+      This one was just boring and I didn't like it as much as the other Maze Runner books. I kept falling asleep.
   hc-39629:  # Throne of Glass, Sarah J. Maas
     rating: 4.5
     text: |
