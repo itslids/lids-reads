@@ -7,6 +7,22 @@
 #     text: |
 #       The review.
 banana:
+  hc-153090:  # Queen of Shadows, Sarah J. Maas
+    rating: 4
+    text: |
+      So good and eventful. Lots of Rowan and Celaena in this one! Can't stop thinking about what's going to happen with Elide.
+  hc-10265:  # The Death Cure, James Dashner
+    rating: 3
+    text: |
+      It was good but I didn't like it as much as the other books. It just didn't feel as impactful. The plot was good, though. Just not as exciting as others in the series.
+  hc-444942:  # The Scorch Trials, James Dashner
+    rating: 4
+    text: |
+      The setting was a lot more interesting and diverse, which made it a cool book to read. Some of the girl characters were boring, but otherwise pretty great. Teresa confused me a lot in this book and that got annoying!
+  hc-109009:  # The Maze Runner, James Dashner
+    rating: 4
+    text: |
+      Really good introduction to the series. I like the descriptive language. Definitely love the characters.
   hc-382513:  # A Good Girl's Guide to Murder, Holly Jackson
     rating: 3
     text: |
@@ -22,7 +38,7 @@ banana:
   hc-548931:  # Crank Palace, James Dashner
     rating: 4
     text: |
-      Cried a lot.
+      Cried a lot. Read it between Death Cure and Kill Order for best effect.
   hc-277804:  # The Kill Order, James Dashner
     rating: 2.5
     text: |
