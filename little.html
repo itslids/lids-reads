@@ -48,6 +48,9 @@ permalink: /little/
           <h2>{{ b.title }}</h2>
           <p class="byline">{{ b.author }}</p>
           {% if b.note != "" %}<blockquote class="little-note">“{{ b.note }}”</blockquote>{% endif %}
+          {% assign rev = site.data.little_reviews[k.slug][b.id] %}
+          {% if rev %}{% if rev.text %}{% assign rev_text = rev.text %}{% assign rev_stars = rev.rating %}{% else %}{% assign rev_text = rev %}{% assign rev_stars = nil %}{% endif %}
+          <div class="little-review"><p class="little-review-label">{{ k.name }}'s review{% if rev_stars %} {% include stars.html rating=rev_stars %}{% endif %}</p>{{ rev_text | markdownify }}</div>{% endif %}
           <p class="finished">{{ b.date | date: "%b %-d, %Y" }}</p>
         </div>
       </div>

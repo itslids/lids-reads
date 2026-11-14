@@ -1,0 +1,27 @@
+# Short reviews by the kids, shown on their Finished cards on the Little Lids page.
+# Keyed by the kid's slug, then the book's id from _data/little_read.json (hc-<number>).
+# Their words; only light typo and clarity fixes.
+# A plain text value is just the review. To add stars, use:
+#   hc-12345:
+#     rating: 4.5
+#     text: |
+#       The review.
+banana:
+  hc-39629:  # Throne of Glass, Sarah J. Maas
+    rating: 4.5
+    text: |
+      OH MY GOD!
+
+      My first experience actually staying up till 3 AM reading a book.
+
+      No words. ❤️
+  hc-204230:  # Stargirl, Jerry Spinelli
+    rating: 2
+    text: |
+      Eh, fine. I read it for school. I got the lesson. Honestly, it could've been worse. I think it got better gradually through the story, but the characters don't have goals or wants; they kinda are just pushed by the plot.
+  hc-228700:  # The Cheerleaders, Kara Thomas
+    rating: 1
+    text: |
+      BAD. Please do not waste your time.
+
+      The main character is really annoying, difficult to like, and can't communicate. I want my life back.
