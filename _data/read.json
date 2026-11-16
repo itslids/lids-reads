@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-374373",
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "cover": "https://assets.hardcover.app/edition/12241267/9124c233-2464-4fab-b064-7ff18eecc59c.jpg",
+      "rating": 5.0,
+      "date": "2026-11-16",
+      "pages": 362,
+      "published": 1987,
+      "avg_rating": 3.9
+    },
+    {
       "id": "hc-2073053",
       "title": "London Falling",
       "author": "Patrick Radden Keefe",
@@ -321,17 +332,6 @@
       "avg_rating": 3.35
     },
     {
-      "id": "199635125",
-      "title": "Rejection",
-      "author": "Tony Tulathimutte",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-14",
-      "pages": 272,
-      "published": 2024,
-      "avg_rating": 3.92
-    },
-    {
       "id": "238873074",
       "title": "Vigil",
       "author": "George Saunders",
@@ -341,6 +341,17 @@
       "pages": 179,
       "published": 2026,
       "avg_rating": 3.35
+    },
+    {
+      "id": "199635125",
+      "title": "Rejection",
+      "author": "Tony Tulathimutte",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-14",
+      "pages": 272,
+      "published": 2024,
+      "avg_rating": 3.92
     },
     {
       "id": "7631105",
@@ -376,17 +387,6 @@
       "avg_rating": 4.36
     },
     {
-      "id": "126262032",
-      "title": "So Late in the Day",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
-      "rating": 4.0,
-      "date": "2026-07-05",
-      "pages": 128,
-      "published": 2023,
-      "avg_rating": 3.83
-    },
-    {
       "id": "674155",
       "title": "Chronicle of a Death Foretold",
       "author": "Gabriel García Márquez",
@@ -396,6 +396,17 @@
       "pages": 130,
       "published": 1981,
       "avg_rating": 3.85
+    },
+    {
+      "id": "126262032",
+      "title": "So Late in the Day",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684206469l/126262032.jpg",
+      "rating": 4.0,
+      "date": "2026-07-05",
+      "pages": 128,
+      "published": 2023,
+      "avg_rating": 3.83
     },
     {
       "id": "238226942",
