@@ -27,17 +27,27 @@
           "cover": "https://assets.hardcover.app/edition/32130845/69028b14-c32e-4028-ad97-ffefa56b432a.png",
           "pages": 450,
           "note": ""
+        }
+      ],
+      "books": [
+        {
+          "id": "hc-428990",
+          "title": "Destroy Me",
+          "author": "Tahereh Mafi",
+          "cover": "https://assets.hardcover.app/edition/26811149/369e18a0-a34d-48c6-97a2-ff65755219fb.jpg",
+          "pages": 111,
+          "note": "",
+          "date": "2026-11-16"
         },
         {
           "id": "hc-379288",
           "title": "Shatter Me",
           "author": "Tahereh Mafi",
-          "cover": "https://assets.hardcover.app/edition/30480192/c6e776efb30a6534c6c558d39a7476c422e3435e.jpeg",
+          "cover": "https://assets.hardcover.app/editions/30460178/627316130272577.jpg",
           "pages": 339,
-          "note": ""
-        }
-      ],
-      "books": [
+          "note": "",
+          "date": "2026-11-16"
+        },
         {
           "id": "hc-204230",
           "title": "Stargirl",
