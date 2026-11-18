@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "finished_this_year": 11,
-  "hours_this_year": 105,
+  "hours_this_year": 99,
   "reading": [
     {
       "id": "hc-375634",
@@ -205,13 +205,13 @@
       "date": "2026-11-07"
     },
     {
-      "id": "hc-1765782",
+      "id": "hc-431440",
       "title": "Twilight of Democracy",
       "author": "Anne Applebaum",
       "cover": "https://assets.hardcover.app/edition/31874201/7c319df4f66e876c8e5e9fed16916c736572c9a3.jpeg",
-      "narrator": "Anne Applebaum",
-      "minutes": 315,
-      "pages": 0,
+      "narrator": "",
+      "minutes": 0,
+      "pages": 208,
       "note": "",
       "date": "2026-11-07"
     },
