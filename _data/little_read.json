@@ -163,6 +163,14 @@
       "slug": "turkey",
       "reading": [
         {
+          "id": "hc-427305",
+          "title": "How the Grinch Stole Christmas!",
+          "author": "Dr. Seuss",
+          "cover": "https://assets.hardcover.app/edition/13824978/c0b65960-6d1d-4688-bc8f-943918e9ce5f.jpg",
+          "pages": 64,
+          "note": ""
+        },
+        {
           "id": "hc-452399",
           "title": "Gustavo, the Shy Ghost",
           "author": "Flavia Z. Drago",
@@ -177,17 +185,18 @@
           "cover": "https://assets.hardcover.app/edition/30858311/85ffd086f22f5006ede40a2e69b4810a7ec92813.jpeg",
           "pages": 224,
           "note": ""
-        },
+        }
+      ],
+      "books": [
         {
           "id": "hc-1465151",
           "title": "Leina and the Lord of the Toadstools",
           "author": "Myriam Dahman",
           "cover": "https://assets.hardcover.app/edition/31509896/48d01f4348dda5fd52a331235629ea81bba0dadc.jpeg",
           "pages": 48,
-          "note": ""
-        }
-      ],
-      "books": [
+          "note": "",
+          "date": "2026-11-21"
+        },
         {
           "id": "hc-617144",
           "title": "The Three Billy Goats Gruff",
