@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-2243088",
+      "title": "Black Bag",
+      "author": "Luke Kennard",
+      "cover": "https://assets.hardcover.app/edition/32475570/7f0a23cb-8d61-4d43-ad5e-2a8e3238a756.png",
+      "rating": 0,
+      "date": "2026-11-23",
+      "pages": 400,
+      "published": 2026,
+      "avg_rating": 3.98
+    },
+    {
       "id": "hc-374373",
       "title": "Beloved",
       "author": "Toni Morrison",
@@ -219,7 +230,7 @@
       "date": "2026-08-31",
       "pages": 385,
       "published": 2023,
-      "avg_rating": 4.13
+      "avg_rating": 4.14
     },
     {
       "id": "228110489",
@@ -332,17 +343,6 @@
       "avg_rating": 3.35
     },
     {
-      "id": "238873074",
-      "title": "Vigil",
-      "author": "George Saunders",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
-      "rating": 4.0,
-      "date": "2026-07-14",
-      "pages": 179,
-      "published": 2026,
-      "avg_rating": 3.36
-    },
-    {
       "id": "199635125",
       "title": "Rejection",
       "author": "Tony Tulathimutte",
@@ -352,6 +352,17 @@
       "pages": 272,
       "published": 2024,
       "avg_rating": 3.91
+    },
+    {
+      "id": "238873074",
+      "title": "Vigil",
+      "author": "George Saunders",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
+      "rating": 4.0,
+      "date": "2026-07-14",
+      "pages": 179,
+      "published": 2026,
+      "avg_rating": 3.36
     },
     {
       "id": "7631105",
@@ -406,7 +417,7 @@
       "date": "2026-07-05",
       "pages": 128,
       "published": 2023,
-      "avg_rating": 3.83
+      "avg_rating": 3.85
     },
     {
       "id": "238226942",
@@ -519,17 +530,6 @@
       "avg_rating": 4.17
     },
     {
-      "id": "240424526",
-      "title": "Half His Age",
-      "author": "Jennette McCurdy",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
-      "rating": 2.0,
-      "date": "2026-05-30",
-      "pages": 240,
-      "published": 2026,
-      "avg_rating": 3.24
-    },
-    {
       "id": "36739755",
       "title": "Convenience Store Woman",
       "author": "Sayaka Murata",
@@ -539,6 +539,17 @@
       "pages": 163,
       "published": 2016,
       "avg_rating": 3.7
+    },
+    {
+      "id": "240424526",
+      "title": "Half His Age",
+      "author": "Jennette McCurdy",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1765907278l/240424526._SY475_.jpg",
+      "rating": 2.0,
+      "date": "2026-05-30",
+      "pages": 240,
+      "published": 2026,
+      "avg_rating": 3.24
     },
     {
       "id": "207571151",
@@ -560,7 +571,7 @@
       "date": "2026-05-25",
       "pages": 304,
       "published": 2021,
-      "avg_rating": 3.62
+      "avg_rating": 3.61
     },
     {
       "id": "222700466",
@@ -813,7 +824,7 @@
       "date": "2026-02-21",
       "pages": 127,
       "published": 1998,
-      "avg_rating": 3.73
+      "avg_rating": 3.74
     },
     {
       "id": "53138099",
