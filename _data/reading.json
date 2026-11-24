@@ -1,9 +1,15 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "year": 2026,
   "goal": 100,
   "read_this_year": 88,
   "currently_reading": [
+    {
+      "title": "You Will Not Kill Our Imagination",
+      "author": "Saeed Teebi",
+      "cover": "https://assets.hardcover.app/external_data/2459092/479ea435d1fa1285e1860cc03ddc7a931d16d6ee.jpeg",
+      "link": "https://hardcover.app/books/you-will-not-kill-our-imagination-2025"
+    },
     {
       "title": "Securing What Feeds Us",
       "author": "Kristin King",
