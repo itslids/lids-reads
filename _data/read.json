@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-2999449",
+      "title": "Famesick",
+      "author": "Lena Dunham",
+      "cover": "https://assets.hardcover.app/external_data/4319605/8f38b9a810a653fadfe4ddc4fcca335646e7e33e.jpeg",
+      "rating": 4.0,
+      "date": "2026-11-26",
+      "pages": 385,
+      "published": 2026,
+      "avg_rating": 4.0
+    },
+    {
       "id": "hc-2243088",
       "title": "Black Bag",
       "author": "Luke Kennard",
@@ -10,7 +21,7 @@
       "date": "2026-11-23",
       "pages": 400,
       "published": 2026,
-      "avg_rating": 3.96
+      "avg_rating": 3.94
     },
     {
       "id": "hc-374373",
@@ -219,7 +230,7 @@
       "date": "2026-09-04",
       "pages": 228,
       "published": 2022,
-      "avg_rating": 3.72
+      "avg_rating": 3.7
     },
     {
       "id": "71872930",
@@ -343,17 +354,6 @@
       "avg_rating": 3.35
     },
     {
-      "id": "199635125",
-      "title": "Rejection",
-      "author": "Tony Tulathimutte",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-14",
-      "pages": 272,
-      "published": 2024,
-      "avg_rating": 3.92
-    },
-    {
       "id": "238873074",
       "title": "Vigil",
       "author": "George Saunders",
@@ -363,6 +363,17 @@
       "pages": 179,
       "published": 2026,
       "avg_rating": 3.36
+    },
+    {
+      "id": "199635125",
+      "title": "Rejection",
+      "author": "Tony Tulathimutte",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-14",
+      "pages": 272,
+      "published": 2024,
+      "avg_rating": 3.91
     },
     {
       "id": "7631105",
@@ -420,6 +431,17 @@
       "avg_rating": 3.85
     },
     {
+      "id": "61022861",
+      "title": "Foster",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-04",
+      "pages": 128,
+      "published": 2010,
+      "avg_rating": 4.31
+    },
+    {
       "id": "238226942",
       "title": "Yesteryear",
       "author": "Caro Claire Burke",
@@ -429,17 +451,6 @@
       "pages": 391,
       "published": 2026,
       "avg_rating": 3.78
-    },
-    {
-      "id": "61022861",
-      "title": "Foster",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-04",
-      "pages": 128,
-      "published": 2010,
-      "avg_rating": 4.32
     },
     {
       "id": "58662236",
@@ -494,7 +505,7 @@
       "date": "2026-06-18",
       "pages": 295,
       "published": 2026,
-      "avg_rating": 4.25
+      "avg_rating": 4.26
     },
     {
       "id": "6186357",
@@ -670,7 +681,7 @@
       "date": "2026-04-22",
       "pages": 304,
       "published": 2026,
-      "avg_rating": 3.35
+      "avg_rating": 3.34
     },
     {
       "id": "33460",
@@ -879,7 +890,7 @@
       "date": "2026-01-29",
       "pages": 338,
       "published": 2026,
-      "avg_rating": 3.73
+      "avg_rating": 3.74
     },
     {
       "id": "33375622",
