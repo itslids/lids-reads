@@ -17,7 +17,7 @@
       "title": "Black Bag",
       "author": "Luke Kennard",
       "cover": "https://assets.hardcover.app/edition/32475570/7f0a23cb-8d61-4d43-ad5e-2a8e3238a756.png",
-      "rating": 0,
+      "rating": 4.0,
       "date": "2026-11-23",
       "pages": 400,
       "published": 2026,
@@ -76,7 +76,7 @@
       "date": "2026-10-30",
       "pages": 352,
       "published": 2018,
-      "avg_rating": 3.67
+      "avg_rating": 3.65
     },
     {
       "id": "hc-2418677",
@@ -87,7 +87,7 @@
       "date": "2026-10-29",
       "pages": 272,
       "published": 2026,
-      "avg_rating": 4.06
+      "avg_rating": 4.0
     },
     {
       "id": "220160849",
@@ -354,17 +354,6 @@
       "avg_rating": 3.35
     },
     {
-      "id": "238873074",
-      "title": "Vigil",
-      "author": "George Saunders",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
-      "rating": 4.0,
-      "date": "2026-07-14",
-      "pages": 179,
-      "published": 2026,
-      "avg_rating": 3.36
-    },
-    {
       "id": "199635125",
       "title": "Rejection",
       "author": "Tony Tulathimutte",
@@ -374,6 +363,17 @@
       "pages": 272,
       "published": 2024,
       "avg_rating": 3.91
+    },
+    {
+      "id": "238873074",
+      "title": "Vigil",
+      "author": "George Saunders",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753151765l/238873074._SY475_.jpg",
+      "rating": 4.0,
+      "date": "2026-07-14",
+      "pages": 179,
+      "published": 2026,
+      "avg_rating": 3.36
     },
     {
       "id": "7631105",
@@ -431,17 +431,6 @@
       "avg_rating": 3.85
     },
     {
-      "id": "61022861",
-      "title": "Foster",
-      "author": "Claire Keegan",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-04",
-      "pages": 128,
-      "published": 2010,
-      "avg_rating": 4.31
-    },
-    {
       "id": "238226942",
       "title": "Yesteryear",
       "author": "Caro Claire Burke",
@@ -451,6 +440,17 @@
       "pages": 391,
       "published": 2026,
       "avg_rating": 3.78
+    },
+    {
+      "id": "61022861",
+      "title": "Foster",
+      "author": "Claire Keegan",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1733564724l/61022861._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-04",
+      "pages": 128,
+      "published": 2010,
+      "avg_rating": 4.31
     },
     {
       "id": "58662236",
@@ -541,17 +541,6 @@
       "avg_rating": 4.17
     },
     {
-      "id": "36739755",
-      "title": "Convenience Store Woman",
-      "author": "Sayaka Murata",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg",
-      "rating": 4.0,
-      "date": "2026-05-30",
-      "pages": 163,
-      "published": 2016,
-      "avg_rating": 3.7
-    },
-    {
       "id": "240424526",
       "title": "Half His Age",
       "author": "Jennette McCurdy",
@@ -561,6 +550,17 @@
       "pages": 240,
       "published": 2026,
       "avg_rating": 3.25
+    },
+    {
+      "id": "36739755",
+      "title": "Convenience Store Woman",
+      "author": "Sayaka Murata",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1680105376l/36739755._SX318_.jpg",
+      "rating": 4.0,
+      "date": "2026-05-30",
+      "pages": 163,
+      "published": 2016,
+      "avg_rating": 3.7
     },
     {
       "id": "207571151",
@@ -791,7 +791,7 @@
       "date": "2026-03-13",
       "pages": 313,
       "published": 2024,
-      "avg_rating": 4.08
+      "avg_rating": 4.09
     },
     {
       "id": "54680228",
