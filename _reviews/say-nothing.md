@@ -17,6 +17,8 @@ vibes:
   - "literary nonfiction"
   - "firsthand oral histories"
   - "flawed and fraught"
+part_of:
+  - "My Patrick Radden Keefe obsession"
 ---
 
 This was easily one of my favorite books of the year. This story is incredible: the body of a missing widowed mother of ten is found about 30 years after the fact, and Patrick Radden Keefe impeccably uses this event to unpack the charged history (and present) of the Troubles in Northern Ireland.
