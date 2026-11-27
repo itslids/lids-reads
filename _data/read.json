@@ -2,6 +2,17 @@
   "year": 2026,
   "books": [
     {
+      "id": "hc-2275229",
+      "title": "The Things We Never Say",
+      "author": "Elizabeth Strout",
+      "cover": "https://assets.hardcover.app/edition/33061224/6c3c9e70-4097-485f-9b16-20664db07b6d.jpg",
+      "rating": 4.0,
+      "date": "2026-11-27",
+      "pages": 208,
+      "published": 2026,
+      "avg_rating": 4.05
+    },
+    {
       "id": "hc-2999449",
       "title": "Famesick",
       "author": "Lena Dunham",
@@ -354,17 +365,6 @@
       "avg_rating": 3.35
     },
     {
-      "id": "199635125",
-      "title": "Rejection",
-      "author": "Tony Tulathimutte",
-      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
-      "rating": 5.0,
-      "date": "2026-07-14",
-      "pages": 272,
-      "published": 2024,
-      "avg_rating": 3.91
-    },
-    {
       "id": "238873074",
       "title": "Vigil",
       "author": "George Saunders",
@@ -374,6 +374,17 @@
       "pages": 179,
       "published": 2026,
       "avg_rating": 3.36
+    },
+    {
+      "id": "199635125",
+      "title": "Rejection",
+      "author": "Tony Tulathimutte",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1757697215l/199635125._SY475_.jpg",
+      "rating": 5.0,
+      "date": "2026-07-14",
+      "pages": 272,
+      "published": 2024,
+      "avg_rating": 3.91
     },
     {
       "id": "7631105",
@@ -516,7 +527,7 @@
       "date": "2026-06-14",
       "pages": 386,
       "published": 2009,
-      "avg_rating": 3.75
+      "avg_rating": 3.76
     },
     {
       "id": "197798168",
