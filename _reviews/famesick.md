@@ -7,7 +7,7 @@ rating: 4
 format: "audio"
 cover: "https://assets.hardcover.app/external_data/4319605/8f38b9a810a653fadfe4ddc4fcca335646e7e33e.jpeg"
 genre: "Memoir"
-verdict: "Still a voice of a generation."
+verdict: "I'm shocked that I liked this book, but what can I say? She's still \"a\" voice of \"a\" generation."
 quotes:
   - "\"I wanted, I know now, to be loving and loved, to be needed and necessary, to be so generous that I was above censure and so kind that I was above being subjected to anyone's cruelty.\""
   - "\"That's the crux of it: Through it all, I always wanted to be a good girl.\""
