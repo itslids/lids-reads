@@ -43,7 +43,7 @@ When turning her review into `_reviews/<slug>.md`:
 - `format` is how she read it, one of `audio`, `ebook`, `physical`, or two joined with ` + ` (audio first). Don't add "(library)": everything she reads comes from the library (print copies or the library app), so it isn't tracked per book. Hardcover doesn't give us this, so ask her for it if she leaves it out. The Stats page charts it.
 - `vibes` are short tags (shown as chips, searchable on the home page). Build them from phrases in her review and recommendation, not new descriptions.
 - `why` ("Why I picked it up") is only filled in when she states the reason herself: a "why I picked it up" line in what she sends, or a sentence in the review that says it. Otherwise leave it out.
-- `part_of` groups reviews into a reading project; reviews sharing a label link to each other. Current labels: "Tracking the International Booker Prize", "The Abhorsen series", "My Mona Awad micro-obsession", "My Claire Keegan obsession", "The Maze Runner series", "Obsession stories". Reuse the exact label text.
+- `part_of` groups reviews into a reading project; reviews sharing a label link to each other. Current labels: "Tracking the International Booker Prize", "The Abhorsen series", "My Mona Awad micro-obsession", "My Claire Keegan obsession", "The Maze Runner series", "Obsession stories", "My Patrick Radden Keefe obsession", "Tracking the Booker Prize". Reuse the exact label text.
 
 ## Conventions
 

@@ -16,6 +16,8 @@ vibes:
   - "a contemporary American man"
   - "a glimpse at this very specific moment in American history"
   - "almost preachy"
+part_of:
+  - "Tracking the Booker Prize"
 ---
 
 This one was quite good, surprisingly easy for a Booker finalist. I didn't find this to be particularly challenging, either in the way it was written or the message it contained.
